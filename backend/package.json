@@ -1,0 +1,29 @@
+{
+  "name": "internal-link-tool",
+  "version": "1.0.0",
+  "description": "Automated internal link tool for SEO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "crawl": "node scripts/crawl.js",
+    "analyze": "node scripts/analyze.js",
+    "generate": "node scripts/generate-suggestions.js"
+  },
+  "keywords": ["seo", "internal-links", "automation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.1",
+    "natural": "^5.2.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
