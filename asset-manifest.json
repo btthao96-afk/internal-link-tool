@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/internal-link-tool/static/css/main.751c4887.css",
+    "main.js": "/internal-link-tool/static/js/main.fa757cee.js",
+    "index.html": "/internal-link-tool/index.html",
+    "main.751c4887.css.map": "/internal-link-tool/static/css/main.751c4887.css.map",
+    "main.fa757cee.js.map": "/internal-link-tool/static/js/main.fa757cee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.751c4887.css",
+    "static/js/main.fa757cee.js"
+  ]
+}
