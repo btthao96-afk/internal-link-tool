@@ -11,6 +11,10 @@ import {
   Pencil,
   Check,
   Link2,
+  Target,
+  Tag,
+  ListChecks,
+  Hash,
 } from 'lucide-react';
 
 // ───────────────────────────────────────────────────────────────────────
@@ -215,19 +219,6 @@ const downloadCsv = (suggestions) => {
 };
 
 // ───────────────────────────────────────────────────────────────────────
-// Shared button styles
-// ───────────────────────────────────────────────────────────────────────
-
-const btnPrimary =
-  'inline-flex items-center gap-1.5 rounded-md bg-zinc-900 px-3.5 py-2 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-40 disabled:hover:bg-zinc-900';
-const btnSecondary =
-  'inline-flex items-center gap-1.5 rounded-md border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:opacity-40';
-const btnDanger =
-  'inline-flex items-center gap-1.5 rounded-md border border-transparent px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-50';
-const iconBtn =
-  'inline-flex h-7 w-7 items-center justify-center rounded-md text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700';
-
-// ───────────────────────────────────────────────────────────────────────
 // Component
 // ───────────────────────────────────────────────────────────────────────
 
@@ -286,7 +277,6 @@ const InternalLinkSeoTool = () => {
     setAnchorOverrides({});
   }, [inputValue, anchorPoolInput, mappings]);
 
-  // ── Mapping CRUD ──
   const addMapping = () => setMappings((prev) => [...prev, emptyMapping()]);
   const updateMapping = (id, patch) =>
     setMappings((prev) => prev.map((m) => (m.id === id ? { ...m, ...patch } : m)));
@@ -328,7 +318,6 @@ const InternalLinkSeoTool = () => {
     reader.readAsText(file);
   };
 
-  // ── Anchor edit ──
   const startEdit = (row) => {
     setEditingId(row.id);
     setEditingValue(row.anchorText);
@@ -355,182 +344,220 @@ const InternalLinkSeoTool = () => {
     });
 
   const inputCls =
-    'w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900/5';
+    'w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 outline-none transition focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100';
 
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900 antialiased">
-      <div className="mx-auto w-full max-w-6xl px-6 py-12">
+    <div className="relative min-h-screen overflow-x-hidden bg-gradient-to-br from-indigo-50/40 via-white to-violet-50/40 text-zinc-900 antialiased">
+      {/* Decorative gradient orbs */}
+      <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-indigo-300/20 blur-3xl" />
+      <div className="pointer-events-none absolute top-40 -right-40 h-96 w-96 rounded-full bg-violet-300/20 blur-3xl" />
+      <div className="pointer-events-none absolute top-[600px] left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-sky-200/20 blur-3xl" />
 
-        {/* ─── Header ─── */}
-        <header className="mb-10 border-b border-zinc-200 pb-8">
-          <div className="flex items-center gap-2 text-zinc-400">
-            <Link2 className="h-4 w-4" />
-            <span className="text-xs font-medium uppercase tracking-wider">SEO · Internal linking</span>
+      <div className="relative mx-auto w-full max-w-6xl px-6 py-12">
+
+        {/* ─── Hero header ─── */}
+        <header className="mb-12">
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/60 bg-white/80 px-3 py-1 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur">
+            <Sparkles className="h-3.5 w-3.5" />
+            SEO Internal Linking
           </div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+          <h1 className="mt-5 bg-gradient-to-br from-zinc-900 via-indigo-900 to-violet-900 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
             Internal Link Tool
           </h1>
-          <p className="mt-3 max-w-2xl text-base text-zinc-600">
-            Định nghĩa nhóm keyword → URL → anchor text. Tool sẽ quét danh sách URL nguồn và gợi ý liên kết nội bộ theo đúng mapping của bạn.
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-600">
+            Định nghĩa nhóm <span className="font-medium text-indigo-700">keyword</span> → <span className="font-medium text-violet-700">URL</span> → <span className="font-medium text-sky-700">anchor text</span>.
+            Tool sẽ quét danh sách URL nguồn và gợi ý liên kết nội bộ theo đúng mapping của bạn.
           </p>
         </header>
 
         {/* ─── Mapping section ─── */}
-        <section className="mb-8">
-          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <h2 className="text-lg font-semibold text-zinc-900">Keyword mapping</h2>
-              <p className="mt-1 text-sm text-zinc-500">
-                Mỗi nhóm gồm keywords, target URL và anchor texts. Lưu tự động vào trình duyệt.
-              </p>
+        <section className="mb-10 overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/80 shadow-sm shadow-indigo-100/40 backdrop-blur">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-100 bg-gradient-to-r from-indigo-50/60 to-transparent px-6 py-5">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white shadow-sm shadow-indigo-200">
+                <Target className="h-5 w-5" />
+              </div>
+              <div>
+                <h2 className="text-base font-semibold text-zinc-900">Keyword mapping</h2>
+                <p className="text-xs text-zinc-500">Tự động lưu vào trình duyệt</p>
+              </div>
             </div>
             <div className="flex flex-wrap gap-2">
-              <button type="button" onClick={addMapping} className={btnSecondary}>
+              <button type="button" onClick={addMapping}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500 px-3 py-1.5 text-sm font-medium text-white shadow-sm shadow-indigo-200 transition hover:shadow-md hover:shadow-indigo-200">
                 <Plus className="h-4 w-4" />
                 Thêm
               </button>
-              <button type="button" onClick={() => fileInputRef.current?.click()} className={btnSecondary}>
+              <button type="button" onClick={() => fileInputRef.current?.click()}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 transition hover:border-indigo-200 hover:bg-indigo-50/50 hover:text-indigo-700">
                 <Upload className="h-4 w-4" />
                 Import
               </button>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="application/json,.json"
-                className="hidden"
-                onChange={(e) => {
-                  if (e.target.files?.[0]) importMappings(e.target.files[0]);
-                  e.target.value = '';
-                }}
-              />
-              <button
-                type="button"
-                onClick={exportMappings}
-                disabled={mappings.length === 0}
-                className={btnSecondary}
-              >
+              <input ref={fileInputRef} type="file" accept="application/json,.json" className="hidden"
+                onChange={(e) => { if (e.target.files?.[0]) importMappings(e.target.files[0]); e.target.value = ''; }} />
+              <button type="button" onClick={exportMappings} disabled={mappings.length === 0}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 transition hover:border-indigo-200 hover:bg-indigo-50/50 hover:text-indigo-700 disabled:opacity-40 disabled:hover:border-zinc-200 disabled:hover:bg-white disabled:hover:text-zinc-700">
                 <Download className="h-4 w-4" />
                 Export
               </button>
               {mappings.length > 0 && (
-                <button type="button" onClick={clearAllMappings} className={btnDanger}>
+                <button type="button" onClick={clearAllMappings}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-transparent px-3 py-1.5 text-sm font-medium text-red-600 transition hover:bg-red-50">
                   <Trash2 className="h-4 w-4" />
-                  Clear all
+                  Clear
                 </button>
               )}
             </div>
           </div>
 
           {mappings.length === 0 ? (
-            <div className="rounded-lg border border-dashed border-zinc-300 bg-white px-6 py-12 text-center">
-              <p className="text-sm text-zinc-500">
-                Chưa có mapping. Bấm <span className="font-medium text-zinc-900">Thêm</span> để tạo nhóm đầu tiên.
+            <div className="px-6 py-16 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-100 to-violet-100">
+                <Target className="h-7 w-7 text-indigo-600" />
+              </div>
+              <p className="mt-4 text-sm font-medium text-zinc-900">Chưa có mapping nào</p>
+              <p className="mt-1 text-sm text-zinc-500">
+                Bấm <span className="font-medium text-indigo-700">Thêm</span> để tạo nhóm keyword đầu tiên
               </p>
             </div>
           ) : (
-            <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead className="bg-zinc-50/80">
-                    <tr className="text-left text-xs font-medium uppercase tracking-wide text-zinc-500">
-                      <th className="px-4 py-3 w-[30%]">Keywords</th>
-                      <th className="px-4 py-3 w-[30%]">Target URL</th>
-                      <th className="px-4 py-3 w-[35%]">Anchor texts</th>
-                      <th className="px-4 py-3 w-[5%]"></th>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
+                    <th className="px-5 py-3 w-[30%]">
+                      <span className="inline-flex items-center gap-1.5"><Hash className="h-3 w-3 text-indigo-500" /> Keywords</span>
+                    </th>
+                    <th className="px-5 py-3 w-[30%]">
+                      <span className="inline-flex items-center gap-1.5"><Link2 className="h-3 w-3 text-violet-500" /> Target URL</span>
+                    </th>
+                    <th className="px-5 py-3 w-[35%]">
+                      <span className="inline-flex items-center gap-1.5"><Tag className="h-3 w-3 text-sky-500" /> Anchor texts</span>
+                    </th>
+                    <th className="px-5 py-3 w-[5%]"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {mappings.map((m, idx) => (
+                    <tr key={m.id} className="border-t border-zinc-100 align-top transition hover:bg-zinc-50/40">
+                      <td className="p-4">
+                        <textarea
+                          value={m.keywordsRaw}
+                          onChange={(e) => updateMapping(m.id, { keywordsRaw: e.target.value })}
+                          rows={3}
+                          placeholder={'ghế văn phòng\nghế xoay'}
+                          className={inputCls + ' resize-y'}
+                        />
+                      </td>
+                      <td className="p-4">
+                        <input
+                          type="text"
+                          value={m.targetUrl}
+                          onChange={(e) => updateMapping(m.id, { targetUrl: e.target.value })}
+                          placeholder="https://example.com/page"
+                          className={inputCls}
+                        />
+                        <div className="mt-2 inline-flex items-center rounded-md bg-zinc-100 px-2 py-0.5 text-[10px] font-medium text-zinc-600">
+                          Group #{idx + 1}
+                        </div>
+                      </td>
+                      <td className="p-4">
+                        <textarea
+                          value={m.anchorsRaw}
+                          onChange={(e) => updateMapping(m.id, { anchorsRaw: e.target.value })}
+                          rows={3}
+                          placeholder={'ghế văn phòng The One\nmua ghế xoay'}
+                          className={inputCls + ' resize-y'}
+                        />
+                      </td>
+                      <td className="p-4 text-center">
+                        <button
+                          type="button"
+                          onClick={() => removeMapping(m.id)}
+                          title="Xoá nhóm"
+                          className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-zinc-400 transition hover:bg-red-50 hover:text-red-600"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </button>
+                      </td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {mappings.map((m, idx) => (
-                      <tr key={m.id} className="border-t border-zinc-100 align-top">
-                        <td className="p-3">
-                          <textarea
-                            value={m.keywordsRaw}
-                            onChange={(e) => updateMapping(m.id, { keywordsRaw: e.target.value })}
-                            rows={3}
-                            placeholder={'ghế văn phòng\nghế xoay'}
-                            className={inputCls + ' resize-y'}
-                          />
-                        </td>
-                        <td className="p-3">
-                          <input
-                            type="text"
-                            value={m.targetUrl}
-                            onChange={(e) => updateMapping(m.id, { targetUrl: e.target.value })}
-                            placeholder="https://example.com/ghe-van-phong"
-                            className={inputCls}
-                          />
-                          <p className="mt-1.5 text-[11px] text-zinc-400">Group #{idx + 1}</p>
-                        </td>
-                        <td className="p-3">
-                          <textarea
-                            value={m.anchorsRaw}
-                            onChange={(e) => updateMapping(m.id, { anchorsRaw: e.target.value })}
-                            rows={3}
-                            placeholder={'ghế văn phòng The One\nmua ghế xoay'}
-                            className={inputCls + ' resize-y'}
-                          />
-                        </td>
-                        <td className="p-3 text-center">
-                          <button
-                            type="button"
-                            onClick={() => removeMapping(m.id)}
-                            title="Xoá nhóm"
-                            className="inline-flex h-8 w-8 items-center justify-center rounded-md text-zinc-400 hover:bg-red-50 hover:text-red-600"
-                          >
-                            <Trash2 className="h-4 w-4" />
-                          </button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
         </section>
 
         {/* ─── Input section ─── */}
-        <section className="mb-8 grid gap-6 lg:grid-cols-2">
-          <div>
-            <label className="text-sm font-medium text-zinc-900">Source URLs</label>
-            <p className="mt-1 text-xs text-zinc-500">Mỗi dòng một URL — tool sẽ quét slug để khớp keyword.</p>
-            <textarea
-              value={inputValue}
-              onChange={(e) => { setInputValue(e.target.value); setSubmitted(false); }}
-              rows={9}
-              className={'mt-3 ' + inputCls + ' resize-y font-mono text-[13px]'}
-              placeholder={'https://theone.vn/ghe-van-phong\nhttps://theone.vn/ban-lam-viec\nhttps://theone.vn/sofa-phong-khach'}
-            />
-            <p className="mt-2 text-xs text-zinc-500">{urls.length} URL</p>
+        <section className="mb-10 grid gap-6 lg:grid-cols-2">
+          {/* Source URLs */}
+          <div className="overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/80 shadow-sm shadow-sky-100/40 backdrop-blur">
+            <div className="flex items-center gap-3 border-b border-zinc-100 bg-gradient-to-r from-sky-50/60 to-transparent px-5 py-4">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-cyan-500 text-white shadow-sm shadow-sky-200">
+                <Link2 className="h-4 w-4" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-zinc-900">Source URLs</h3>
+                <p className="text-xs text-zinc-500">Mỗi dòng một URL</p>
+              </div>
+              <span className="rounded-md bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-700 tabular-nums">
+                {urls.length}
+              </span>
+            </div>
+            <div className="p-5">
+              <textarea
+                value={inputValue}
+                onChange={(e) => { setInputValue(e.target.value); setSubmitted(false); }}
+                rows={9}
+                className={inputCls + ' resize-y font-mono text-[13px]'}
+                placeholder={'https://theone.vn/ghe-van-phong\nhttps://theone.vn/ban-lam-viec\nhttps://theone.vn/sofa-phong-khach'}
+              />
+            </div>
           </div>
-          <div>
-            <label className="text-sm font-medium text-zinc-900">Fallback anchors</label>
-            <p className="mt-1 text-xs text-zinc-500">Tuỳ chọn — dùng khi URL không khớp mapping nào.</p>
-            <textarea
-              value={anchorPoolInput}
-              onChange={(e) => { setAnchorPoolInput(e.target.value); setSubmitted(false); }}
-              rows={9}
-              className={'mt-3 ' + inputCls + ' resize-y'}
-              placeholder={'tham khảo thêm\nxem chi tiết\nbài viết liên quan'}
-            />
-            <p className="mt-2 text-xs text-zinc-500">{fallbackPool.length} anchor</p>
+
+          {/* Fallback anchors */}
+          <div className="overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/80 shadow-sm shadow-violet-100/40 backdrop-blur">
+            <div className="flex items-center gap-3 border-b border-zinc-100 bg-gradient-to-r from-violet-50/60 to-transparent px-5 py-4">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-sm shadow-violet-200">
+                <Tag className="h-4 w-4" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-zinc-900">Fallback anchors</h3>
+                <p className="text-xs text-zinc-500">Khi URL không khớp mapping</p>
+              </div>
+              <span className="rounded-md bg-violet-100 px-2 py-0.5 text-xs font-semibold text-violet-700 tabular-nums">
+                {fallbackPool.length}
+              </span>
+            </div>
+            <div className="p-5">
+              <textarea
+                value={anchorPoolInput}
+                onChange={(e) => { setAnchorPoolInput(e.target.value); setSubmitted(false); }}
+                rows={9}
+                className={inputCls + ' resize-y'}
+                placeholder={'tham khảo thêm\nxem chi tiết\nbài viết liên quan'}
+              />
+            </div>
           </div>
         </section>
 
         {/* ─── Action bar ─── */}
-        <section className="mb-6 flex flex-wrap items-center gap-3 border-t border-b border-zinc-200 py-4">
-          <button type="button" onClick={() => setSubmitted(true)} className={btnPrimary}>
-            <Sparkles className="h-4 w-4" />
+        <section className="mb-8 flex flex-wrap items-center gap-3">
+          <button type="button" onClick={() => setSubmitted(true)}
+            className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-indigo-200 transition hover:shadow-lg hover:shadow-indigo-300/60 hover:brightness-110 active:scale-[0.98]">
+            <Sparkles className="h-4 w-4 transition group-hover:rotate-12" />
             Tạo gợi ý
           </button>
           {submitted && suggestions.length > 0 && (
             <>
-              <button type="button" onClick={() => downloadCsv(suggestions)} className={btnSecondary}>
+              <button type="button" onClick={() => downloadCsv(suggestions)}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50/60 px-4 py-2.5 text-sm font-medium text-emerald-700 transition hover:border-emerald-300 hover:bg-emerald-50">
                 <FileSpreadsheet className="h-4 w-4" />
                 Export CSV
               </button>
               {overrideCount > 0 && (
-                <button type="button" onClick={() => setAnchorOverrides({})} className={btnSecondary}>
+                <button type="button" onClick={() => setAnchorOverrides({})}
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-amber-200 bg-amber-50/60 px-4 py-2.5 text-sm font-medium text-amber-700 transition hover:border-amber-300 hover:bg-amber-50">
                   <RotateCcw className="h-4 w-4" />
                   Reset {overrideCount} chỉnh sửa
                 </button>
@@ -542,52 +569,56 @@ const InternalLinkSeoTool = () => {
         {/* ─── Results ─── */}
         {submitted && (
           <section>
-            {/* Inline stats strip */}
-            <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-zinc-600">
-              <StatInline label="URLs" value={urls.length} />
-              <StatInline label="Mappings" value={mappings.length} />
-              <StatInline label="Mapping hits" value={mappingSuggestionCount} highlight />
-              <StatInline label="Total suggestions" value={suggestions.length} />
-              <StatInline label="Edited" value={overrideCount} />
+            {/* Color-coded stat pills */}
+            <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+              <StatPill icon={Link2} label="URLs" value={urls.length} tone="sky" />
+              <StatPill icon={Target} label="Mappings" value={mappings.length} tone="indigo" />
+              <StatPill icon={Sparkles} label="Mapping hits" value={mappingSuggestionCount} tone="violet" highlight />
+              <StatPill icon={ListChecks} label="Total" value={suggestions.length} tone="emerald" />
+              <StatPill icon={Pencil} label="Edited" value={overrideCount} tone="amber" />
             </div>
 
             {suggestions.length === 0 ? (
-              <div className="rounded-lg border border-zinc-200 bg-white px-6 py-12 text-center">
-                <p className="text-sm font-medium text-zinc-900">Không có gợi ý nào</p>
+              <div className="rounded-2xl border border-zinc-200/80 bg-white/80 px-6 py-16 text-center backdrop-blur">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-zinc-100 to-zinc-200">
+                  <Target className="h-7 w-7 text-zinc-400" />
+                </div>
+                <p className="mt-4 text-sm font-medium text-zinc-900">Không có gợi ý nào</p>
                 <p className="mt-1 text-sm text-zinc-500">URL của bạn có thể không khớp keyword trong mapping. Kiểm tra lại keywords.</p>
               </div>
             ) : (
-              <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+              <div className="overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/90 shadow-sm shadow-indigo-100/40 backdrop-blur">
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
-                    <thead className="bg-zinc-50/80">
-                      <tr className="text-left text-xs font-medium uppercase tracking-wide text-zinc-500">
-                        <th className="px-4 py-3">Source</th>
-                        <th className="px-4 py-3">Target</th>
-                        <th className="px-4 py-3">Anchor text</th>
-                        <th className="px-4 py-3">Matched</th>
-                        <th className="px-4 py-3 w-20 text-right">Score</th>
+                    <thead className="bg-gradient-to-r from-indigo-50/40 via-violet-50/40 to-sky-50/40">
+                      <tr className="text-left text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
+                        <th className="px-5 py-3.5">Source</th>
+                        <th className="px-5 py-3.5">Target</th>
+                        <th className="px-5 py-3.5">Anchor text</th>
+                        <th className="px-5 py-3.5">Matched</th>
+                        <th className="px-5 py-3.5 w-20 text-right">Score</th>
                       </tr>
                     </thead>
                     <tbody>
                       {recommended.map((item) => (
-                        <tr key={item.id} className="border-t border-zinc-100 hover:bg-zinc-50/60">
-                          <td className="px-4 py-3 align-top max-w-[220px]">
+                        <tr key={item.id} className="border-t border-zinc-100 transition hover:bg-indigo-50/20">
+                          <td className="px-5 py-3.5 align-top max-w-[220px]">
                             <div className="break-words text-zinc-800">{humanizeUrl(item.sourceUrl)}</div>
                           </td>
-                          <td className="px-4 py-3 align-top max-w-[220px]">
+                          <td className="px-5 py-3.5 align-top max-w-[220px]">
                             <div className="break-words text-zinc-800">{humanizeUrl(item.targetUrl)}</div>
                             <span
-                              className={`mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium ${
+                              className={`mt-1.5 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium ${
                                 item.source === 'mapping'
-                                  ? 'bg-indigo-50 text-indigo-700'
-                                  : 'bg-zinc-100 text-zinc-600'
+                                  ? 'bg-gradient-to-r from-indigo-50 to-violet-50 text-indigo-700 ring-1 ring-indigo-200'
+                                  : 'bg-zinc-100 text-zinc-600 ring-1 ring-zinc-200'
                               }`}
                             >
+                              {item.source === 'mapping' && <Sparkles className="h-2.5 w-2.5" />}
                               {item.source}
                             </span>
                           </td>
-                          <td className="px-4 py-3 align-top">
+                          <td className="px-5 py-3.5 align-top">
                             {editingId === item.id ? (
                               <div className="flex flex-wrap items-center gap-2">
                                 <input
@@ -601,10 +632,12 @@ const InternalLinkSeoTool = () => {
                                   autoFocus
                                   className={inputCls + ' min-w-[200px] flex-1'}
                                 />
-                                <button type="button" onClick={saveEdit} className={iconBtn} title="Lưu (Enter)">
-                                  <Check className="h-4 w-4 text-emerald-600" />
+                                <button type="button" onClick={saveEdit} title="Lưu (Enter)"
+                                  className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-100">
+                                  <Check className="h-4 w-4" />
                                 </button>
-                                <button type="button" onClick={cancelEdit} className={iconBtn} title="Hủy (Esc)">
+                                <button type="button" onClick={cancelEdit} title="Hủy (Esc)"
+                                  className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700">
                                   <X className="h-4 w-4" />
                                 </button>
                               </div>
@@ -612,7 +645,7 @@ const InternalLinkSeoTool = () => {
                               <button
                                 type="button"
                                 onClick={() => startEdit(item)}
-                                className="group flex w-full items-center gap-2 rounded-md px-2 py-1 -mx-2 -my-1 text-left hover:bg-white"
+                                className="group flex w-full items-center gap-2 rounded-lg px-2 py-1 -mx-2 -my-1 text-left transition hover:bg-white hover:shadow-sm"
                               >
                                 <span className={item.isOverridden ? 'text-indigo-700 font-medium' : 'text-zinc-800'}>
                                   {item.anchorText}
@@ -621,22 +654,25 @@ const InternalLinkSeoTool = () => {
                                   <button
                                     type="button"
                                     onClick={(e) => { e.stopPropagation(); resetRow(item.id); }}
-                                    className="text-[10px] text-zinc-400 hover:text-red-600"
+                                    className="rounded-md bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700 hover:bg-amber-100"
                                     title="Khôi phục auto"
                                   >
-                                    reset
+                                    edited
                                   </button>
                                 )}
-                                <Pencil className="ml-auto h-3.5 w-3.5 text-zinc-300 opacity-0 transition group-hover:opacity-100" />
+                                <Pencil className="ml-auto h-3.5 w-3.5 text-indigo-400 opacity-0 transition group-hover:opacity-100" />
                               </button>
                             )}
                           </td>
-                          <td className="px-4 py-3 align-top">
-                            <span className="text-xs text-zinc-500">
-                              {(item.keywords || []).slice(0, 3).join(', ') || '—'}
-                            </span>
+                          <td className="px-5 py-3.5 align-top">
+                            <div className="flex flex-wrap gap-1">
+                              {(item.keywords || []).slice(0, 3).map((k, i) => (
+                                <span key={i} className="rounded-md bg-zinc-100 px-1.5 py-0.5 text-[10px] text-zinc-600">{k}</span>
+                              ))}
+                              {(!item.keywords || item.keywords.length === 0) && <span className="text-xs text-zinc-400">—</span>}
+                            </div>
                           </td>
-                          <td className="px-4 py-3 align-top text-right">
+                          <td className="px-5 py-3.5 align-top text-right">
                             <ScoreBadge score={item.score} />
                           </td>
                         </tr>
@@ -645,8 +681,8 @@ const InternalLinkSeoTool = () => {
                   </table>
                 </div>
                 {suggestions.length > recommended.length && (
-                  <div className="border-t border-zinc-200 bg-zinc-50/60 px-4 py-3 text-xs text-zinc-500">
-                    Hiển thị {recommended.length} / {suggestions.length} gợi ý. Export CSV để lấy đầy đủ.
+                  <div className="border-t border-zinc-100 bg-gradient-to-r from-zinc-50/60 to-transparent px-5 py-3 text-xs text-zinc-500">
+                    Hiển thị <span className="font-medium text-zinc-700">{recommended.length}</span> / {suggestions.length} gợi ý. Export CSV để lấy đầy đủ.
                   </div>
                 )}
               </div>
@@ -654,30 +690,50 @@ const InternalLinkSeoTool = () => {
           </section>
         )}
 
-        <footer className="mt-16 border-t border-zinc-200 pt-6 text-xs text-zinc-400">
-          Internal Link Tool · build 2026-05-14
+        <footer className="mt-20 border-t border-zinc-200/60 pt-6 text-center text-xs text-zinc-400">
+          Internal Link Tool · 2026
         </footer>
       </div>
     </div>
   );
 };
 
-const StatInline = ({ label, value, highlight }) => (
-  <div className="flex items-baseline gap-1.5">
-    <span className={`text-base font-semibold tabular-nums ${highlight ? 'text-indigo-700' : 'text-zinc-900'}`}>
-      {value}
-    </span>
-    <span className="text-xs text-zinc-500">{label}</span>
-  </div>
-);
+// ───────────────────────────────────────────────────────────────────────
+// Sub-components
+// ───────────────────────────────────────────────────────────────────────
+
+const TONE_STYLES = {
+  sky:     { bg: 'from-sky-500 to-cyan-500',         ring: 'ring-sky-200',     pill: 'bg-sky-100 text-sky-700',         shadow: 'shadow-sky-100' },
+  indigo:  { bg: 'from-indigo-500 to-blue-500',       ring: 'ring-indigo-200',  pill: 'bg-indigo-100 text-indigo-700',   shadow: 'shadow-indigo-100' },
+  violet:  { bg: 'from-violet-500 to-fuchsia-500',    ring: 'ring-violet-200',  pill: 'bg-violet-100 text-violet-700',   shadow: 'shadow-violet-100' },
+  emerald: { bg: 'from-emerald-500 to-teal-500',      ring: 'ring-emerald-200', pill: 'bg-emerald-100 text-emerald-700', shadow: 'shadow-emerald-100' },
+  amber:   { bg: 'from-amber-500 to-orange-500',      ring: 'ring-amber-200',   pill: 'bg-amber-100 text-amber-700',     shadow: 'shadow-amber-100' },
+};
+
+const StatPill = ({ icon: Icon, label, value, tone, highlight }) => {
+  const t = TONE_STYLES[tone] || TONE_STYLES.indigo;
+  return (
+    <div className={`group relative overflow-hidden rounded-xl border border-zinc-200/80 bg-white/80 p-4 shadow-sm backdrop-blur transition hover:shadow-md ${highlight ? 'ring-2 ring-offset-2 ' + t.ring : ''}`}>
+      <div className="flex items-center gap-3">
+        <div className={`flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br ${t.bg} text-white shadow-sm ${t.shadow}`}>
+          <Icon className="h-4 w-4" />
+        </div>
+        <div className="min-w-0">
+          <div className="text-xs font-medium text-zinc-500">{label}</div>
+          <div className="text-xl font-bold tabular-nums text-zinc-900">{value}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const ScoreBadge = ({ score }) => {
   const tone =
-    score >= 80 ? 'bg-emerald-50 text-emerald-700 ring-emerald-600/10' :
-    score >= 50 ? 'bg-amber-50 text-amber-700 ring-amber-600/10' :
-                  'bg-zinc-100 text-zinc-600 ring-zinc-500/10';
+    score >= 80 ? 'bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-sm shadow-emerald-200' :
+    score >= 50 ? 'bg-gradient-to-br from-amber-500 to-orange-500 text-white shadow-sm shadow-amber-200' :
+                  'bg-zinc-200 text-zinc-700';
   return (
-    <span className={`inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ring-1 ring-inset tabular-nums ${tone}`}>
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold tabular-nums ${tone}`}>
       {score}
     </span>
   );
