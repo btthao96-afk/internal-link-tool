@@ -62,21 +62,44 @@ vercel --prod
 
 ## 🚀 Quick Start
 
-### 1. Setup Database
+### 1. Setup Database (PostgreSQL)
 
-#### Option A: PostgreSQL (Recommended)
+Cả Local Tool và Web App đều dùng PostgreSQL nhưng **2 schema khác nhau** (Web App có thêm bảng users, sessions, projects vì multi-user).
 
 ```bash
+# Cài PostgreSQL (macOS)
+brew install postgresql
+brew services start postgresql
+
 # Tạo database
 createdb internal_link_tool
 
-# Chạy schema
-psql -U postgres -d internal_link_tool -f backend/src/db/schema.sql
+# Verify connection
+psql -d internal_link_tool -c "SELECT version();"
 ```
 
-#### Option B: SQLite
+**Chạy schema cho Local Tool:**
+```bash
+psql -d internal_link_tool -f backend/src/db/schema.sql
+```
+> Tạo 7 bảng: `pages`, `keywords`, `relationships`, `suggestions`, `implemented_links`, `crawl_sessions`, `analytics`.
 
-Bạn có thể sửa database config để dùng SQLite thay cho PostgreSQL.
+**HOẶC chạy schema cho Web App (multi-user):**
+```bash
+psql -d internal_link_tool -f web-app/backend/src/config/schema.sql
+```
+> Tạo 11 bảng: bao gồm `users`, `user_sessions`, `projects` cộng với các bảng của Local Tool (có thêm `project_id` để phân biệt theo user).
+>
+> Schema này cũng seed sẵn 1 admin user: `admin@internallinktool.com` / `admin123`.
+
+**Verify schema:**
+```bash
+psql -d internal_link_tool -c "\dt"
+# Hoặc xem 1 bảng cụ thể:
+psql -d internal_link_tool -c "\d users"
+```
+
+> ⚠️ Đừng chạy cả 2 schema cùng lúc lên cùng 1 database — chọn 1 trong 2 tuỳ bạn dùng Local Tool hay Web App.
 
 ### 2. Setup Backend API (Web App)
 
@@ -172,36 +195,84 @@ node scripts/workflow.js https://example.com 50
 
 ## 📂 Project Structure
 
+Repo có **2 phần độc lập**: Local Tool (single-user, CLI workflow) và Web App (multi-user, có auth + database).
+
 ```
 internal-link-tool/
-├── backend/                 # Express API & Core Logic
-│   ├── src/
-│   │   ├── config/         # Database & constants
-│   │   ├── services/       # Business logic
-│   │   │   ├── crawler.js
-│   │   │   ├── nlp.js
-│   │   │   ├── relevanceEngine.js
-│   │   │   └── suggestionGenerator.js
-│   │   ├── db/             # Database
-│   │   │   ├── schema.sql
-│   │   │   └── queries.js
-│   │   └── routes/         # API endpoints
-│   ├── scripts/
-│   │   └── workflow.js    # CLI workflow
-│   ├── server.js          # Express app
-│   └── package.json
 │
-├── dashboard/             # React Frontend
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   ├── index.js
-│   │   └── components/   # React components
-│   ├── public/
-│   └── package.json
+├── 🅰️  LOCAL TOOL (single-user, chạy local)
+│   │
+│   ├── backend/                 # Backend — Express API + core logic
+│   │   ├── src/
+│   │   │   ├── config/         # Database connection + constants
+│   │   │   │   ├── database.js
+│   │   │   │   └── constants.js
+│   │   │   ├── services/       # Business logic
+│   │   │   │   ├── crawler.js          # Quét website
+│   │   │   │   ├── nlp.js              # Tokenize + TF-IDF (hỗ trợ tiếng Việt)
+│   │   │   │   ├── relevanceEngine.js  # Tính độ liên quan
+│   │   │   │   └── suggestionGenerator.js
+│   │   │   ├── db/             # PostgreSQL
+│   │   │   │   ├── schema.sql          # 7 bảng: pages, keywords, ...
+│   │   │   │   └── queries.js
+│   │   │   └── routes/api.js   # REST endpoints (port 3001)
+│   │   ├── scripts/workflow.js # CLI: crawl → NLP → suggestions
+│   │   ├── server.js           # Express bootstrap
+│   │   ├── .env.example        # Cần copy → .env và sửa DATABASE_URL
+│   │   └── package.json
+│   │
+│   └── dashboard/              # Frontend — React (port 3000)
+│       ├── src/
+│       │   ├── App.js
+│       │   └── components/
+│       └── package.json
 │
-└── README.md
+├── 🅱️  WEB APP (multi-user, có auth + projects)
+│   │
+│   └── web-app/
+│       ├── backend/            # Backend — Express + JWT auth (port 5000)
+│       │   ├── src/
+│       │   │   ├── auth/authService.js     # bcrypt + JWT
+│       │   │   ├── middleware/auth.js      # Bảo vệ route
+│       │   │   ├── routes/
+│       │   │   │   ├── auth.js             # /api/auth (login, register)
+│       │   │   │   └── projects.js         # /api/projects CRUD
+│       │   │   ├── db/projectQueries.js
+│       │   │   ├── config/schema.sql       # 11 bảng: users, projects, ...
+│       │   │   ├── models/index.js
+│       │   │   └── services/crawler.js
+│       │   ├── server.js
+│       │   ├── .env.example                # DATABASE_URL + JWT_SECRET
+│       │   ├── Dockerfile                  # Container deploy
+│       │   ├── vercel.json                 # Vercel serverless config
+│       │   └── package.json
+│       │
+│       └── frontend/           # Frontend — React + Tailwind (port 3000)
+│           ├── src/
+│           │   ├── App.js
+│           │   ├── components/InternalLinkSeoTool.js   # Tool chính (live)
+│           │   ├── context/AuthContext.js
+│           │   └── pages/                  # Login, Register, Dashboard, ...
+│           ├── public/
+│           ├── tailwind.config.js
+│           └── package.json
+│
+├── docs/
+│   └── chat-history.md         # Lịch sử phát triển tool
+│
+├── DEPLOYMENT.md               # Hướng dẫn deploy production
+├── deploy.sh                   # Script deploy 1 lệnh
+└── README.md                   # (file này)
 ```
+
+### 🌳 Branches
+
+| Branch | Nội dung | Dùng cho |
+|---|---|---|
+| `main` | Full source code (BE + FE + database schema) | Phát triển, clone về để chạy local |
+| `gh-pages` | Chỉ chứa build static (HTML/CSS/JS đã compile) của `web-app/frontend` | GitHub Pages auto serve tại https://btthao96-afk.github.io/internal-link-tool/ |
+
+→ **Khi review code, luôn xem branch `main`**, không phải `gh-pages`.
 
 ---
 
