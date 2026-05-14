@@ -357,7 +357,7 @@ const InternalLinkSeoTool = () => {
         <div className="mb-8 space-y-4">
           <div>
             <p className="text-sm uppercase tracking-[0.25em] text-emerald-400">SEO Internal Link Generator</p>
-            <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">Tool gợi ý internal link theo mapping</h1>
+            <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">Tool gợi ý internal link theo mapping <span className="text-xs align-middle text-emerald-400 font-normal">v2</span></h1>
           </div>
           <p className="max-w-3xl text-slate-300">
             Định nghĩa <span className="font-semibold text-emerald-300">nhóm keyword → URL → anchor text</span> bên dưới, rồi paste danh sách URL cần gắn link.
