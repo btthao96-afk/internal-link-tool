@@ -1,4 +1,17 @@
 import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
+import {
+  Plus,
+  Upload,
+  Download,
+  Trash2,
+  RotateCcw,
+  X,
+  Sparkles,
+  FileSpreadsheet,
+  Pencil,
+  Check,
+  Link2,
+} from 'lucide-react';
 
 // ───────────────────────────────────────────────────────────────────────
 // URL helpers
@@ -26,7 +39,6 @@ const humanizeUrl = (url) => {
   }
 };
 
-// Normalize text for VN matching: strip diacritics, lowercase, words only
 const removeDiacritics = (s) =>
   s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D');
 
@@ -36,7 +48,6 @@ const normalizeForMatch = (s) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-// Extract keywords from URL pathname (legacy fallback)
 const extractUrlKeywords = (url) => {
   if (!url) return [];
   try {
@@ -72,7 +83,6 @@ const emptyMapping = () => ({
   anchorsRaw: '',
 });
 
-// Build a "haystack" of normalized text from a URL (for keyword matching)
 const buildHaystack = (url) => {
   try {
     const parsed = new URL(url);
@@ -82,7 +92,6 @@ const buildHaystack = (url) => {
   }
 };
 
-// Hash a string to a stable integer (for rotating anchors per source URL)
 const hashCode = (s) => {
   let h = 0;
   for (let i = 0; i < s.length; i += 1) {
@@ -115,7 +124,6 @@ const buildSuggestions = (urls, mappings, fallbackPool) => {
     const haystack = buildHaystack(source.url);
     let matchedAny = false;
 
-    // ── Pass 1: mapping-driven suggestions ──
     for (const mapping of validMappings) {
       if (mapping.targetUrl === source.url) continue;
 
@@ -141,7 +149,6 @@ const buildSuggestions = (urls, mappings, fallbackPool) => {
       matchedAny = true;
     }
 
-    // ── Pass 2: legacy fallback (URL ↔ URL similarity) ──
     if (!matchedAny) {
       const sourceKeywords = extractUrlKeywords(source.url);
       for (const target of normalizedUrls) {
@@ -208,6 +215,19 @@ const downloadCsv = (suggestions) => {
 };
 
 // ───────────────────────────────────────────────────────────────────────
+// Shared button styles
+// ───────────────────────────────────────────────────────────────────────
+
+const btnPrimary =
+  'inline-flex items-center gap-1.5 rounded-md bg-zinc-900 px-3.5 py-2 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-40 disabled:hover:bg-zinc-900';
+const btnSecondary =
+  'inline-flex items-center gap-1.5 rounded-md border border-zinc-200 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:opacity-40';
+const btnDanger =
+  'inline-flex items-center gap-1.5 rounded-md border border-transparent px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-50';
+const iconBtn =
+  'inline-flex h-7 w-7 items-center justify-center rounded-md text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700';
+
+// ───────────────────────────────────────────────────────────────────────
 // Component
 // ───────────────────────────────────────────────────────────────────────
 
@@ -221,7 +241,6 @@ const InternalLinkSeoTool = () => {
   const [editingValue, setEditingValue] = useState('');
   const fileInputRef = useRef(null);
 
-  // ── Load mappings from localStorage on mount ──
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -229,18 +248,12 @@ const InternalLinkSeoTool = () => {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) setMappings(parsed);
       }
-    } catch {
-      // ignore
-    }
+    } catch { /* ignore */ }
   }, []);
 
-  // ── Persist mappings whenever they change ──
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(mappings));
-    } catch {
-      // ignore quota
-    }
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(mappings)); }
+    catch { /* quota */ }
   }, [mappings]);
 
   const urls = useMemo(
@@ -269,20 +282,16 @@ const InternalLinkSeoTool = () => {
   const overrideCount = Object.keys(anchorOverrides).length;
   const mappingSuggestionCount = suggestions.filter((s) => s.source === 'mapping').length;
 
-  // Reset row-level overrides if structure changes meaningfully
   useEffect(() => {
     setAnchorOverrides({});
   }, [inputValue, anchorPoolInput, mappings]);
 
   // ── Mapping CRUD ──
   const addMapping = () => setMappings((prev) => [...prev, emptyMapping()]);
-
   const updateMapping = (id, patch) =>
     setMappings((prev) => prev.map((m) => (m.id === id ? { ...m, ...patch } : m)));
-
   const removeMapping = (id) =>
     setMappings((prev) => prev.filter((m) => m.id !== id));
-
   const clearAllMappings = () => {
     if (window.confirm('Xoá tất cả mapping?')) setMappings([]);
   };
@@ -324,7 +333,6 @@ const InternalLinkSeoTool = () => {
     setEditingId(row.id);
     setEditingValue(row.anchorText);
   };
-
   const saveEdit = useCallback(() => {
     if (editingId === null) return;
     const base = baseSuggestions.find((r) => r.id === editingId);
@@ -338,12 +346,7 @@ const InternalLinkSeoTool = () => {
     setEditingId(null);
     setEditingValue('');
   }, [editingId, editingValue, baseSuggestions]);
-
-  const cancelEdit = () => {
-    setEditingId(null);
-    setEditingValue('');
-  };
-
+  const cancelEdit = () => { setEditingId(null); setEditingValue(''); };
   const resetRow = (rowId) =>
     setAnchorOverrides((prev) => {
       const next = { ...prev };
@@ -351,43 +354,44 @@ const InternalLinkSeoTool = () => {
       return next;
     });
 
-  return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 px-4 py-8">
-      <div className="mx-auto w-full max-w-7xl rounded-3xl border border-slate-700 bg-slate-900/90 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
-        <div className="mb-8 space-y-4">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-emerald-400">SEO Internal Link Generator</p>
-            <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">Tool gợi ý internal link theo mapping <span className="text-xs align-middle text-emerald-400 font-normal">v2</span></h1>
-          </div>
-          <p className="max-w-3xl text-slate-300">
-            Định nghĩa <span className="font-semibold text-emerald-300">nhóm keyword → URL → anchor text</span> bên dưới, rồi paste danh sách URL cần gắn link.
-            Tool sẽ tìm URL nào chứa keyword khớp và gợi ý link theo đúng anchor bạn định nghĩa.
-          </p>
-        </div>
+  const inputCls =
+    'w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900/5';
 
-        {/* ─────────────── Mapping Manager ─────────────── */}
-        <section className="mb-8 rounded-3xl border border-emerald-400/30 bg-slate-950/70 p-6 ring-1 ring-emerald-400/20">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+  return (
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 antialiased">
+      <div className="mx-auto w-full max-w-6xl px-6 py-12">
+
+        {/* ─── Header ─── */}
+        <header className="mb-10 border-b border-zinc-200 pb-8">
+          <div className="flex items-center gap-2 text-zinc-400">
+            <Link2 className="h-4 w-4" />
+            <span className="text-xs font-medium uppercase tracking-wider">SEO · Internal linking</span>
+          </div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+            Internal Link Tool
+          </h1>
+          <p className="mt-3 max-w-2xl text-base text-zinc-600">
+            Định nghĩa nhóm keyword → URL → anchor text. Tool sẽ quét danh sách URL nguồn và gợi ý liên kết nội bộ theo đúng mapping của bạn.
+          </p>
+        </header>
+
+        {/* ─── Mapping section ─── */}
+        <section className="mb-8">
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="text-xl font-semibold text-white">📋 Mapping: keyword → URL → anchor</h2>
-              <p className="mt-1 text-sm text-slate-400">
-                Mỗi dòng = 1 nhóm. Keywords và anchor texts cách nhau bằng <kbd className="rounded bg-slate-800 px-1.5 py-0.5 text-xs">Enter</kbd> (mỗi dòng 1 cái). Tự lưu vào trình duyệt.
+              <h2 className="text-lg font-semibold text-zinc-900">Keyword mapping</h2>
+              <p className="mt-1 text-sm text-zinc-500">
+                Mỗi nhóm gồm keywords, target URL và anchor texts. Lưu tự động vào trình duyệt.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              <button
-                type="button"
-                onClick={addMapping}
-                className="inline-flex h-10 items-center rounded-full bg-emerald-400 px-4 text-sm font-semibold text-slate-950 hover:bg-emerald-300"
-              >
-                + Thêm mapping
+              <button type="button" onClick={addMapping} className={btnSecondary}>
+                <Plus className="h-4 w-4" />
+                Thêm
               </button>
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                className="inline-flex h-10 items-center rounded-full border border-slate-600 bg-slate-800 px-4 text-sm text-slate-200 hover:bg-slate-700"
-              >
-                📥 Import JSON
+              <button type="button" onClick={() => fileInputRef.current?.click()} className={btnSecondary}>
+                <Upload className="h-4 w-4" />
+                Import
               </button>
               <input
                 ref={fileInputRef}
@@ -403,199 +407,189 @@ const InternalLinkSeoTool = () => {
                 type="button"
                 onClick={exportMappings}
                 disabled={mappings.length === 0}
-                className="inline-flex h-10 items-center rounded-full border border-slate-600 bg-slate-800 px-4 text-sm text-slate-200 hover:bg-slate-700 disabled:opacity-40"
+                className={btnSecondary}
               >
-                📤 Export JSON
+                <Download className="h-4 w-4" />
+                Export
               </button>
               {mappings.length > 0 && (
-                <button
-                  type="button"
-                  onClick={clearAllMappings}
-                  className="inline-flex h-10 items-center rounded-full border border-rose-400/40 bg-rose-400/10 px-4 text-sm text-rose-300 hover:bg-rose-400/20"
-                >
-                  🗑 Xoá tất cả
+                <button type="button" onClick={clearAllMappings} className={btnDanger}>
+                  <Trash2 className="h-4 w-4" />
+                  Clear all
                 </button>
               )}
             </div>
           </div>
 
           {mappings.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-600 bg-slate-950/40 p-8 text-center text-sm text-slate-400">
-              Chưa có mapping nào. Bấm <span className="font-semibold text-emerald-300">+ Thêm mapping</span> để bắt đầu.
-              <br />
-              Ví dụ: keywords = <code className="text-emerald-300">ghế văn phòng / ghế xoay</code>, URL = <code className="text-emerald-300">theone.vn/ghe-van-phong</code>, anchor = <code className="text-emerald-300">ghế văn phòng The One</code>.
+            <div className="rounded-lg border border-dashed border-zinc-300 bg-white px-6 py-12 text-center">
+              <p className="text-sm text-zinc-500">
+                Chưa có mapping. Bấm <span className="font-medium text-zinc-900">Thêm</span> để tạo nhóm đầu tiên.
+              </p>
             </div>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full border-separate border-spacing-y-2 text-sm">
-                <thead>
-                  <tr className="text-left text-xs uppercase tracking-wide text-slate-400">
-                    <th className="px-3 pb-2 w-[28%]">Keywords <span className="text-slate-500">(mỗi dòng 1 từ khoá)</span></th>
-                    <th className="px-3 pb-2 w-[28%]">Target URL</th>
-                    <th className="px-3 pb-2 w-[36%]">Anchor texts <span className="text-slate-500">(mỗi dòng 1 anchor)</span></th>
-                    <th className="px-3 pb-2 w-[8%]"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {mappings.map((m, idx) => (
-                    <tr key={m.id} className="align-top">
-                      <td className="rounded-l-2xl bg-slate-950/60 p-2">
-                        <textarea
-                          value={m.keywordsRaw}
-                          onChange={(e) => updateMapping(m.id, { keywordsRaw: e.target.value })}
-                          rows={3}
-                          placeholder={'ghế văn phòng\nghế xoay\nghế lưới'}
-                          className="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400/40"
-                        />
-                      </td>
-                      <td className="bg-slate-950/60 p-2">
-                        <input
-                          type="text"
-                          value={m.targetUrl}
-                          onChange={(e) => updateMapping(m.id, { targetUrl: e.target.value })}
-                          placeholder="https://theone.vn/ghe-van-phong"
-                          className="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400/40"
-                        />
-                        <p className="mt-1 px-1 text-xs text-slate-500">Group #{idx + 1}</p>
-                      </td>
-                      <td className="bg-slate-950/60 p-2">
-                        <textarea
-                          value={m.anchorsRaw}
-                          onChange={(e) => updateMapping(m.id, { anchorsRaw: e.target.value })}
-                          rows={3}
-                          placeholder={'ghế văn phòng The One\nghế xoay cao cấp\nmua ghế văn phòng'}
-                          className="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400/40"
-                        />
-                      </td>
-                      <td className="rounded-r-2xl bg-slate-950/60 p-2 text-center">
-                        <button
-                          type="button"
-                          onClick={() => removeMapping(m.id)}
-                          title="Xoá mapping"
-                          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-rose-400/30 text-rose-300 hover:bg-rose-500/15"
-                        >
-                          ✕
-                        </button>
-                      </td>
+            <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead className="bg-zinc-50/80">
+                    <tr className="text-left text-xs font-medium uppercase tracking-wide text-zinc-500">
+                      <th className="px-4 py-3 w-[30%]">Keywords</th>
+                      <th className="px-4 py-3 w-[30%]">Target URL</th>
+                      <th className="px-4 py-3 w-[35%]">Anchor texts</th>
+                      <th className="px-4 py-3 w-[5%]"></th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {mappings.map((m, idx) => (
+                      <tr key={m.id} className="border-t border-zinc-100 align-top">
+                        <td className="p-3">
+                          <textarea
+                            value={m.keywordsRaw}
+                            onChange={(e) => updateMapping(m.id, { keywordsRaw: e.target.value })}
+                            rows={3}
+                            placeholder={'ghế văn phòng\nghế xoay'}
+                            className={inputCls + ' resize-y'}
+                          />
+                        </td>
+                        <td className="p-3">
+                          <input
+                            type="text"
+                            value={m.targetUrl}
+                            onChange={(e) => updateMapping(m.id, { targetUrl: e.target.value })}
+                            placeholder="https://example.com/ghe-van-phong"
+                            className={inputCls}
+                          />
+                          <p className="mt-1.5 text-[11px] text-zinc-400">Group #{idx + 1}</p>
+                        </td>
+                        <td className="p-3">
+                          <textarea
+                            value={m.anchorsRaw}
+                            onChange={(e) => updateMapping(m.id, { anchorsRaw: e.target.value })}
+                            rows={3}
+                            placeholder={'ghế văn phòng The One\nmua ghế xoay'}
+                            className={inputCls + ' resize-y'}
+                          />
+                        </td>
+                        <td className="p-3 text-center">
+                          <button
+                            type="button"
+                            onClick={() => removeMapping(m.id)}
+                            title="Xoá nhóm"
+                            className="inline-flex h-8 w-8 items-center justify-center rounded-md text-zinc-400 hover:bg-red-50 hover:text-red-600"
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           )}
         </section>
 
-        {/* ─────────────── URL input + fallback anchor pool ─────────────── */}
-        <div className="rounded-3xl bg-slate-950/70 p-6 ring-1 ring-slate-700">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-semibold text-slate-300">📥 Danh sách URL (mỗi dòng 1 link)</label>
-              <textarea
-                value={inputValue}
-                onChange={(e) => { setInputValue(e.target.value); setSubmitted(false); }}
-                rows={8}
-                className="mt-3 w-full rounded-3xl border border-slate-700 bg-slate-950/80 px-4 py-4 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/20"
-                placeholder={'https://theone.vn/ghe-van-phong\nhttps://theone.vn/ban-lam-viec\nhttps://theone.vn/sofa-phong-khach'}
-              />
-              <p className="mt-2 text-xs text-slate-500">{urls.length} URL hợp lệ</p>
-            </div>
-            <div>
-              <label className="text-sm font-semibold text-slate-300">
-                ✍️ Anchor fallback <span className="text-slate-500 font-normal">(dùng khi URL không khớp mapping nào)</span>
-              </label>
-              <textarea
-                value={anchorPoolInput}
-                onChange={(e) => { setAnchorPoolInput(e.target.value); setSubmitted(false); }}
-                rows={8}
-                className="mt-3 w-full rounded-3xl border border-slate-700 bg-slate-950/80 px-4 py-4 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/20"
-                placeholder={'tham khảo thêm\nxem chi tiết\nbài viết liên quan'}
-              />
-              <p className="mt-2 text-xs text-slate-500">{fallbackPool.length} anchor fallback</p>
-            </div>
+        {/* ─── Input section ─── */}
+        <section className="mb-8 grid gap-6 lg:grid-cols-2">
+          <div>
+            <label className="text-sm font-medium text-zinc-900">Source URLs</label>
+            <p className="mt-1 text-xs text-zinc-500">Mỗi dòng một URL — tool sẽ quét slug để khớp keyword.</p>
+            <textarea
+              value={inputValue}
+              onChange={(e) => { setInputValue(e.target.value); setSubmitted(false); }}
+              rows={9}
+              className={'mt-3 ' + inputCls + ' resize-y font-mono text-[13px]'}
+              placeholder={'https://theone.vn/ghe-van-phong\nhttps://theone.vn/ban-lam-viec\nhttps://theone.vn/sofa-phong-khach'}
+            />
+            <p className="mt-2 text-xs text-zinc-500">{urls.length} URL</p>
           </div>
+          <div>
+            <label className="text-sm font-medium text-zinc-900">Fallback anchors</label>
+            <p className="mt-1 text-xs text-zinc-500">Tuỳ chọn — dùng khi URL không khớp mapping nào.</p>
+            <textarea
+              value={anchorPoolInput}
+              onChange={(e) => { setAnchorPoolInput(e.target.value); setSubmitted(false); }}
+              rows={9}
+              className={'mt-3 ' + inputCls + ' resize-y'}
+              placeholder={'tham khảo thêm\nxem chi tiết\nbài viết liên quan'}
+            />
+            <p className="mt-2 text-xs text-zinc-500">{fallbackPool.length} anchor</p>
+          </div>
+        </section>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <button
-              type="button"
-              onClick={() => setSubmitted(true)}
-              className="inline-flex h-12 items-center justify-center rounded-full bg-emerald-400 px-6 text-sm font-semibold text-slate-950 hover:bg-emerald-300"
-            >
-              🚀 Tạo gợi ý
-            </button>
-            {submitted && suggestions.length > 0 && (
-              <>
-                <button
-                  type="button"
-                  onClick={() => downloadCsv(suggestions)}
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-emerald-400/40 bg-emerald-400/10 px-6 text-sm font-semibold text-emerald-300 hover:bg-emerald-400/20"
-                >
-                  ⬇️ Export CSV
+        {/* ─── Action bar ─── */}
+        <section className="mb-6 flex flex-wrap items-center gap-3 border-t border-b border-zinc-200 py-4">
+          <button type="button" onClick={() => setSubmitted(true)} className={btnPrimary}>
+            <Sparkles className="h-4 w-4" />
+            Tạo gợi ý
+          </button>
+          {submitted && suggestions.length > 0 && (
+            <>
+              <button type="button" onClick={() => downloadCsv(suggestions)} className={btnSecondary}>
+                <FileSpreadsheet className="h-4 w-4" />
+                Export CSV
+              </button>
+              {overrideCount > 0 && (
+                <button type="button" onClick={() => setAnchorOverrides({})} className={btnSecondary}>
+                  <RotateCcw className="h-4 w-4" />
+                  Reset {overrideCount} chỉnh sửa
                 </button>
-                {overrideCount > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => setAnchorOverrides({})}
-                    className="inline-flex h-12 items-center justify-center rounded-full border border-rose-400/40 bg-rose-400/10 px-6 text-sm font-semibold text-rose-300 hover:bg-rose-400/20"
-                  >
-                    ↺ Reset {overrideCount} chỉnh sửa
-                  </button>
-                )}
-              </>
-            )}
-          </div>
-        </div>
+              )}
+            </>
+          )}
+        </section>
 
-        {/* ─────────────── Results ─────────────── */}
+        {/* ─── Results ─── */}
         {submitted && (
-          <div className="mt-8 space-y-6">
-            <div className="grid gap-4 sm:grid-cols-5">
-              <Stat label="URL nhập" value={urls.length} />
-              <Stat label="Mapping" value={mappings.length} />
-              <Stat label="Gợi ý từ mapping" value={mappingSuggestionCount} accent />
-              <Stat label="Tổng gợi ý" value={suggestions.length} />
-              <Stat label="Anchor đã sửa" value={overrideCount} />
+          <section>
+            {/* Inline stats strip */}
+            <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-zinc-600">
+              <StatInline label="URLs" value={urls.length} />
+              <StatInline label="Mappings" value={mappings.length} />
+              <StatInline label="Mapping hits" value={mappingSuggestionCount} highlight />
+              <StatInline label="Total suggestions" value={suggestions.length} />
+              <StatInline label="Edited" value={overrideCount} />
             </div>
 
             {suggestions.length === 0 ? (
-              <div className="rounded-3xl border border-rose-500/30 bg-rose-500/10 p-6 text-rose-200">
-                <p className="font-semibold">Không có gợi ý nào.</p>
-                <p className="mt-2 text-sm text-rose-100/80">
-                  Có thể URL của bạn không chứa keyword nào trong mapping. Kiểm tra lại keywords (không cần dấu — tool tự normalize).
-                </p>
+              <div className="rounded-lg border border-zinc-200 bg-white px-6 py-12 text-center">
+                <p className="text-sm font-medium text-zinc-900">Không có gợi ý nào</p>
+                <p className="mt-1 text-sm text-zinc-500">URL của bạn có thể không khớp keyword trong mapping. Kiểm tra lại keywords.</p>
               </div>
             ) : (
-              <div className="overflow-hidden rounded-3xl border border-slate-700 bg-slate-950/80">
+              <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
                 <div className="overflow-x-auto">
-                  <table className="min-w-full border-separate border-spacing-0 text-left text-sm text-slate-200">
-                    <thead className="bg-slate-900">
-                      <tr>
-                        <th className="border-b border-slate-700 px-4 py-4">Source URL</th>
-                        <th className="border-b border-slate-700 px-4 py-4">Target URL</th>
-                        <th className="border-b border-slate-700 px-4 py-4">Anchor text <span className="text-xs font-normal text-slate-500">(click sửa)</span></th>
-                        <th className="border-b border-slate-700 px-4 py-4">Matched</th>
-                        <th className="border-b border-slate-700 px-4 py-4">Điểm</th>
-                        <th className="border-b border-slate-700 px-4 py-4"></th>
+                  <table className="w-full text-sm">
+                    <thead className="bg-zinc-50/80">
+                      <tr className="text-left text-xs font-medium uppercase tracking-wide text-zinc-500">
+                        <th className="px-4 py-3">Source</th>
+                        <th className="px-4 py-3">Target</th>
+                        <th className="px-4 py-3">Anchor text</th>
+                        <th className="px-4 py-3">Matched</th>
+                        <th className="px-4 py-3 w-20 text-right">Score</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {recommended.map((item, index) => (
-                        <tr key={item.id} className={index % 2 === 0 ? 'bg-slate-950/80' : 'bg-slate-900/70'}>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top break-words max-w-[200px]">{humanizeUrl(item.sourceUrl)}</td>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top break-words max-w-[200px]">
-                            <div>{humanizeUrl(item.targetUrl)}</div>
+                      {recommended.map((item) => (
+                        <tr key={item.id} className="border-t border-zinc-100 hover:bg-zinc-50/60">
+                          <td className="px-4 py-3 align-top max-w-[220px]">
+                            <div className="break-words text-zinc-800">{humanizeUrl(item.sourceUrl)}</div>
+                          </td>
+                          <td className="px-4 py-3 align-top max-w-[220px]">
+                            <div className="break-words text-zinc-800">{humanizeUrl(item.targetUrl)}</div>
                             <span
-                              className={`mt-1 inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+                              className={`mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium ${
                                 item.source === 'mapping'
-                                  ? 'bg-emerald-500/20 text-emerald-300'
-                                  : 'bg-slate-700/60 text-slate-300'
+                                  ? 'bg-indigo-50 text-indigo-700'
+                                  : 'bg-zinc-100 text-zinc-600'
                               }`}
                             >
-                              {item.source === 'mapping' ? 'mapping' : 'auto'}
+                              {item.source}
                             </span>
                           </td>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top">
+                          <td className="px-4 py-3 align-top">
                             {editingId === item.id ? (
-                              <div className="flex flex-col gap-2">
+                              <div className="flex flex-wrap items-center gap-2">
                                 <input
                                   type="text"
                                   value={editingValue}
@@ -605,38 +599,45 @@ const InternalLinkSeoTool = () => {
                                     if (e.key === 'Escape') cancelEdit();
                                   }}
                                   autoFocus
-                                  className="w-full rounded-lg border border-emerald-400/60 bg-slate-950 px-3 py-2 text-sm text-emerald-100 outline-none focus:ring-2 focus:ring-emerald-400/40"
+                                  className={inputCls + ' min-w-[200px] flex-1'}
                                 />
-                                <div className="flex gap-2">
-                                  <button type="button" onClick={saveEdit} className="rounded-md bg-emerald-400 px-3 py-1 text-xs font-semibold text-slate-950 hover:bg-emerald-300">💾 Lưu</button>
-                                  <button type="button" onClick={cancelEdit} className="rounded-md border border-slate-600 px-3 py-1 text-xs text-slate-300 hover:bg-slate-800">✕ Hủy</button>
-                                </div>
+                                <button type="button" onClick={saveEdit} className={iconBtn} title="Lưu (Enter)">
+                                  <Check className="h-4 w-4 text-emerald-600" />
+                                </button>
+                                <button type="button" onClick={cancelEdit} className={iconBtn} title="Hủy (Esc)">
+                                  <X className="h-4 w-4" />
+                                </button>
                               </div>
                             ) : (
                               <button
                                 type="button"
                                 onClick={() => startEdit(item)}
-                                className="group inline-flex w-full items-start gap-2 rounded-lg px-2 py-1 text-left text-slate-100 hover:bg-slate-800/60"
-                                title="Click để sửa"
+                                className="group flex w-full items-center gap-2 rounded-md px-2 py-1 -mx-2 -my-1 text-left hover:bg-white"
                               >
-                                <span className={item.isOverridden ? 'text-emerald-300' : 'text-slate-100'}>{item.anchorText}</span>
+                                <span className={item.isOverridden ? 'text-indigo-700 font-medium' : 'text-zinc-800'}>
+                                  {item.anchorText}
+                                </span>
                                 {item.isOverridden && (
-                                  <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-300">edited</span>
+                                  <button
+                                    type="button"
+                                    onClick={(e) => { e.stopPropagation(); resetRow(item.id); }}
+                                    className="text-[10px] text-zinc-400 hover:text-red-600"
+                                    title="Khôi phục auto"
+                                  >
+                                    reset
+                                  </button>
                                 )}
-                                <span className="ml-auto opacity-0 transition group-hover:opacity-100 text-xs text-slate-400">✏️</span>
+                                <Pencil className="ml-auto h-3.5 w-3.5 text-zinc-300 opacity-0 transition group-hover:opacity-100" />
                               </button>
                             )}
                           </td>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top text-xs text-slate-400">
-                            {(item.keywords || []).slice(0, 3).join(', ') || '—'}
+                          <td className="px-4 py-3 align-top">
+                            <span className="text-xs text-zinc-500">
+                              {(item.keywords || []).slice(0, 3).join(', ') || '—'}
+                            </span>
                           </td>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top">
-                            <span className="inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-semibold text-emerald-300">{item.score}</span>
-                          </td>
-                          <td className="border-b border-slate-700 px-4 py-4 align-top">
-                            {item.isOverridden && (
-                              <button type="button" onClick={() => resetRow(item.id)} className="text-xs text-slate-400 underline-offset-2 hover:text-rose-300 hover:underline">reset</button>
-                            )}
+                          <td className="px-4 py-3 align-top text-right">
+                            <ScoreBadge score={item.score} />
                           </td>
                         </tr>
                       ))}
@@ -644,24 +645,42 @@ const InternalLinkSeoTool = () => {
                   </table>
                 </div>
                 {suggestions.length > recommended.length && (
-                  <div className="border-t border-slate-700 bg-slate-950/90 px-4 py-4 text-sm text-slate-400">
-                    Hiển thị {recommended.length} dòng đầu trong tổng {suggestions.length}. Export CSV để lấy hết.
+                  <div className="border-t border-zinc-200 bg-zinc-50/60 px-4 py-3 text-xs text-zinc-500">
+                    Hiển thị {recommended.length} / {suggestions.length} gợi ý. Export CSV để lấy đầy đủ.
                   </div>
                 )}
               </div>
             )}
-          </div>
+          </section>
         )}
+
+        <footer className="mt-16 border-t border-zinc-200 pt-6 text-xs text-zinc-400">
+          Internal Link Tool · build 2026-05-14
+        </footer>
       </div>
     </div>
   );
 };
 
-const Stat = ({ label, value, accent }) => (
-  <div className={`rounded-3xl border p-5 ${accent ? 'border-emerald-400/40 bg-emerald-400/5' : 'border-slate-700 bg-slate-950/80'}`}>
-    <p className="text-sm text-slate-400">{label}</p>
-    <p className={`mt-3 text-3xl font-semibold ${accent ? 'text-emerald-300' : 'text-white'}`}>{value}</p>
+const StatInline = ({ label, value, highlight }) => (
+  <div className="flex items-baseline gap-1.5">
+    <span className={`text-base font-semibold tabular-nums ${highlight ? 'text-indigo-700' : 'text-zinc-900'}`}>
+      {value}
+    </span>
+    <span className="text-xs text-zinc-500">{label}</span>
   </div>
 );
+
+const ScoreBadge = ({ score }) => {
+  const tone =
+    score >= 80 ? 'bg-emerald-50 text-emerald-700 ring-emerald-600/10' :
+    score >= 50 ? 'bg-amber-50 text-amber-700 ring-amber-600/10' :
+                  'bg-zinc-100 text-zinc-600 ring-zinc-500/10';
+  return (
+    <span className={`inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ring-1 ring-inset tabular-nums ${tone}`}>
+      {score}
+    </span>
+  );
+};
 
 export default InternalLinkSeoTool;
