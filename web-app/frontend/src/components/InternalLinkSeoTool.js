@@ -15,6 +15,11 @@ import {
   Tag,
   ListChecks,
   Hash,
+  BookOpen,
+  ChevronDown,
+  ChevronUp,
+  PlayCircle,
+  Lightbulb,
 } from 'lucide-react';
 
 // ───────────────────────────────────────────────────────────────────────
@@ -330,6 +335,43 @@ const InternalLinkSeoTool = () => {
   const [editingId, setEditingId] = useState(null);
   const [editingValue, setEditingValue] = useState('');
   const fileInputRef = useRef(null);
+  const [helpOpen, setHelpOpen] = useState(() => {
+    try { return localStorage.getItem('ilt_help_open_v1') !== 'false'; }
+    catch { return true; }
+  });
+
+  useEffect(() => {
+    try { localStorage.setItem('ilt_help_open_v1', String(helpOpen)); }
+    catch { /* ignore */ }
+  }, [helpOpen]);
+
+  const loadExample = () => {
+    setMappings([
+      {
+        id: newMappingId(),
+        keywordsRaw: 'ghế văn phòng\nghế xoay\nghế lưới',
+        targetUrl: 'https://theone.vn/ghe-van-phong',
+        anchorsRaw: 'ghế văn phòng The One | 50\nmua ghế xoay cao cấp | 30\nnội thất văn phòng | 20',
+      },
+      {
+        id: newMappingId(),
+        keywordsRaw: 'bàn làm việc\nbàn gỗ\nbàn họp',
+        targetUrl: 'https://theone.vn/ban-lam-viec',
+        anchorsRaw: 'bàn làm việc gỗ sồi\nbàn họp văn phòng\nbàn gỗ cao cấp',
+      },
+    ]);
+    setInputValue(
+      [
+        'https://theone.vn/ghe-xoay-cao-cap',
+        'https://theone.vn/ban-lam-viec-go-soi',
+        'https://theone.vn/sofa-phong-khach',
+        'https://theone.vn/ghe-luoi-gl363',
+        'https://theone.vn/ban-hop-12-cho',
+      ].join('\n')
+    );
+    setAnchorPoolInput('tham khảo thêm\nxem chi tiết\nbài viết liên quan');
+    setSubmitted(true);
+  };
 
   useEffect(() => {
     try {
@@ -468,6 +510,88 @@ const InternalLinkSeoTool = () => {
             Tool sẽ quét danh sách URL nguồn và gợi ý liên kết nội bộ theo đúng mapping của bạn.
           </p>
         </header>
+
+        {/* ─── Help panel ─── */}
+        <section className={`mb-8 overflow-hidden rounded-2xl border backdrop-blur transition ${helpOpen ? 'border-amber-200 bg-gradient-to-br from-amber-50/80 to-orange-50/40 shadow-sm shadow-amber-100/60' : 'border-zinc-200/80 bg-white/60'}`}>
+          <button
+            type="button"
+            onClick={() => setHelpOpen((v) => !v)}
+            className="flex w-full items-center justify-between gap-3 px-6 py-4 text-left"
+          >
+            <div className="flex items-center gap-3">
+              <div className={`flex h-10 w-10 items-center justify-center rounded-xl text-white shadow-sm ${helpOpen ? 'bg-gradient-to-br from-amber-500 to-orange-500 shadow-amber-200' : 'bg-gradient-to-br from-zinc-400 to-zinc-500'}`}>
+                <BookOpen className="h-5 w-5" />
+              </div>
+              <div>
+                <div className="text-sm font-semibold text-zinc-900">Hướng dẫn nhanh — 3 bước</div>
+                <div className="text-xs text-zinc-500">
+                  {helpOpen ? 'Nhấn để thu gọn' : 'Nhấn để xem cách điền và ví dụ'}
+                </div>
+              </div>
+            </div>
+            {helpOpen ? <ChevronUp className="h-5 w-5 text-zinc-400" /> : <ChevronDown className="h-5 w-5 text-zinc-400" />}
+          </button>
+
+          {helpOpen && (
+            <div className="border-t border-amber-200/50 px-6 py-5">
+              {/* ── 3 steps ── */}
+              <ol className="space-y-3">
+                <Step n={1} title="Tạo Mapping (rule gắn link)">
+                  Bấm <span className="font-medium text-indigo-700">+ Thêm</span> ở khung dưới rồi điền 3 ô: <strong>keywords</strong>, <strong>target URL</strong>, <strong>anchor texts</strong>.
+                  Mỗi mapping = "khi URL chứa keyword này → đặt link tới URL kia với chữ này".
+                </Step>
+                <Step n={2} title="Paste danh sách Source URLs">
+                  Ở ô <span className="font-medium text-sky-700">Source URLs</span>, mỗi dòng 1 URL — đây là các trang trên website bạn muốn check để gợi ý link nội bộ.
+                </Step>
+                <Step n={3} title="Bấm Tạo gợi ý">
+                  Tool quét slug từng URL nguồn, so khớp keyword trong mapping, rồi trả bảng <span className="font-medium">source → target → anchor</span> để bạn dán vào CMS.
+                </Step>
+              </ol>
+
+              {/* ── Field explanations ── */}
+              <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                <FieldCard
+                  icon={Hash}
+                  iconCls="from-indigo-500 to-violet-500 shadow-indigo-200"
+                  title="Keywords"
+                  desc="Mỗi dòng 1 từ khoá. Có thể có dấu — tool tự normalize."
+                  example={'ghế văn phòng\nghế xoay'}
+                />
+                <FieldCard
+                  icon={Link2}
+                  iconCls="from-violet-500 to-fuchsia-500 shadow-violet-200"
+                  title="Target URL"
+                  desc="URL đích bạn muốn dẫn link đến."
+                  example={'https://...'}
+                />
+                <FieldCard
+                  icon={Tag}
+                  iconCls="from-sky-500 to-cyan-500 shadow-sky-200"
+                  title="Anchor texts"
+                  desc='Mỗi dòng 1 chữ link. Thêm "| 50" để gán tỉ lệ %.'
+                  example={'ghế VP The One | 50\nmua ghế xoay | 30'}
+                />
+              </div>
+
+              {/* ── Try example ── */}
+              <div className="mt-5 flex flex-wrap items-center gap-3 rounded-xl border border-amber-200/60 bg-white/70 p-4">
+                <Lightbulb className="h-5 w-5 shrink-0 text-amber-500" />
+                <div className="flex-1 text-sm text-zinc-700">
+                  <span className="font-medium text-zinc-900">Chưa biết bắt đầu?</span>{' '}
+                  Bấm nút bên cạnh để tự động điền 2 mapping + 5 URL mẫu (e-commerce nội thất), tool sẽ chạy luôn để bạn thấy kết quả.
+                </div>
+                <button
+                  type="button"
+                  onClick={loadExample}
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-br from-amber-500 to-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-amber-200 transition hover:shadow-md"
+                >
+                  <PlayCircle className="h-4 w-4" />
+                  Thử dữ liệu mẫu
+                </button>
+              </div>
+            </div>
+          )}
+        </section>
 
         {/* ─── Mapping section ─── */}
         <section className="mb-10 overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/80 shadow-sm shadow-indigo-100/40 backdrop-blur">
@@ -812,6 +936,31 @@ const TONE_STYLES = {
   emerald: { bg: 'from-emerald-500 to-teal-500',      ring: 'ring-emerald-200', pill: 'bg-emerald-100 text-emerald-700', shadow: 'shadow-emerald-100' },
   amber:   { bg: 'from-amber-500 to-orange-500',      ring: 'ring-amber-200',   pill: 'bg-amber-100 text-amber-700',     shadow: 'shadow-amber-100' },
 };
+
+const Step = ({ n, title, children }) => (
+  <li className="flex gap-3">
+    <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 to-orange-500 text-xs font-bold text-white shadow-sm shadow-amber-200">
+      {n}
+    </div>
+    <div className="flex-1 text-sm leading-relaxed text-zinc-700">
+      <div className="font-semibold text-zinc-900">{title}</div>
+      <div className="mt-0.5">{children}</div>
+    </div>
+  </li>
+);
+
+const FieldCard = ({ icon: Icon, iconCls, title, desc, example }) => (
+  <div className="rounded-xl border border-zinc-200/80 bg-white p-3 shadow-sm">
+    <div className="flex items-center gap-2">
+      <div className={`flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br ${iconCls} text-white shadow-sm`}>
+        <Icon className="h-3.5 w-3.5" />
+      </div>
+      <div className="text-sm font-semibold text-zinc-900">{title}</div>
+    </div>
+    <p className="mt-2 text-xs text-zinc-600">{desc}</p>
+    <pre className="mt-2 overflow-x-auto rounded-md bg-zinc-50 px-2 py-1.5 font-mono text-[11px] leading-relaxed text-zinc-700">{example}</pre>
+  </div>
+);
 
 const WeightPreview = ({ anchorsRaw }) => {
   const items = parseAnchorsWithWeights(anchorsRaw);
