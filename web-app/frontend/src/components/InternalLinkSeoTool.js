@@ -78,6 +78,54 @@ const STORAGE_KEY = 'internalLinkMappings_v1';
 const parseLines = (raw) =>
   String(raw || '').split('\n').map((s) => s.trim()).filter(Boolean);
 
+// Parse one anchor line: "text" OR "text | 50" OR "text | 50%"
+// Returns { text, weight } where weight=null when not specified
+const parseAnchorLine = (line) => {
+  const m = String(line || '').match(/^(.+?)\s*\|\s*(\d+(?:\.\d+)?)\s*%?\s*$/);
+  if (m) {
+    const w = parseFloat(m[2]);
+    return { text: m[1].trim(), weight: Number.isFinite(w) ? w : null };
+  }
+  return { text: String(line || '').trim(), weight: null };
+};
+
+// Parse the whole anchor textarea → list of { text, weight, rawWeight }
+// where weight is the FINAL normalized %. rawWeight stays null if unspecified.
+//
+// Rules:
+//  • All unweighted → equal split (100/n each)
+//  • All weighted   → normalize so sum = 100
+//  • Mixed          → weighted lines keep their %, unweighted share remainder equally
+const parseAnchorsWithWeights = (raw) => {
+  const lines = parseLines(raw);
+  if (lines.length === 0) return [];
+
+  const items = lines.map(parseAnchorLine).filter((it) => it.text);
+  if (items.length === 0) return [];
+
+  const weighted = items.filter((it) => it.weight !== null);
+  const unweighted = items.filter((it) => it.weight === null);
+  const sumW = weighted.reduce((s, it) => s + it.weight, 0);
+
+  let finalWeights;
+  if (weighted.length === 0) {
+    const equal = 100 / items.length;
+    finalWeights = items.map(() => equal);
+  } else if (unweighted.length === 0) {
+    finalWeights = items.map((it) => (sumW > 0 ? (it.weight / sumW) * 100 : 100 / items.length));
+  } else {
+    const remainder = Math.max(0, 100 - sumW);
+    const perUnweighted = unweighted.length > 0 ? remainder / unweighted.length : 0;
+    finalWeights = items.map((it) => (it.weight !== null ? it.weight : perUnweighted));
+  }
+
+  return items.map((it, i) => ({
+    text: it.text,
+    weight: finalWeights[i],
+    rawWeight: it.weight,
+  }));
+};
+
 const newMappingId = () => `m_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
 
 const emptyMapping = () => ({
@@ -108,6 +156,25 @@ const hashCode = (s) => {
 // Suggestion engine
 // ───────────────────────────────────────────────────────────────────────
 
+// Build integer quotas summing to total, proportional to weights
+const buildQuotas = (weights, total) => {
+  if (total <= 0 || weights.length === 0) return weights.map(() => 0);
+  const raw = weights.map((w) => (total * w) / 100);
+  const quotas = raw.map((r) => Math.floor(r));
+  let sum = quotas.reduce((s, q) => s + q, 0);
+  // Distribute remainder to entries with largest fractional part
+  const order = raw
+    .map((r, i) => ({ i, frac: r - Math.floor(r) }))
+    .sort((a, b) => b.frac - a.frac);
+  let k = 0;
+  while (sum < total && k < order.length) {
+    quotas[order[k].i] += 1;
+    sum += 1;
+    k += 1;
+  }
+  return quotas;
+};
+
 const buildSuggestions = (urls, mappings, fallbackPool) => {
   const normalizedUrls = urls
     .map((url) => ({ original: url, url: normalizeUrl(url) }))
@@ -117,10 +184,10 @@ const buildSuggestions = (urls, mappings, fallbackPool) => {
     .map((m) => ({
       ...m,
       keywords: parseLines(m.keywordsRaw),
-      anchors: parseLines(m.anchorsRaw),
+      anchorItems: parseAnchorsWithWeights(m.anchorsRaw),
       targetUrl: normalizeUrl(m.targetUrl),
     }))
-    .filter((m) => m.targetUrl && m.keywords.length > 0 && m.anchors.length > 0);
+    .filter((m) => m.targetUrl && m.keywords.length > 0 && m.anchorItems.length > 0);
 
   const rows = [];
 
@@ -136,15 +203,14 @@ const buildSuggestions = (urls, mappings, fallbackPool) => {
       );
       if (matchedKeywords.length === 0) continue;
 
-      const anchorIdx = hashCode(source.url + mapping.id) % mapping.anchors.length;
-      const anchorText = mapping.anchors[anchorIdx];
       const score = Math.min(100, 40 + matchedKeywords.length * 20);
 
+      // anchorText assigned later in the quota pass
       rows.push({
         id: `map_${source.url}_${mapping.id}`,
         sourceUrl: source.url,
         targetUrl: mapping.targetUrl,
-        anchorText,
+        anchorText: '',
         score,
         keywords: matchedKeywords,
         source: 'mapping',
@@ -176,6 +242,39 @@ const buildSuggestions = (urls, mappings, fallbackPool) => {
           source: 'auto',
         });
       }
+    }
+  }
+
+  // ── Distribute anchors per-mapping according to weights ──
+  // Group mapping rows by mappingId, then assign anchors to hit exact %.
+  const groups = new Map();
+  for (const r of rows) {
+    if (r.source !== 'mapping') continue;
+    if (!groups.has(r.mappingId)) groups.set(r.mappingId, []);
+    groups.get(r.mappingId).push(r);
+  }
+
+  for (const [mappingId, group] of groups.entries()) {
+    const mapping = validMappings.find((m) => m.id === mappingId);
+    if (!mapping) continue;
+
+    // Sort sources deterministically so the same set always produces the
+    // same anchor assignment.
+    group.sort((a, b) => a.sourceUrl.localeCompare(b.sourceUrl));
+
+    const quotas = buildQuotas(mapping.anchorItems.map((a) => a.weight), group.length);
+
+    let idx = 0;
+    for (let a = 0; a < mapping.anchorItems.length; a += 1) {
+      for (let q = 0; q < quotas[a] && idx < group.length; q += 1) {
+        group[idx].anchorText = mapping.anchorItems[a].text;
+        idx += 1;
+      }
+    }
+    // Safety: fill any leftover (shouldn't happen) with first anchor
+    while (idx < group.length) {
+      group[idx].anchorText = mapping.anchorItems[0].text;
+      idx += 1;
     }
   }
 
@@ -432,7 +531,10 @@ const InternalLinkSeoTool = () => {
                       <span className="inline-flex items-center gap-1.5"><Link2 className="h-3 w-3 text-violet-500" /> Target URL</span>
                     </th>
                     <th className="px-5 py-3 w-[35%]">
-                      <span className="inline-flex items-center gap-1.5"><Tag className="h-3 w-3 text-sky-500" /> Anchor texts</span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <Tag className="h-3 w-3 text-sky-500" /> Anchor texts
+                        <span className="font-normal normal-case tracking-normal text-zinc-400">— dùng <code className="rounded bg-zinc-100 px-1 text-[10px] text-zinc-700">anchor | 50</code> để gán %</span>
+                      </span>
                     </th>
                     <th className="px-5 py-3 w-[5%]"></th>
                   </tr>
@@ -466,9 +568,10 @@ const InternalLinkSeoTool = () => {
                           value={m.anchorsRaw}
                           onChange={(e) => updateMapping(m.id, { anchorsRaw: e.target.value })}
                           rows={3}
-                          placeholder={'ghế văn phòng The One\nmua ghế xoay'}
-                          className={inputCls + ' resize-y'}
+                          placeholder={'ghế văn phòng The One | 50\nmua ghế xoay | 30\nnội thất | 20'}
+                          className={inputCls + ' resize-y font-mono text-[12px]'}
                         />
+                        <WeightPreview anchorsRaw={m.anchorsRaw} />
                       </td>
                       <td className="p-4 text-center">
                         <button
@@ -708,6 +811,47 @@ const TONE_STYLES = {
   violet:  { bg: 'from-violet-500 to-fuchsia-500',    ring: 'ring-violet-200',  pill: 'bg-violet-100 text-violet-700',   shadow: 'shadow-violet-100' },
   emerald: { bg: 'from-emerald-500 to-teal-500',      ring: 'ring-emerald-200', pill: 'bg-emerald-100 text-emerald-700', shadow: 'shadow-emerald-100' },
   amber:   { bg: 'from-amber-500 to-orange-500',      ring: 'ring-amber-200',   pill: 'bg-amber-100 text-amber-700',     shadow: 'shadow-amber-100' },
+};
+
+const WeightPreview = ({ anchorsRaw }) => {
+  const items = parseAnchorsWithWeights(anchorsRaw);
+  if (items.length === 0) return null;
+
+  const sumRaw = items.reduce((s, it) => s + (it.rawWeight || 0), 0);
+  const hasAnyExplicit = items.some((it) => it.rawWeight !== null);
+  const tone =
+    !hasAnyExplicit ? 'text-zinc-500' :
+    Math.abs(sumRaw - 100) < 0.5 ? 'text-emerald-600' :
+    sumRaw > 100 ? 'text-red-600' : 'text-amber-600';
+
+  return (
+    <div className="mt-2 space-y-1">
+      {items.map((it, i) => (
+        <div key={i} className="flex items-center gap-2 text-[11px]">
+          <div className="flex-1 h-1.5 overflow-hidden rounded-full bg-zinc-100">
+            <div
+              className={`h-full rounded-full ${it.rawWeight !== null ? 'bg-gradient-to-r from-indigo-500 to-violet-500' : 'bg-zinc-300'}`}
+              style={{ width: `${Math.min(100, it.weight)}%` }}
+            />
+          </div>
+          <span className="w-10 text-right tabular-nums text-zinc-600">{it.weight.toFixed(0)}%</span>
+        </div>
+      ))}
+      <div className="flex items-center justify-between pt-1 text-[10px]">
+        {hasAnyExplicit ? (
+          <span className={tone}>
+            Sum: {sumRaw.toFixed(0)}%
+            {Math.abs(sumRaw - 100) < 0.5 && ' ✓'}
+            {sumRaw > 100 && ' (sẽ chuẩn hoá về 100%)'}
+            {sumRaw < 100 && sumRaw > 0 && items.some((it) => it.rawWeight === null) && ' (phần còn lại chia đều cho anchor không gán %)'}
+            {sumRaw < 100 && !items.some((it) => it.rawWeight === null) && ' (sẽ chuẩn hoá về 100%)'}
+          </span>
+        ) : (
+          <span className="text-zinc-400">Equal split — thêm <code className="rounded bg-zinc-100 px-1 text-zinc-600">| 50</code> sau anchor để gán %</span>
+        )}
+      </div>
+    </div>
+  );
 };
 
 const StatPill = ({ icon: Icon, label, value, tone, highlight }) => {
