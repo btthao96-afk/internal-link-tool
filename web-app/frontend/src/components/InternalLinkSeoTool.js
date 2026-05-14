@@ -92,119 +92,6 @@ const hashCode = (s) => {
 };
 
 // ───────────────────────────────────────────────────────────────────────
-// File import helpers (TXT / CSV / XML sitemap)
-// ───────────────────────────────────────────────────────────────────────
-
-const readFileAsText = (file) =>
-  new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = (e) => resolve(String(e.target.result || ''));
-    reader.onerror = () => reject(reader.error);
-    reader.readAsText(file);
-  });
-
-// Robust CSV line parser (handles quoted commas + escaped quotes)
-const parseCsvLine = (line) => {
-  const out = [];
-  let cur = '';
-  let inQuotes = false;
-  for (let i = 0; i < line.length; i += 1) {
-    const c = line[i];
-    if (c === '"') {
-      if (inQuotes && line[i + 1] === '"') { cur += '"'; i += 1; }
-      else inQuotes = !inQuotes;
-    } else if (c === ',' && !inQuotes) {
-      out.push(cur); cur = '';
-    } else {
-      cur += c;
-    }
-  }
-  out.push(cur);
-  return out.map((s) => s.trim());
-};
-
-const parseCsv = (text) =>
-  text.split(/\r?\n/).filter((l) => l.trim().length > 0).map(parseCsvLine);
-
-// Detect URLs anywhere in a blob of text (TXT / CSV fallback)
-const extractAllUrlsFromText = (text) => {
-  const matches = text.match(/https?:\/\/[^\s,;"'<>()]+/gi) || [];
-  return Array.from(new Set(matches));
-};
-
-// Parse sitemap.xml → list of <loc> URLs
-const extractUrlsFromSitemap = (xmlText) => {
-  try {
-    const doc = new DOMParser().parseFromString(xmlText, 'application/xml');
-    const locs = doc.getElementsByTagName('loc');
-    const urls = [];
-    for (let i = 0; i < locs.length; i += 1) {
-      const t = (locs[i].textContent || '').trim();
-      if (t) urls.push(t);
-    }
-    return urls;
-  } catch {
-    return [];
-  }
-};
-
-// Smart URL extractor — picks strategy by file extension + content
-const extractUrlsFromFile = async (file) => {
-  const text = await readFileAsText(file);
-  const name = (file.name || '').toLowerCase();
-
-  if (name.endsWith('.xml') || text.trimStart().startsWith('<?xml') || text.includes('<urlset') || text.includes('<sitemapindex')) {
-    const urls = extractUrlsFromSitemap(text);
-    if (urls.length > 0) return urls;
-  }
-
-  if (name.endsWith('.csv')) {
-    const rows = parseCsv(text);
-    const urls = [];
-    for (const row of rows) {
-      for (const cell of row) {
-        if (/^https?:\/\//i.test(cell)) urls.push(cell);
-      }
-    }
-    if (urls.length > 0) return Array.from(new Set(urls));
-  }
-
-  // TXT or anything else: one URL per line, then regex fallback
-  const byLine = text.split(/\r?\n/).map((l) => l.trim()).filter((l) => /^https?:\/\//i.test(l));
-  if (byLine.length > 0) return Array.from(new Set(byLine));
-
-  return extractAllUrlsFromText(text);
-};
-
-// Parse mapping CSV: columns = keywords | target_url | anchors
-// keywords/anchors cells can use newline or "|" as inner separator
-const splitMultiCell = (cell) =>
-  String(cell || '').split(/\n|\|/).map((s) => s.trim()).filter(Boolean);
-
-const extractMappingsFromCsv = (text) => {
-  const rows = parseCsv(text);
-  if (rows.length === 0) return [];
-
-  // Skip header row if it looks like one
-  const first = rows[0].map((c) => c.toLowerCase());
-  const hasHeader =
-    first.some((c) => c.includes('keyword')) ||
-    first.some((c) => c.includes('url')) ||
-    first.some((c) => c.includes('anchor'));
-  const dataRows = hasHeader ? rows.slice(1) : rows;
-
-  return dataRows
-    .filter((row) => row.length >= 2)
-    .map((row) => ({
-      id: `m_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
-      keywordsRaw: splitMultiCell(row[0]).join('\n'),
-      targetUrl: (row[1] || '').trim(),
-      anchorsRaw: splitMultiCell(row[2] || '').join('\n'),
-    }))
-    .filter((m) => m.targetUrl && m.keywordsRaw);
-};
-
-// ───────────────────────────────────────────────────────────────────────
 // Suggestion engine
 // ───────────────────────────────────────────────────────────────────────
 
@@ -333,8 +220,6 @@ const InternalLinkSeoTool = () => {
   const [editingId, setEditingId] = useState(null);
   const [editingValue, setEditingValue] = useState('');
   const fileInputRef = useRef(null);
-  const urlFileInputRef = useRef(null);
-  const [importNotice, setImportNotice] = useState('');
 
   // ── Load mappings from localStorage on mount ──
   useEffect(() => {
@@ -414,58 +299,24 @@ const InternalLinkSeoTool = () => {
     URL.revokeObjectURL(url);
   };
 
-  const importMappings = async (file) => {
-    const name = (file.name || '').toLowerCase();
-    try {
-      const text = await readFileAsText(file);
-
-      // CSV path
-      if (name.endsWith('.csv') || (!name.endsWith('.json') && !text.trimStart().startsWith('['))) {
-        const parsed = extractMappingsFromCsv(text);
-        if (parsed.length === 0) throw new Error('Không tìm thấy mapping trong file CSV (cần 3 cột: keywords, url, anchors).');
-        setMappings(parsed);
-        setImportNotice(`✅ Đã import ${parsed.length} mapping từ CSV.`);
-        return;
+  const importMappings = (file) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const data = JSON.parse(e.target.result);
+        if (!Array.isArray(data)) throw new Error('Not an array');
+        const normalized = data.map((m) => ({
+          id: m.id || newMappingId(),
+          keywordsRaw: String(m.keywordsRaw ?? (Array.isArray(m.keywords) ? m.keywords.join('\n') : '')),
+          targetUrl: String(m.targetUrl ?? ''),
+          anchorsRaw: String(m.anchorsRaw ?? (Array.isArray(m.anchors) ? m.anchors.join('\n') : '')),
+        }));
+        setMappings(normalized);
+      } catch (err) {
+        alert('File JSON không hợp lệ: ' + err.message);
       }
-
-      // JSON path
-      const data = JSON.parse(text);
-      if (!Array.isArray(data)) throw new Error('JSON phải là mảng các mapping.');
-      const normalized = data.map((m) => ({
-        id: m.id || newMappingId(),
-        keywordsRaw: String(m.keywordsRaw ?? (Array.isArray(m.keywords) ? m.keywords.join('\n') : '')),
-        targetUrl: String(m.targetUrl ?? ''),
-        anchorsRaw: String(m.anchorsRaw ?? (Array.isArray(m.anchors) ? m.anchors.join('\n') : '')),
-      }));
-      setMappings(normalized);
-      setImportNotice(`✅ Đã import ${normalized.length} mapping từ JSON.`);
-    } catch (err) {
-      alert('Không đọc được file: ' + err.message);
-    }
-  };
-
-  const importUrlsFromFile = async (file) => {
-    try {
-      const urls = await extractUrlsFromFile(file);
-      if (urls.length === 0) {
-        alert('Không tìm thấy URL nào trong file. Hỗ trợ .txt / .csv / .xml (sitemap).');
-        return;
-      }
-      // Append to existing (deduped)
-      setInputValue((prev) => {
-        const existing = new Set(parseLines(prev));
-        const merged = [...parseLines(prev)];
-        let added = 0;
-        for (const u of urls) {
-          if (!existing.has(u)) { merged.push(u); existing.add(u); added += 1; }
-        }
-        setImportNotice(`✅ Đã import ${urls.length} URL từ "${file.name}" (${added} mới, ${urls.length - added} đã có).`);
-        return merged.join('\n');
-      });
-      setSubmitted(false);
-    } catch (err) {
-      alert('Không đọc được file: ' + err.message);
-    }
+    };
+    reader.readAsText(file);
   };
 
   // ── Anchor edit ──
@@ -535,14 +386,13 @@ const InternalLinkSeoTool = () => {
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 className="inline-flex h-10 items-center rounded-full border border-slate-600 bg-slate-800 px-4 text-sm text-slate-200 hover:bg-slate-700"
-                title="Cấu trúc CSV: keywords | url | anchors (mỗi dòng 1 mapping; nhiều keywords/anchors cách nhau bằng dòng mới hoặc dấu |)"
               >
-                📥 Import JSON/CSV
+                📥 Import JSON
               </button>
               <input
                 ref={fileInputRef}
                 type="file"
-                accept="application/json,.json,.csv,text/csv"
+                accept="application/json,.json"
                 className="hidden"
                 onChange={(e) => {
                   if (e.target.files?.[0]) importMappings(e.target.files[0]);
@@ -639,38 +489,7 @@ const InternalLinkSeoTool = () => {
         <div className="rounded-3xl bg-slate-950/70 p-6 ring-1 ring-slate-700">
           <div className="grid gap-6 lg:grid-cols-2">
             <div>
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <label className="text-sm font-semibold text-slate-300">📥 Danh sách URL (mỗi dòng 1 link)</label>
-                <div className="flex gap-2">
-                  <button
-                    type="button"
-                    onClick={() => urlFileInputRef.current?.click()}
-                    className="inline-flex h-8 items-center rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 text-xs font-semibold text-emerald-300 hover:bg-emerald-400/20"
-                    title="Hỗ trợ .txt (mỗi dòng 1 URL), .csv (URL ở cột bất kỳ), .xml (sitemap)"
-                  >
-                    📂 Import file
-                  </button>
-                  {inputValue && (
-                    <button
-                      type="button"
-                      onClick={() => { setInputValue(''); setSubmitted(false); setImportNotice(''); }}
-                      className="inline-flex h-8 items-center rounded-full border border-slate-600 px-3 text-xs text-slate-400 hover:bg-slate-800"
-                    >
-                      Xoá
-                    </button>
-                  )}
-                  <input
-                    ref={urlFileInputRef}
-                    type="file"
-                    accept=".txt,.csv,.xml,text/plain,text/csv,application/xml,text/xml"
-                    className="hidden"
-                    onChange={(e) => {
-                      if (e.target.files?.[0]) importUrlsFromFile(e.target.files[0]);
-                      e.target.value = '';
-                    }}
-                  />
-                </div>
-              </div>
+              <label className="text-sm font-semibold text-slate-300">📥 Danh sách URL (mỗi dòng 1 link)</label>
               <textarea
                 value={inputValue}
                 onChange={(e) => { setInputValue(e.target.value); setSubmitted(false); }}
@@ -679,12 +498,6 @@ const InternalLinkSeoTool = () => {
                 placeholder={'https://theone.vn/ghe-van-phong\nhttps://theone.vn/ban-lam-viec\nhttps://theone.vn/sofa-phong-khach'}
               />
               <p className="mt-2 text-xs text-slate-500">{urls.length} URL hợp lệ</p>
-              {importNotice && (
-                <div className="mt-2 flex items-start justify-between gap-2 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-xs text-emerald-200">
-                  <span>{importNotice}</span>
-                  <button type="button" onClick={() => setImportNotice('')} className="text-emerald-300 hover:text-white">✕</button>
-                </div>
-              )}
             </div>
             <div>
               <label className="text-sm font-semibold text-slate-300">
