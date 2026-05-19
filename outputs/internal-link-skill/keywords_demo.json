@@ -1,0 +1,77 @@
+{
+  "source": "/tmp/ilskill_demo/source.txt",
+  "keywords": [
+    {
+      "keyword": "link",
+      "count": 3,
+      "frequency": 0.0652
+    },
+    {
+      "keyword": "google",
+      "count": 2,
+      "frequency": 0.0435
+    },
+    {
+      "keyword": "anchor",
+      "count": 2,
+      "frequency": 0.0435
+    },
+    {
+      "keyword": "text",
+      "count": 2,
+      "frequency": 0.0435
+    },
+    {
+      "keyword": "internal",
+      "count": 1,
+      "frequency": 0.0217
+    },
+    {
+      "keyword": "yếu",
+      "count": 1,
+      "frequency": 0.0217
+    },
+    {
+      "keyword": "tố",
+      "count": 1,
+      "frequency": 0.0217
+    },
+    {
+      "keyword": "quan",
+      "count": 1,
+      "frequency": 0.0217
+    },
+    {
+      "keyword": "trọng",
+      "count": 1,
+      "frequency": 0.0217
+    },
+    {
+      "keyword": "seo",
+      "count": 1,
+      "frequency": 0.0217
+    }
+  ],
+  "bigrams": [
+    {
+      "phrase": "anchor text",
+      "count": 2
+    },
+    {
+      "phrase": "internal link",
+      "count": 1
+    },
+    {
+      "phrase": "yếu tố",
+      "count": 1
+    },
+    {
+      "phrase": "tố quan",
+      "count": 1
+    },
+    {
+      "phrase": "quan trọng",
+      "count": 1
+    }
+  ]
+}

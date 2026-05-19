@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://x.com/internal-link",
+    "title": "Internal link là gì",
+    "relevance_score": 57.5,
+    "matched_keywords": [
+      "link",
+      "và",
+      "google",
+      "equity",
+      "cấu",
+      "bổ",
+      "hiểu",
+      "phân",
+      "internal",
+      "giúp"
+    ]
+  },
+  {
+    "url": "https://x.com/anchor",
+    "title": "Anchor text",
+    "relevance_score": 42.26,
+    "matched_keywords": [
+      "anchor",
+      "text",
+      "optimization",
+      "tránh",
+      "đa",
+      "over",
+      "giúp",
+      "dạng"
+    ]
+  },
+  {
+    "url": "https://x.com/random",
+    "title": "Phở bò",
+    "relevance_score": 3.78,
+    "matched_keywords": [
+      "là"
+    ]
+  }
+]
