@@ -45,7 +45,6 @@ coverage/
 .cache/
 .turbo/
 
-# Claude Code local config (giữ skills + commands để chia sẻ qua repo)
+# Claude Code local config — chỉ giữ symlink trong .claude/skills/ trỏ về top-level skills/
 .claude/*
 !.claude/skills/
-!.claude/commands/
