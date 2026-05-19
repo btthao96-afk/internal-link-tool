@@ -1,0 +1,7232 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "url": "https://noithattheone.vn/tin-tuc/huong-ban-lam-viec.html",
+      "title": "hướng bàn làm việc",
+      "main_keyword": "hướng bàn làm việc",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.00656,
+      "semantic_score": 0.5106,
+      "candidates": [
+        {
+          "target_id": 2,
+          "weight": 0.5106,
+          "same_cluster": true
+        },
+        {
+          "target_id": 35,
+          "weight": 0.3913,
+          "same_cluster": false
+        },
+        {
+          "target_id": 1,
+          "weight": 0.332,
+          "same_cluster": true
+        },
+        {
+          "target_id": 38,
+          "weight": 0.2946,
+          "same_cluster": false
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2859,
+          "same_cluster": false
+        },
+        {
+          "target_id": 37,
+          "weight": 0.2849,
+          "same_cluster": false
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2807,
+          "same_cluster": false
+        },
+        {
+          "target_id": 23,
+          "weight": 0.28,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-lam-viec-tuoi-quy-hoi.html",
+      "title": "hướng kê bàn làm việc tuổi quý hợi",
+      "main_keyword": "hướng kê bàn làm việc tuổi quý hợi",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.004823,
+      "semantic_score": 0.631,
+      "candidates": [
+        {
+          "target_id": 32,
+          "weight": 0.631,
+          "same_cluster": false
+        },
+        {
+          "target_id": 6,
+          "weight": 0.4276,
+          "same_cluster": true
+        },
+        {
+          "target_id": 7,
+          "weight": 0.4259,
+          "same_cluster": true
+        },
+        {
+          "target_id": 2,
+          "weight": 0.3497,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.332,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.3282,
+          "same_cluster": true
+        },
+        {
+          "target_id": 5,
+          "weight": 0.2676,
+          "same_cluster": true
+        },
+        {
+          "target_id": 35,
+          "weight": 0.2119,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://noithattheone.vn/tin-tuc/huong-ban-lam-viec-tuoi-canh-ngo.html",
+      "title": "hướng bàn làm việc tuổi canh ngọ",
+      "main_keyword": "hướng bàn làm việc tuổi canh ngọ",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.002894,
+      "semantic_score": 0.5106,
+      "candidates": [
+        {
+          "target_id": 0,
+          "weight": 0.5106,
+          "same_cluster": true
+        },
+        {
+          "target_id": 1,
+          "weight": 0.3497,
+          "same_cluster": true
+        },
+        {
+          "target_id": 32,
+          "weight": 0.2874,
+          "same_cluster": false
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2269,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.2169,
+          "same_cluster": false
+        },
+        {
+          "target_id": 24,
+          "weight": 0.208,
+          "same_cluster": false
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2023,
+          "same_cluster": false
+        },
+        {
+          "target_id": 7,
+          "weight": 0.1837,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-lam-viec-trong-phong-ngu.html",
+      "title": "kê bàn làm việc trong phòng ngủ",
+      "main_keyword": "kê bàn làm việc trong phòng ngủ",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.004585,
+      "semantic_score": 0.3398,
+      "candidates": [
+        {
+          "target_id": 100,
+          "weight": 0.3398,
+          "same_cluster": false
+        },
+        {
+          "target_id": 1,
+          "weight": 0.3282,
+          "same_cluster": true
+        },
+        {
+          "target_id": 34,
+          "weight": 0.2925,
+          "same_cluster": false
+        },
+        {
+          "target_id": 5,
+          "weight": 0.2866,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.273,
+          "same_cluster": true
+        },
+        {
+          "target_id": 35,
+          "weight": 0.2467,
+          "same_cluster": false
+        },
+        {
+          "target_id": 7,
+          "weight": 0.2305,
+          "same_cluster": true
+        },
+        {
+          "target_id": 6,
+          "weight": 0.2177,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-hoc-goc-nha-co-tot-khong.html",
+      "title": "kê bàn học góc nhà có tốt không",
+      "main_keyword": "kê bàn học góc nhà có tốt không",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.00214,
+      "semantic_score": 0.358,
+      "candidates": [
+        {
+          "target_id": 5,
+          "weight": 0.358,
+          "same_cluster": true
+        },
+        {
+          "target_id": 7,
+          "weight": 0.2769,
+          "same_cluster": true
+        },
+        {
+          "target_id": 6,
+          "weight": 0.2736,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.215,
+          "same_cluster": true
+        },
+        {
+          "target_id": 1,
+          "weight": 0.1806,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.1798,
+          "same_cluster": true
+        },
+        {
+          "target_id": 34,
+          "weight": 0.1623,
+          "same_cluster": false
+        },
+        {
+          "target_id": 16,
+          "weight": 0.1591,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-hoc-hop-phong-thuy.html",
+      "title": "kê bàn học hợp phong thủy",
+      "main_keyword": "kê bàn học hợp phong thủy",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.00357,
+      "semantic_score": 0.4491,
+      "candidates": [
+        {
+          "target_id": 6,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 55,
+          "weight": 0.4463,
+          "same_cluster": false
+        },
+        {
+          "target_id": 7,
+          "weight": 0.4103,
+          "same_cluster": true
+        },
+        {
+          "target_id": 4,
+          "weight": 0.358,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.2866,
+          "same_cluster": true
+        },
+        {
+          "target_id": 1,
+          "weight": 0.2676,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.2395,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.2082,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2015.html",
+      "title": "hướng kê bàn học cho tuổi 2015",
+      "main_keyword": "hướng kê bàn học cho tuổi 2015",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.003749,
+      "semantic_score": 0.7547,
+      "candidates": [
+        {
+          "target_id": 7,
+          "weight": 0.7547,
+          "same_cluster": true
+        },
+        {
+          "target_id": 5,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 1,
+          "weight": 0.4276,
+          "same_cluster": true
+        },
+        {
+          "target_id": 4,
+          "weight": 0.2736,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.2263,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.2177,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.1949,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.1836,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2018.html",
+      "title": "hướng kê bàn học cho tuổi 2018",
+      "main_keyword": "hướng kê bàn học cho tuổi 2018",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.003906,
+      "semantic_score": 0.7547,
+      "candidates": [
+        {
+          "target_id": 6,
+          "weight": 0.7547,
+          "same_cluster": true
+        },
+        {
+          "target_id": 1,
+          "weight": 0.4259,
+          "same_cluster": true
+        },
+        {
+          "target_id": 5,
+          "weight": 0.4103,
+          "same_cluster": true
+        },
+        {
+          "target_id": 4,
+          "weight": 0.2769,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.2305,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.226,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.2235,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2062,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ban-hoc-sinh.html",
+      "title": "cách lắp bàn học sinh",
+      "main_keyword": "cách lắp bàn học sinh",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.007323,
+      "semantic_score": 0.6233,
+      "candidates": [
+        {
+          "target_id": 35,
+          "weight": 0.6233,
+          "same_cluster": false
+        },
+        {
+          "target_id": 14,
+          "weight": 0.4765,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.4618,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.4587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 65,
+          "weight": 0.4232,
+          "same_cluster": false
+        },
+        {
+          "target_id": 64,
+          "weight": 0.4166,
+          "same_cluster": false
+        },
+        {
+          "target_id": 73,
+          "weight": 0.2813,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.2552,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-lam-viec-tieu-chuan.html",
+      "title": "kích thước bàn làm việc tiêu chuẩn",
+      "main_keyword": "kích thước bàn làm việc tiêu chuẩn",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.007613,
+      "semantic_score": 0.4717,
+      "candidates": [
+        {
+          "target_id": 10,
+          "weight": 0.4717,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.4475,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.3765,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.3698,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.3582,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.3534,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.3248,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2542,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giam-doc.html",
+      "title": "kích thước bàn giám đốc",
+      "main_keyword": "kích thước bàn giám đốc",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.008359,
+      "semantic_score": 0.4723,
+      "candidates": [
+        {
+          "target_id": 12,
+          "weight": 0.4723,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.4717,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.4483,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.3812,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.3758,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.3643,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.3267,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.2765,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giao-vien.html",
+      "title": "kích thước bàn giáo viên",
+      "main_keyword": "kích thước bàn giáo viên",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.00843,
+      "semantic_score": 0.5134,
+      "candidates": [
+        {
+          "target_id": 12,
+          "weight": 0.5134,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.4483,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.4026,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.3725,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.3698,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.3675,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.3522,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.264,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hop.html",
+      "title": "kích thước bàn họp",
+      "main_keyword": "kích thước bàn họp",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.011054,
+      "semantic_score": 0.5134,
+      "candidates": [
+        {
+          "target_id": 11,
+          "weight": 0.5134,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.4864,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.4723,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.4682,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.4631,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.4475,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.4441,
+          "same_cluster": true
+        },
+        {
+          "target_id": 17,
+          "weight": 0.4144,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-cho-tre-mau-giao.html",
+      "title": "kích thước bàn học cho trẻ mẫu giáo",
+      "main_keyword": "kích thước bàn học cho trẻ mẫu giáo",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.008347,
+      "semantic_score": 0.4864,
+      "candidates": [
+        {
+          "target_id": 12,
+          "weight": 0.4864,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.4537,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.4533,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.4474,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.4026,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.3267,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.3248,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.2562,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+      "title": "kích thước bàn học sinh cấp 1",
+      "main_keyword": "kích thước bàn học sinh cấp 1",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.011904,
+      "semantic_score": 0.9943,
+      "candidates": [
+        {
+          "target_id": 15,
+          "weight": 0.9943,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.9663,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.4765,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.4474,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.4441,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.3765,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.3643,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.3522,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-2.html",
+      "title": "kích thước bàn học sinh cấp 2",
+      "main_keyword": "kích thước bàn học sinh cấp 2",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.012222,
+      "semantic_score": 0.9943,
+      "candidates": [
+        {
+          "target_id": 14,
+          "weight": 0.9943,
+          "same_cluster": true
+        },
+        {
+          "target_id": 16,
+          "weight": 0.9707,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.4682,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.4618,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.4537,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.3812,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.3725,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.3582,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-3.html",
+      "title": "kích thước bàn học sinh cấp 3",
+      "main_keyword": "kích thước bàn học sinh cấp 3",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.011796,
+      "semantic_score": 0.9707,
+      "candidates": [
+        {
+          "target_id": 15,
+          "weight": 0.9707,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.9663,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.4631,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.4587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 13,
+          "weight": 0.4533,
+          "same_cluster": true
+        },
+        {
+          "target_id": 10,
+          "weight": 0.3758,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.3675,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.3534,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "url": "https://noithattheone.vn/tin-tuc/ban-hop-3m.html",
+      "title": "bàn họp 3m",
+      "main_keyword": "bàn họp 3m",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.002129,
+      "semantic_score": 0.4144,
+      "candidates": [
+        {
+          "target_id": 12,
+          "weight": 0.4144,
+          "same_cluster": true
+        },
+        {
+          "target_id": 37,
+          "weight": 0.1823,
+          "same_cluster": false
+        },
+        {
+          "target_id": 38,
+          "weight": 0.1413,
+          "same_cluster": false
+        },
+        {
+          "target_id": 0,
+          "weight": 0.1159,
+          "same_cluster": true
+        },
+        {
+          "target_id": 36,
+          "weight": 0.1111,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.1102,
+          "same_cluster": false
+        },
+        {
+          "target_id": 40,
+          "weight": 0.1012,
+          "same_cluster": false
+        },
+        {
+          "target_id": 11,
+          "weight": 0.0934,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-chan-quy.html",
+      "title": "kích thước ghế chân quỳ",
+      "main_keyword": "kích thước ghế chân quỳ",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.002487,
+      "semantic_score": 0.4178,
+      "candidates": [
+        {
+          "target_id": 19,
+          "weight": 0.4178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.4171,
+          "same_cluster": false
+        },
+        {
+          "target_id": 20,
+          "weight": 0.338,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.274,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2481,
+          "same_cluster": false
+        },
+        {
+          "target_id": 10,
+          "weight": 0.2366,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.2258,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.2238,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-hoi-truong.html",
+      "title": "kích thước ghế hội trường",
+      "main_keyword": "kích thước ghế hội trường",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.002458,
+      "semantic_score": 0.4178,
+      "candidates": [
+        {
+          "target_id": 18,
+          "weight": 0.4178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.4048,
+          "same_cluster": false
+        },
+        {
+          "target_id": 20,
+          "weight": 0.335,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.2667,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2423,
+          "same_cluster": false
+        },
+        {
+          "target_id": 10,
+          "weight": 0.2296,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.2203,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.2134,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "url": "https://noithattheone.vn/tin-tuc/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+      "title": "kích thước ghế quầy bar",
+      "main_keyword": "kích thước ghế quầy bar",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.001871,
+      "semantic_score": 0.3877,
+      "candidates": [
+        {
+          "target_id": 71,
+          "weight": 0.3877,
+          "same_cluster": false
+        },
+        {
+          "target_id": 18,
+          "weight": 0.338,
+          "same_cluster": true
+        },
+        {
+          "target_id": 19,
+          "weight": 0.335,
+          "same_cluster": true
+        },
+        {
+          "target_id": 21,
+          "weight": 0.3031,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.2582,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2346,
+          "same_cluster": false
+        },
+        {
+          "target_id": 10,
+          "weight": 0.2222,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.2133,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-quay-le-tan.html",
+      "title": "kích thước quầy lễ tân",
+      "main_keyword": "kích thước quầy lễ tân",
+      "cluster_id": 4,
+      "cluster_label": "bàn / kích / thước",
+      "pagerank": 0.001289,
+      "semantic_score": 0.3031,
+      "candidates": [
+        {
+          "target_id": 20,
+          "weight": 0.3031,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.2362,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2146,
+          "same_cluster": false
+        },
+        {
+          "target_id": 71,
+          "weight": 0.2113,
+          "same_cluster": false
+        },
+        {
+          "target_id": 10,
+          "weight": 0.2032,
+          "same_cluster": true
+        },
+        {
+          "target_id": 11,
+          "weight": 0.1951,
+          "same_cluster": true
+        },
+        {
+          "target_id": 15,
+          "weight": 0.189,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.1879,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-kim.html",
+      "title": "phong thủy bàn làm việc mệnh kim",
+      "main_keyword": "phong thủy bàn làm việc mệnh kim",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.008125,
+      "semantic_score": 0.7095,
+      "candidates": [
+        {
+          "target_id": 24,
+          "weight": 0.7095,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.7079,
+          "same_cluster": true
+        },
+        {
+          "target_id": 26,
+          "weight": 0.4968,
+          "same_cluster": true
+        },
+        {
+          "target_id": 25,
+          "weight": 0.4848,
+          "same_cluster": true
+        },
+        {
+          "target_id": 28,
+          "weight": 0.4693,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.3093,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.3093,
+          "same_cluster": true
+        },
+        {
+          "target_id": 29,
+          "weight": 0.2879,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-moc.html",
+      "title": "phong thủy bàn làm việc mệnh mộc",
+      "main_keyword": "phong thủy bàn làm việc mệnh mộc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.008129,
+      "semantic_score": 0.7336,
+      "candidates": [
+        {
+          "target_id": 24,
+          "weight": 0.7336,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.7079,
+          "same_cluster": true
+        },
+        {
+          "target_id": 26,
+          "weight": 0.4989,
+          "same_cluster": true
+        },
+        {
+          "target_id": 25,
+          "weight": 0.4867,
+          "same_cluster": true
+        },
+        {
+          "target_id": 29,
+          "weight": 0.4656,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.3139,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.3139,
+          "same_cluster": true
+        },
+        {
+          "target_id": 28,
+          "weight": 0.2872,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-thuy.html",
+      "title": "phong thủy bàn làm việc mệnh thủy",
+      "main_keyword": "phong thủy bàn làm việc mệnh thủy",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.008224,
+      "semantic_score": 0.7336,
+      "candidates": [
+        {
+          "target_id": 23,
+          "weight": 0.7336,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.7095,
+          "same_cluster": true
+        },
+        {
+          "target_id": 25,
+          "weight": 0.5887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 26,
+          "weight": 0.5693,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.364,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.364,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.3189,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.3071,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-hoa.html",
+      "title": "phong thủy bàn làm việc cho người mệnh hỏa",
+      "main_keyword": "phong thủy bàn làm việc cho người mệnh hỏa",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.004884,
+      "semantic_score": 0.7339,
+      "candidates": [
+        {
+          "target_id": 26,
+          "weight": 0.7339,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.5887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.4867,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.4848,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.2699,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2699,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2451,
+          "same_cluster": false
+        },
+        {
+          "target_id": 57,
+          "weight": 0.2366,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-tho.html",
+      "title": "phong thủy bàn làm việc cho người mệnh thổ",
+      "main_keyword": "phong thủy bàn làm việc cho người mệnh thổ",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.005627,
+      "semantic_score": 0.7339,
+      "candidates": [
+        {
+          "target_id": 25,
+          "weight": 0.7339,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.5693,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.4989,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.4968,
+          "same_cluster": true
+        },
+        {
+          "target_id": 30,
+          "weight": 0.3932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.2892,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2892,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2625,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "url": "https://noithattheone.vn/tin-tuc/menh-hoa-hop-cay-gi-de-ban-lam-viec.html",
+      "title": "mệnh hoả hợp cây gì để bàn làm việc",
+      "main_keyword": "mệnh hoả hợp cây gì để bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.003882,
+      "semantic_score": 0.746,
+      "candidates": [
+        {
+          "target_id": 28,
+          "weight": 0.746,
+          "same_cluster": true
+        },
+        {
+          "target_id": 29,
+          "weight": 0.7198,
+          "same_cluster": true
+        },
+        {
+          "target_id": 30,
+          "weight": 0.7198,
+          "same_cluster": true
+        },
+        {
+          "target_id": 31,
+          "weight": 0.6992,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2761,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2558,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.254,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2073,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "url": "https://noithattheone.vn/tin-tuc/menh-kim-hop-cay-gi-de-ban-lam-viec.html",
+      "title": "mệnh kim hợp cây gì để bàn làm việc",
+      "main_keyword": "mệnh kim hợp cây gì để bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.00523,
+      "semantic_score": 0.778,
+      "candidates": [
+        {
+          "target_id": 29,
+          "weight": 0.778,
+          "same_cluster": true
+        },
+        {
+          "target_id": 30,
+          "weight": 0.7506,
+          "same_cluster": true
+        },
+        {
+          "target_id": 27,
+          "weight": 0.746,
+          "same_cluster": true
+        },
+        {
+          "target_id": 31,
+          "weight": 0.7291,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.4693,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2872,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2667,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2162,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "url": "https://noithattheone.vn/tin-tuc/menh-moc-hop-cay-gi-de-ban-lam-viec.html",
+      "title": "mệnh mộc hợp cây gì để bàn làm việc",
+      "main_keyword": "mệnh mộc hợp cây gì để bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.005226,
+      "semantic_score": 0.778,
+      "candidates": [
+        {
+          "target_id": 28,
+          "weight": 0.778,
+          "same_cluster": true
+        },
+        {
+          "target_id": 30,
+          "weight": 0.7779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 31,
+          "weight": 0.7291,
+          "same_cluster": true
+        },
+        {
+          "target_id": 27,
+          "weight": 0.7198,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.4656,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2879,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2667,
+          "same_cluster": true
+        },
+        {
+          "target_id": 26,
+          "weight": 0.2279,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "url": "https://noithattheone.vn/tin-tuc/menh-tho-hop-cay-gi-de-ban-lam-viec.html",
+      "title": "mệnh thổ hợp cây gì để bàn làm việc",
+      "main_keyword": "mệnh thổ hợp cây gì để bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.004489,
+      "semantic_score": 0.7779,
+      "candidates": [
+        {
+          "target_id": 29,
+          "weight": 0.7779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 31,
+          "weight": 0.7583,
+          "same_cluster": true
+        },
+        {
+          "target_id": 28,
+          "weight": 0.7506,
+          "same_cluster": true
+        },
+        {
+          "target_id": 27,
+          "weight": 0.7198,
+          "same_cluster": true
+        },
+        {
+          "target_id": 26,
+          "weight": 0.3932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2667,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2655,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "url": "https://noithattheone.vn/tin-tuc/menh-thuy-hop-cay-gi-de-ban-lam-viec.html",
+      "title": "mệnh thuỷ hợp cây gì để bàn làm việc",
+      "main_keyword": "mệnh thuỷ hợp cây gì để bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.004154,
+      "semantic_score": 0.7583,
+      "candidates": [
+        {
+          "target_id": 30,
+          "weight": 0.7583,
+          "same_cluster": true
+        },
+        {
+          "target_id": 29,
+          "weight": 0.7291,
+          "same_cluster": true
+        },
+        {
+          "target_id": 28,
+          "weight": 0.7291,
+          "same_cluster": true
+        },
+        {
+          "target_id": 27,
+          "weight": 0.6992,
+          "same_cluster": true
+        },
+        {
+          "target_id": 32,
+          "weight": 0.29,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2743,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2697,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2693,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "url": "https://noithattheone.vn/tin-tuc/vat-phong-thuy-de-ban-lam-viec-tuoi-quy-hoi.html",
+      "title": "vật phong thủy để bàn làm việc tuổi quý hợi",
+      "main_keyword": "vật phong thủy để bàn làm việc tuổi quý hợi",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.002527,
+      "semantic_score": 0.631,
+      "candidates": [
+        {
+          "target_id": 1,
+          "weight": 0.631,
+          "same_cluster": false
+        },
+        {
+          "target_id": 31,
+          "weight": 0.29,
+          "same_cluster": true
+        },
+        {
+          "target_id": 2,
+          "weight": 0.2874,
+          "same_cluster": false
+        },
+        {
+          "target_id": 24,
+          "weight": 0.247,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2406,
+          "same_cluster": false
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2227,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2208,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2116,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-doi-dien-cua-ra-vao.html",
+      "title": "bàn làm việc đối diện cửa ra vào",
+      "main_keyword": "bàn làm việc đối diện cửa ra vào",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001079,
+      "semantic_score": 0.1896,
+      "candidates": [
+        {
+          "target_id": 0,
+          "weight": 0.1896,
+          "same_cluster": false
+        },
+        {
+          "target_id": 3,
+          "weight": 0.1891,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.1712,
+          "same_cluster": true
+        },
+        {
+          "target_id": 38,
+          "weight": 0.152,
+          "same_cluster": true
+        },
+        {
+          "target_id": 37,
+          "weight": 0.147,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.1376,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.1351,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.1347,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "url": "https://noithattheone.vn/tin-tuc/trang-tri-ban-lam-viec-tai-van-phong.html",
+      "title": "trang trí bàn làm việc tại văn phòng",
+      "main_keyword": "trang trí bàn làm việc tại văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.00188,
+      "semantic_score": 0.2925,
+      "candidates": [
+        {
+          "target_id": 3,
+          "weight": 0.2925,
+          "same_cluster": false
+        },
+        {
+          "target_id": 124,
+          "weight": 0.2481,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.2442,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.2433,
+          "same_cluster": false
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2322,
+          "same_cluster": false
+        },
+        {
+          "target_id": 121,
+          "weight": 0.2173,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.211,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.2103,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ban-lam-viec.html",
+      "title": "cách lắp bàn làm việc",
+      "main_keyword": "cách lắp bàn làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.005473,
+      "semantic_score": 0.6233,
+      "candidates": [
+        {
+          "target_id": 8,
+          "weight": 0.6233,
+          "same_cluster": false
+        },
+        {
+          "target_id": 0,
+          "weight": 0.3913,
+          "same_cluster": false
+        },
+        {
+          "target_id": 76,
+          "weight": 0.3151,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.3151,
+          "same_cluster": false
+        },
+        {
+          "target_id": 93,
+          "weight": 0.3151,
+          "same_cluster": false
+        },
+        {
+          "target_id": 86,
+          "weight": 0.3151,
+          "same_cluster": false
+        },
+        {
+          "target_id": 96,
+          "weight": 0.3009,
+          "same_cluster": false
+        },
+        {
+          "target_id": 91,
+          "weight": 0.3009,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-van-phong-co-vach-ngan.html",
+      "title": "bàn làm việc văn phòng có vách ngăn",
+      "main_keyword": "bàn làm việc văn phòng có vách ngăn",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001237,
+      "semantic_score": 0.2182,
+      "candidates": [
+        {
+          "target_id": 0,
+          "weight": 0.2182,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.1975,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.1965,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.1933,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.1926,
+          "same_cluster": false
+        },
+        {
+          "target_id": 56,
+          "weight": 0.1911,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.1911,
+          "same_cluster": true
+        },
+        {
+          "target_id": 34,
+          "weight": 0.1827,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-1m8.html",
+      "title": "bàn làm việc dài 1m8",
+      "main_keyword": "bàn làm việc dài 1m8",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.002843,
+      "semantic_score": 0.6176,
+      "candidates": [
+        {
+          "target_id": 38,
+          "weight": 0.6176,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2849,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.2573,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2068,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.203,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2025,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.1975,
+          "same_cluster": false
+        },
+        {
+          "target_id": 26,
+          "weight": 0.1899,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-2m4.html",
+      "title": "bàn làm việc dài 2m4",
+      "main_keyword": "bàn làm việc dài 2m4",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.002912,
+      "semantic_score": 0.6176,
+      "candidates": [
+        {
+          "target_id": 37,
+          "weight": 0.6176,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2946,
+          "same_cluster": false
+        },
+        {
+          "target_id": 39,
+          "weight": 0.2909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 35,
+          "weight": 0.266,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.2138,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.2099,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.2094,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.2042,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "url": "https://noithattheone.vn/tin-tuc/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+      "title": "bàn làm việc chân sắt 1m6",
+      "main_keyword": "bàn làm việc chân sắt 1m6",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001391,
+      "semantic_score": 0.2909,
+      "candidates": [
+        {
+          "target_id": 38,
+          "weight": 0.2909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 0,
+          "weight": 0.2413,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.2184,
+          "same_cluster": true
+        },
+        {
+          "target_id": 37,
+          "weight": 0.188,
+          "same_cluster": true
+        },
+        {
+          "target_id": 24,
+          "weight": 0.1751,
+          "same_cluster": true
+        },
+        {
+          "target_id": 22,
+          "weight": 0.1719,
+          "same_cluster": true
+        },
+        {
+          "target_id": 23,
+          "weight": 0.1715,
+          "same_cluster": true
+        },
+        {
+          "target_id": 3,
+          "weight": 0.1696,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "url": "https://noithattheone.vn/tin-tuc/ban-van-phong-1m.html",
+      "title": "bàn văn phòng 1m",
+      "main_keyword": "bàn văn phòng 1m",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001223,
+      "semantic_score": 0.1926,
+      "candidates": [
+        {
+          "target_id": 121,
+          "weight": 0.1926,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.1923,
+          "same_cluster": false
+        },
+        {
+          "target_id": 124,
+          "weight": 0.1896,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.188,
+          "same_cluster": false
+        },
+        {
+          "target_id": 0,
+          "weight": 0.1845,
+          "same_cluster": false
+        },
+        {
+          "target_id": 54,
+          "weight": 0.1778,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.1743,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.1705,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "url": "https://noithattheone.vn/tin-tuc/cach-chinh-ghe-xoay-nga-lung.html",
+      "title": "cách chỉnh ghế xoay ngả lưng",
+      "main_keyword": "cách chỉnh ghế xoay ngả lưng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001292,
+      "semantic_score": 0.2214,
+      "candidates": [
+        {
+          "target_id": 42,
+          "weight": 0.2214,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.1937,
+          "same_cluster": false
+        },
+        {
+          "target_id": 86,
+          "weight": 0.1781,
+          "same_cluster": false
+        },
+        {
+          "target_id": 93,
+          "weight": 0.1781,
+          "same_cluster": false
+        },
+        {
+          "target_id": 76,
+          "weight": 0.1781,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.1781,
+          "same_cluster": false
+        },
+        {
+          "target_id": 91,
+          "weight": 0.1701,
+          "same_cluster": false
+        },
+        {
+          "target_id": 96,
+          "weight": 0.1701,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "url": "https://noithattheone.vn/tin-tuc/ghe-xoay-khong-nga-duoc-hieu-qua.html",
+      "title": "ghế xoay không ngả được",
+      "main_keyword": "ghế xoay không ngả được",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001912,
+      "semantic_score": 0.2897,
+      "candidates": [
+        {
+          "target_id": 75,
+          "weight": 0.2897,
+          "same_cluster": false
+        },
+        {
+          "target_id": 108,
+          "weight": 0.2221,
+          "same_cluster": false
+        },
+        {
+          "target_id": 41,
+          "weight": 0.2214,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.1922,
+          "same_cluster": false
+        },
+        {
+          "target_id": 89,
+          "weight": 0.1922,
+          "same_cluster": false
+        },
+        {
+          "target_id": 78,
+          "weight": 0.1922,
+          "same_cluster": false
+        },
+        {
+          "target_id": 94,
+          "weight": 0.1922,
+          "same_cluster": false
+        },
+        {
+          "target_id": 77,
+          "weight": 0.1917,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "url": "https://noithattheone.vn/tin-tuc/cach-thao-banh-xe-ghe-xoay-van-phong.html",
+      "title": "cách tháo bánh xe ghế xoay văn phòng",
+      "main_keyword": "cách tháo bánh xe ghế xoay văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001079,
+      "semantic_score": 0.3039,
+      "candidates": [
+        {
+          "target_id": 76,
+          "weight": 0.3039,
+          "same_cluster": false
+        },
+        {
+          "target_id": 93,
+          "weight": 0.3039,
+          "same_cluster": false
+        },
+        {
+          "target_id": 86,
+          "weight": 0.3039,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.3039,
+          "same_cluster": false
+        },
+        {
+          "target_id": 89,
+          "weight": 0.2632,
+          "same_cluster": false
+        },
+        {
+          "target_id": 82,
+          "weight": 0.2632,
+          "same_cluster": false
+        },
+        {
+          "target_id": 94,
+          "weight": 0.2632,
+          "same_cluster": false
+        },
+        {
+          "target_id": 78,
+          "weight": 0.2632,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "url": "https://noithattheone.vn/tin-tuc/so-sanh-van-phong-dong-van-phong-mo.html",
+      "title": "so sánh văn phòng đóng – văn phòng mở",
+      "main_keyword": "so sánh văn phòng đóng – văn phòng mở",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001079,
+      "semantic_score": 0.2726,
+      "candidates": [
+        {
+          "target_id": 129,
+          "weight": 0.2726,
+          "same_cluster": false
+        },
+        {
+          "target_id": 54,
+          "weight": 0.2031,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.1748,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.1724,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.1697,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.1691,
+          "same_cluster": false
+        },
+        {
+          "target_id": 46,
+          "weight": 0.1543,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.1543,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/bi-quyet-phong-thuy-phong-lam-viec.html",
+      "title": "bố trí văn phòng theo phong thủy",
+      "main_keyword": "bố trí văn phòng theo phong thủy",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.015959,
+      "semantic_score": 0.7432,
+      "candidates": [
+        {
+          "target_id": 125,
+          "weight": 0.7432,
+          "same_cluster": false
+        },
+        {
+          "target_id": 126,
+          "weight": 0.7432,
+          "same_cluster": false
+        },
+        {
+          "target_id": 127,
+          "weight": 0.7102,
+          "same_cluster": false
+        },
+        {
+          "target_id": 57,
+          "weight": 0.6692,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.6448,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.6436,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.6368,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.6368,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ban-lam-viec.html",
+      "title": "phong thủy văn phòng làm việc",
+      "main_keyword": "phong thủy văn phòng làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.012449,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 56,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.7545,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.6917,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6368,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5836,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5474,
+          "same_cluster": false
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5022,
+          "same_cluster": false
+        },
+        {
+          "target_id": 137,
+          "weight": 0.493,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/chon-huong-ban-lam-viec-nam-2025-chuan-phong-thuy-giup-su-nghiep-thang-tien.html",
+      "title": "cách bài trí phong thủy trong văn phòng",
+      "main_keyword": "cách bài trí phong thủy trong văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.005736,
+      "semantic_score": 0.9877,
+      "candidates": [
+        {
+          "target_id": 59,
+          "weight": 0.9877,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.6506,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.5972,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.544,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.5271,
+          "same_cluster": true
+        },
+        {
+          "target_id": 48,
+          "weight": 0.3851,
+          "same_cluster": true
+        },
+        {
+          "target_id": 61,
+          "weight": 0.3851,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3644,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+      "title": "khái niệm phong thủy trong văn phòng",
+      "main_keyword": "khái niệm phong thủy trong văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.003581,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 61,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.5514,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.5023,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4513,
+          "same_cluster": true
+        },
+        {
+          "target_id": 47,
+          "weight": 0.3851,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.3761,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.3626,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3119,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-ban-lam-viec-theo-tuoi.html",
+      "title": "phong thuỷ cho văn phòng làm việc",
+      "main_keyword": "phong thuỷ cho văn phòng làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001626,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 62,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 128,
+          "weight": 0.4337,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.3932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.3665,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.3621,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-xoay-van-phong.html",
+      "title": "phong thủy khi thiết kế văn phòng",
+      "main_keyword": "phong thủy khi thiết kế văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001528,
+      "semantic_score": 0.9919,
+      "candidates": [
+        {
+          "target_id": 63,
+          "weight": 0.9919,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.3896,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3566,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.2668,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2517,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.2517,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.2403,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.2206,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-xoay-van-phong.html",
+      "title": "phong thủy nơi văn phòng",
+      "main_keyword": "phong thủy nơi văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001079,
+      "semantic_score": 0.4483,
+      "candidates": [
+        {
+          "target_id": 54,
+          "weight": 0.4483,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4464,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.363,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.3325,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.3325,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.3175,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.2915,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.2841,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-dan-sua-ghe-xoay-van-phong.html",
+      "title": "phong thủy trong nội thất văn phòng",
+      "main_keyword": "phong thủy trong nội thất văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001079,
+      "semantic_score": 0.4513,
+      "candidates": [
+        {
+          "target_id": 53,
+          "weight": 0.4513,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4389,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.3923,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.3716,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3687,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.3056,
+          "same_cluster": true
+        },
+        {
+          "target_id": 47,
+          "weight": 0.2888,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2704,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-thao-banh-xe-ghe-xoay-van-phong.html",
+      "title": "phong thủy trong văn phòng",
+      "main_keyword": "phong thủy trong văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.007548,
+      "semantic_score": 0.7945,
+      "candidates": [
+        {
+          "target_id": 57,
+          "weight": 0.7945,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6264,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.6092,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.6022,
+          "same_cluster": true
+        },
+        {
+          "target_id": 47,
+          "weight": 0.5972,
+          "same_cluster": true
+        },
+        {
+          "target_id": 61,
+          "weight": 0.5514,
+          "same_cluster": true
+        },
+        {
+          "target_id": 48,
+          "weight": 0.5514,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.5505,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-thao-ghe-xoay-van-phong.html",
+      "title": "phong thủy văn phòng",
+      "main_keyword": "phong thủy văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.011559,
+      "semantic_score": 0.7545,
+      "candidates": [
+        {
+          "target_id": 56,
+          "weight": 0.7545,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.7545,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6436,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.5993,
+          "same_cluster": false
+        },
+        {
+          "target_id": 138,
+          "weight": 0.5687,
+          "same_cluster": false
+        },
+        {
+          "target_id": 60,
+          "weight": 0.5554,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.5505,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.4957,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-thiet-ke-noi-that-van-phong.html",
+      "title": "văn phòng hợp phong thủy",
+      "main_keyword": "văn phòng hợp phong thủy",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.002095,
+      "semantic_score": 0.4873,
+      "candidates": [
+        {
+          "target_id": 54,
+          "weight": 0.4873,
+          "same_cluster": true
+        },
+        {
+          "target_id": 5,
+          "weight": 0.4463,
+          "same_cluster": false
+        },
+        {
+          "target_id": 130,
+          "weight": 0.4361,
+          "same_cluster": false
+        },
+        {
+          "target_id": 135,
+          "weight": 0.4211,
+          "same_cluster": false
+        },
+        {
+          "target_id": 56,
+          "weight": 0.411,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.411,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4006,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.3262,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-the-one.html",
+      "title": "phong thủy văn phòng làm việc",
+      "main_keyword": "phong thủy văn phòng làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.012689,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 46,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.7545,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.6917,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6368,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5836,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5474,
+          "same_cluster": false
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5022,
+          "same_cluster": false
+        },
+        {
+          "target_id": 137,
+          "weight": 0.493,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ban-van-phong.html",
+      "title": "phong thủy trong văn phòng làm việc",
+      "main_keyword": "phong thủy trong văn phòng làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.011031,
+      "semantic_score": 0.7945,
+      "candidates": [
+        {
+          "target_id": 53,
+          "weight": 0.7945,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.6917,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.6917,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6692,
+          "same_cluster": true
+        },
+        {
+          "target_id": 47,
+          "weight": 0.544,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.5319,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.5245,
+          "same_cluster": true
+        },
+        {
+          "target_id": 61,
+          "weight": 0.5023,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-ve-sinh-ban-van-phong.html",
+      "title": "phong thủy trong bài trí văn phòng",
+      "main_keyword": "phong thủy trong bài trí văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.008042,
+      "semantic_score": 0.6506,
+      "candidates": [
+        {
+          "target_id": 47,
+          "weight": 0.6506,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.6448,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.6355,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.6022,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.5245,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.4957,
+          "same_cluster": true
+        },
+        {
+          "target_id": 125,
+          "weight": 0.4351,
+          "same_cluster": false
+        },
+        {
+          "target_id": 126,
+          "weight": 0.4351,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-xoay-van-phong-la-gi.html",
+      "title": "cách bài trí phong thủy trong văn phòng",
+      "main_keyword": "cách bài trí phong thủy trong văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.005695,
+      "semantic_score": 0.9877,
+      "candidates": [
+        {
+          "target_id": 47,
+          "weight": 0.9877,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.6355,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.6092,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.5319,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.5194,
+          "same_cluster": true
+        },
+        {
+          "target_id": 48,
+          "weight": 0.3761,
+          "same_cluster": true
+        },
+        {
+          "target_id": 61,
+          "weight": 0.3761,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3758,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/tieu-chuan-de-xay-dung-van-phong-xanh.html",
+      "title": "cách xem phong thủy văn phòng",
+      "main_keyword": "cách xem phong thủy văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.002188,
+      "semantic_score": 0.5554,
+      "candidates": [
+        {
+          "target_id": 54,
+          "weight": 0.5554,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.4465,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.4465,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4298,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.3975,
+          "same_cluster": false
+        },
+        {
+          "target_id": 137,
+          "weight": 0.3428,
+          "same_cluster": false
+        },
+        {
+          "target_id": 138,
+          "weight": 0.3364,
+          "same_cluster": false
+        },
+        {
+          "target_id": 55,
+          "weight": 0.2928,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/vach-ngan-van-phong-xu-the-tro-lai.html",
+      "title": "khái niệm phong thủy trong văn phòng",
+      "main_keyword": "khái niệm phong thủy trong văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.004363,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 48,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.5514,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.5023,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4513,
+          "same_cluster": true
+        },
+        {
+          "target_id": 47,
+          "weight": 0.3851,
+          "same_cluster": true
+        },
+        {
+          "target_id": 59,
+          "weight": 0.3761,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.3626,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3119,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-xanh--xu-huong-thiet-ke-van-phong-cua-tuong-lai.html",
+      "title": "phong thuỷ cho văn phòng làm việc",
+      "main_keyword": "phong thuỷ cho văn phòng làm việc",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001626,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 49,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.4491,
+          "same_cluster": true
+        },
+        {
+          "target_id": 128,
+          "weight": 0.4337,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.4178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.3932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.3665,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.3621,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/xu-huong-ban-van-phong-hien-nay.html",
+      "title": "phong thủy khi thiết kế văn phòng",
+      "main_keyword": "phong thủy khi thiết kế văn phòng",
+      "cluster_id": 3,
+      "cluster_label": "phòng / văn / phong",
+      "pagerank": 0.001513,
+      "semantic_score": 0.9919,
+      "candidates": [
+        {
+          "target_id": 50,
+          "weight": 0.9919,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.371,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3103,
+          "same_cluster": true
+        },
+        {
+          "target_id": 53,
+          "weight": 0.2483,
+          "same_cluster": true
+        },
+        {
+          "target_id": 46,
+          "weight": 0.2396,
+          "same_cluster": true
+        },
+        {
+          "target_id": 56,
+          "weight": 0.2396,
+          "same_cluster": true
+        },
+        {
+          "target_id": 58,
+          "weight": 0.2302,
+          "same_cluster": true
+        },
+        {
+          "target_id": 57,
+          "weight": 0.2101,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "url": "https://noithattheone.vn/tin-tuc/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+      "title": "quy trình sản xuất bàn ghế học sinh",
+      "main_keyword": "quy trình sản xuất bàn ghế học sinh",
+      "cluster_id": 0,
+      "cluster_label": "ghế / sinh / học",
+      "pagerank": 0.00221,
+      "semantic_score": 0.4166,
+      "candidates": [
+        {
+          "target_id": 8,
+          "weight": 0.4166,
+          "same_cluster": false
+        },
+        {
+          "target_id": 65,
+          "weight": 0.3095,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.2392,
+          "same_cluster": false
+        },
+        {
+          "target_id": 15,
+          "weight": 0.2313,
+          "same_cluster": false
+        },
+        {
+          "target_id": 16,
+          "weight": 0.2283,
+          "same_cluster": false
+        },
+        {
+          "target_id": 35,
+          "weight": 0.129,
+          "same_cluster": false
+        },
+        {
+          "target_id": 66,
+          "weight": 0.1215,
+          "same_cluster": true
+        },
+        {
+          "target_id": 9,
+          "weight": 0.1118,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "url": "https://noithattheone.vn/tin-tuc/cach-chon-ghe-hoc-sinh.html",
+      "title": "cách chọn ghế học sinh",
+      "main_keyword": "cách chọn ghế học sinh",
+      "cluster_id": 0,
+      "cluster_label": "ghế / sinh / học",
+      "pagerank": 0.00309,
+      "semantic_score": 0.4232,
+      "candidates": [
+        {
+          "target_id": 8,
+          "weight": 0.4232,
+          "same_cluster": false
+        },
+        {
+          "target_id": 64,
+          "weight": 0.3095,
+          "same_cluster": true
+        },
+        {
+          "target_id": 14,
+          "weight": 0.2897,
+          "same_cluster": false
+        },
+        {
+          "target_id": 15,
+          "weight": 0.2818,
+          "same_cluster": false
+        },
+        {
+          "target_id": 16,
+          "weight": 0.2745,
+          "same_cluster": false
+        },
+        {
+          "target_id": 66,
+          "weight": 0.2258,
+          "same_cluster": true
+        },
+        {
+          "target_id": 73,
+          "weight": 0.2143,
+          "same_cluster": false
+        },
+        {
+          "target_id": 71,
+          "weight": 0.1937,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "url": "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-cong-thai-hoc.html",
+      "title": "vệ sinh ghế công thái học",
+      "main_keyword": "vệ sinh ghế công thái học",
+      "cluster_id": 0,
+      "cluster_label": "ghế / sinh / học",
+      "pagerank": 0.006268,
+      "semantic_score": 0.6821,
+      "candidates": [
+        {
+          "target_id": 67,
+          "weight": 0.6821,
+          "same_cluster": true
+        },
+        {
+          "target_id": 68,
+          "weight": 0.636,
+          "same_cluster": true
+        },
+        {
+          "target_id": 73,
+          "weight": 0.5146,
+          "same_cluster": false
+        },
+        {
+          "target_id": 69,
+          "weight": 0.4824,
+          "same_cluster": false
+        },
+        {
+          "target_id": 71,
+          "weight": 0.4724,
+          "same_cluster": false
+        },
+        {
+          "target_id": 74,
+          "weight": 0.422,
+          "same_cluster": false
+        },
+        {
+          "target_id": 70,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 72,
+          "weight": 0.3586,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "url": "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-luoi.html",
+      "title": "vệ sinh ghế lưới",
+      "main_keyword": "vệ sinh ghế lưới",
+      "cluster_id": 0,
+      "cluster_label": "ghế / sinh / học",
+      "pagerank": 0.002444,
+      "semantic_score": 0.6821,
+      "candidates": [
+        {
+          "target_id": 66,
+          "weight": 0.6821,
+          "same_cluster": true
+        },
+        {
+          "target_id": 68,
+          "weight": 0.6527,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.1493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 91,
+          "weight": 0.1493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 96,
+          "weight": 0.1493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 75,
+          "weight": 0.1461,
+          "same_cluster": false
+        },
+        {
+          "target_id": 65,
+          "weight": 0.1448,
+          "same_cluster": true
+        },
+        {
+          "target_id": 8,
+          "weight": 0.1403,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "url": "https://noithattheone.vn/tin-tuc/cach-ve-sinh-ghe-xoay-van-phong.html",
+      "title": "cách vệ sinh ghế xoay văn phòng",
+      "main_keyword": "cách vệ sinh ghế xoay văn phòng",
+      "cluster_id": 0,
+      "cluster_label": "ghế / sinh / học",
+      "pagerank": 0.002868,
+      "semantic_score": 0.6527,
+      "candidates": [
+        {
+          "target_id": 67,
+          "weight": 0.6527,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.636,
+          "same_cluster": true
+        },
+        {
+          "target_id": 93,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 76,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 86,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 89,
+          "weight": 0.3418,
+          "same_cluster": false
+        },
+        {
+          "target_id": 82,
+          "weight": 0.3418,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "url": "https://noithattheone.vn/tin-tuc/ghe-cong-thai-hoc-la-gi.html",
+      "title": "ghế công thái học là gì",
+      "main_keyword": "ghế công thái học là gì",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.005417,
+      "semantic_score": 0.5808,
+      "candidates": [
+        {
+          "target_id": 73,
+          "weight": 0.5808,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.5431,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.4824,
+          "same_cluster": false
+        },
+        {
+          "target_id": 74,
+          "weight": 0.4792,
+          "same_cluster": true
+        },
+        {
+          "target_id": 70,
+          "weight": 0.4593,
+          "same_cluster": true
+        },
+        {
+          "target_id": 72,
+          "weight": 0.4168,
+          "same_cluster": true
+        },
+        {
+          "target_id": 129,
+          "weight": 0.2984,
+          "same_cluster": false
+        },
+        {
+          "target_id": 65,
+          "weight": 0.1554,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "url": "https://noithattheone.vn/tin-tuc/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+      "title": "ngồi ghế công thái học đúng cách",
+      "main_keyword": "ngồi ghế công thái học đúng cách",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.004619,
+      "semantic_score": 0.503,
+      "candidates": [
+        {
+          "target_id": 73,
+          "weight": 0.503,
+          "same_cluster": true
+        },
+        {
+          "target_id": 69,
+          "weight": 0.4593,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.4415,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.3947,
+          "same_cluster": false
+        },
+        {
+          "target_id": 74,
+          "weight": 0.3895,
+          "same_cluster": true
+        },
+        {
+          "target_id": 72,
+          "weight": 0.3505,
+          "same_cluster": true
+        },
+        {
+          "target_id": 65,
+          "weight": 0.1543,
+          "same_cluster": false
+        },
+        {
+          "target_id": 68,
+          "weight": 0.1122,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-cong-thai-hoc.html",
+      "title": "kích thước ghế công thái học",
+      "main_keyword": "kích thước ghế công thái học",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.008383,
+      "semantic_score": 0.5718,
+      "candidates": [
+        {
+          "target_id": 73,
+          "weight": 0.5718,
+          "same_cluster": true
+        },
+        {
+          "target_id": 69,
+          "weight": 0.5431,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.4724,
+          "same_cluster": false
+        },
+        {
+          "target_id": 74,
+          "weight": 0.4703,
+          "same_cluster": true
+        },
+        {
+          "target_id": 70,
+          "weight": 0.4415,
+          "same_cluster": true
+        },
+        {
+          "target_id": 18,
+          "weight": 0.4171,
+          "same_cluster": false
+        },
+        {
+          "target_id": 19,
+          "weight": 0.4048,
+          "same_cluster": false
+        },
+        {
+          "target_id": 72,
+          "weight": 0.3985,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "url": "https://noithattheone.vn/tin-tuc/cach-su-dung-ghe-cong-thai-hoc.html",
+      "title": "cách sử dụng ghế công thái học",
+      "main_keyword": "cách sử dụng ghế công thái học",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.003807,
+      "semantic_score": 0.4782,
+      "candidates": [
+        {
+          "target_id": 73,
+          "weight": 0.4782,
+          "same_cluster": true
+        },
+        {
+          "target_id": 69,
+          "weight": 0.4168,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.3985,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.3586,
+          "same_cluster": false
+        },
+        {
+          "target_id": 70,
+          "weight": 0.3505,
+          "same_cluster": true
+        },
+        {
+          "target_id": 74,
+          "weight": 0.3505,
+          "same_cluster": true
+        },
+        {
+          "target_id": 65,
+          "weight": 0.1493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 68,
+          "weight": 0.1335,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ghe-cong-thai-hoc.html",
+      "title": "cách lắp ghế công thái học",
+      "main_keyword": "cách lắp ghế công thái học",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.006327,
+      "semantic_score": 0.5808,
+      "candidates": [
+        {
+          "target_id": 69,
+          "weight": 0.5808,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.5718,
+          "same_cluster": true
+        },
+        {
+          "target_id": 93,
+          "weight": 0.5214,
+          "same_cluster": false
+        },
+        {
+          "target_id": 76,
+          "weight": 0.5214,
+          "same_cluster": false
+        },
+        {
+          "target_id": 86,
+          "weight": 0.5214,
+          "same_cluster": false
+        },
+        {
+          "target_id": 81,
+          "weight": 0.5214,
+          "same_cluster": false
+        },
+        {
+          "target_id": 66,
+          "weight": 0.5146,
+          "same_cluster": false
+        },
+        {
+          "target_id": 70,
+          "weight": 0.503,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "url": "https://noithattheone.vn/tin-tuc/thay-luoi-ghe-cong-thai-hoc.html",
+      "title": "thay lưới ghế công thái học",
+      "main_keyword": "thay lưới ghế công thái học",
+      "cluster_id": 6,
+      "cluster_label": "ghế / công / thái",
+      "pagerank": 0.004169,
+      "semantic_score": 0.503,
+      "candidates": [
+        {
+          "target_id": 73,
+          "weight": 0.503,
+          "same_cluster": true
+        },
+        {
+          "target_id": 69,
+          "weight": 0.4792,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.4703,
+          "same_cluster": true
+        },
+        {
+          "target_id": 66,
+          "weight": 0.422,
+          "same_cluster": false
+        },
+        {
+          "target_id": 70,
+          "weight": 0.3895,
+          "same_cluster": true
+        },
+        {
+          "target_id": 72,
+          "weight": 0.3505,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.1418,
+          "same_cluster": false
+        },
+        {
+          "target_id": 65,
+          "weight": 0.135,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-rap-ghe-xoay-luoi.html",
+      "title": "cách lắp ráp ghế xoay lưới",
+      "main_keyword": "cách lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.014569,
+      "semantic_score": 0.9481,
+      "candidates": [
+        {
+          "target_id": 84,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7908,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 0.6178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 0.6178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 87,
+          "weight": 0.6178,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 0.6178,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-ghe-giao-vien-noi-that-the-one.html",
+      "title": "cách lắp ghế xoay văn phòng",
+      "main_keyword": "cách lắp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.004924,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 86,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 81,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 93,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7081,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 0.5742,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-rap-ghe-xoay-luoi.html",
+      "title": "cách lắp ghế xoay văn phòng",
+      "main_keyword": "cách lắp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.023314,
+      "semantic_score": 0.8272,
+      "candidates": [
+        {
+          "target_id": 91,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.7908,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.7781,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/bo-suu-tap-ban-ghe-hoc-danh-cho-be-thong-minh-tu-noi-that-the-one-1.html",
+      "title": "lắp ráp ghế xoay văn phòng",
+      "main_keyword": "lắp ráp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.009335,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 82,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.5808,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-nga-ghe-cong-thai-hoc.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.015449,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 87,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+      "title": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "main_keyword": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.002324,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 85,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 88,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 97,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 92,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6713,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.5587,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-bi-dau-lung.html",
+      "title": "cách lắp ghế xoay văn phòng",
+      "main_keyword": "cách lắp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.005334,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 86,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 93,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 76,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7081,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 0.5742,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/nhung-dieu-can-chu-y-khi-mua-ghe-phong-cho-cho-benh-vien.html",
+      "title": "lắp ráp ghế xoay văn phòng",
+      "main_keyword": "lắp ráp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.009542,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 94,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.5808,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/top-ban-ghe-hoc-sinh-duoc-yeu-thich-nhat-tu-noi-that-hoa-phat.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.0109,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 79,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 87,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/tu-van-chon-ban-ghe-hoc-sinh-tai-nha-sao-cho-dung.html",
+      "title": "cách lắp ráp ghế xoay lưới",
+      "main_keyword": "cách lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.021174,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 96,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+      "title": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "main_keyword": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.002324,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 80,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 88,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 97,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 92,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6713,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.5587,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+      "title": "cách lắp ghế xoay văn phòng",
+      "main_keyword": "cách lắp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.004924,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 81,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 93,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 76,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7081,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 0.5742,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.0109,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 79,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+      "title": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "main_keyword": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.002324,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 85,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 97,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 80,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 92,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6713,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.5587,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-chan-quy.html",
+      "title": "lắp ráp ghế xoay văn phòng",
+      "main_keyword": "lắp ráp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.009542,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 82,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.5808,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.015449,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 87,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-cong-thai-hoc.html",
+      "title": "cách lắp ráp ghế xoay lưới",
+      "main_keyword": "cách lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.017126,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 96,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html",
+      "title": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "main_keyword": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.002324,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 85,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 88,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 97,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 80,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6713,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.5587,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-cong-thai-hoc.html",
+      "title": "cách lắp ghế xoay văn phòng",
+      "main_keyword": "cách lắp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.004924,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 86,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 81,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 76,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7081,
+          "same_cluster": true
+        },
+        {
+          "target_id": 94,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 82,
+          "weight": 0.5742,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 0.5742,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ghe-cong-thai-hoc.html",
+      "title": "lắp ráp ghế xoay văn phòng",
+      "main_keyword": "lắp ráp ghế xoay văn phòng",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.009335,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 82,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 78,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 89,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.7781,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.603,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.5808,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-cong-thai-hoc.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.014332,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 87,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-luoi.html",
+      "title": "cách lắp ráp ghế xoay lưới",
+      "main_keyword": "cách lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.02064,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 91,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 75,
+          "weight": 0.9481,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.8272,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 98,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+      "title": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "main_keyword": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.002324,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 85,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 88,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 80,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 92,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6713,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 91,
+          "weight": 0.5587,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.5587,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-xoay-khong-nga-duoc.html",
+      "title": "các bước lắp ráp ghế xoay lưới",
+      "main_keyword": "các bước lắp ráp ghế xoay lưới",
+      "cluster_id": 2,
+      "cluster_label": "ghế / xoay / lắp",
+      "pagerank": 0.014332,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 87,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 79,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 83,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 95,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 90,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 77,
+          "weight": 0.6909,
+          "same_cluster": true
+        },
+        {
+          "target_id": 84,
+          "weight": 0.649,
+          "same_cluster": true
+        },
+        {
+          "target_id": 96,
+          "weight": 0.649,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-nen-de-o-dau.html",
+      "title": "két sắt nên để ở đâu",
+      "main_keyword": "két sắt nên để ở đâu",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.006996,
+      "semantic_score": 0.3314,
+      "candidates": [
+        {
+          "target_id": 102,
+          "weight": 0.3314,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.3233,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.29,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.2273,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.2191,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.212,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.1986,
+          "same_cluster": true
+        },
+        {
+          "target_id": 104,
+          "weight": 0.1905,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "url": "https://noithattheone.vn/tin-tuc/vi-tri-de-ket-sat-trong-phong-ngu.html",
+      "title": "vị trí để két sắt trong phòng ngủ",
+      "main_keyword": "vị trí để két sắt trong phòng ngủ",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.006912,
+      "semantic_score": 0.3398,
+      "candidates": [
+        {
+          "target_id": 3,
+          "weight": 0.3398,
+          "same_cluster": false
+        },
+        {
+          "target_id": 99,
+          "weight": 0.3233,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.2421,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.2011,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.183,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.1796,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.1757,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-nang-bao-nhieu-kg.html",
+      "title": "két sắt nặng bao nhiêu kg",
+      "main_keyword": "két sắt nặng bao nhiêu kg",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.005384,
+      "semantic_score": 0.3127,
+      "candidates": [
+        {
+          "target_id": 102,
+          "weight": 0.3127,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.2381,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.2191,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.1994,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.1866,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.183,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.1631,
+          "same_cluster": true
+        },
+        {
+          "target_id": 104,
+          "weight": 0.1564,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ket-sat.html",
+      "title": "kích thước két sắt",
+      "main_keyword": "kích thước két sắt",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.010281,
+      "semantic_score": 0.4082,
+      "candidates": [
+        {
+          "target_id": 103,
+          "weight": 0.4082,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.3601,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.3314,
+          "same_cluster": true
+        },
+        {
+          "target_id": 12,
+          "weight": 0.3195,
+          "same_cluster": false
+        },
+        {
+          "target_id": 101,
+          "weight": 0.3127,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.299,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.2932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 71,
+          "weight": 0.2859,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "url": "https://noithattheone.vn/tin-tuc/kinh-nghiem-mua-ket-sat-gia-dinh.html",
+      "title": "kinh nghiệm mua két sắt gia đình",
+      "main_keyword": "kinh nghiệm mua két sắt gia đình",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.00619,
+      "semantic_score": 0.4082,
+      "candidates": [
+        {
+          "target_id": 102,
+          "weight": 0.4082,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.2245,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.212,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.2039,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.1994,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.1796,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.1782,
+          "same_cluster": true
+        },
+        {
+          "target_id": 104,
+          "weight": 0.1723,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-co-4-so.html",
+      "title": "cách đổi mật khẩu két sắt cơ 4 số",
+      "main_keyword": "cách đổi mật khẩu két sắt cơ 4 số",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.005261,
+      "semantic_score": 0.5887,
+      "candidates": [
+        {
+          "target_id": 106,
+          "weight": 0.5887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.5681,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2507,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.214,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.2004,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.1905,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.1723,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.1686,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-ma-ket-sat-dien-tu.html",
+      "title": "cách đổi mật mã két sắt điện tử",
+      "main_keyword": "cách đổi mật mã két sắt điện tử",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.007001,
+      "semantic_score": 0.5681,
+      "candidates": [
+        {
+          "target_id": 104,
+          "weight": 0.5681,
+          "same_cluster": true
+        },
+        {
+          "target_id": 106,
+          "weight": 0.5276,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.4346,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2613,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.2515,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.1986,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.1782,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.1757,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-mini-co-van-tay.html",
+      "title": "cách đổi mật khẩu két sắt mini có vân tay",
+      "main_keyword": "cách đổi mật khẩu két sắt mini có vân tay",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.003408,
+      "semantic_score": 0.5887,
+      "candidates": [
+        {
+          "target_id": 104,
+          "weight": 0.5887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.5276,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.2306,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.1969,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.1843,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.1752,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.155,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.1439,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "url": "https://noithattheone.vn/tin-tuc/thay-pin-ket-sat-dien-tu.html",
+      "title": "thay pin két sắt điện tử",
+      "main_keyword": "thay pin két sắt điện tử",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.007317,
+      "semantic_score": 0.4346,
+      "candidates": [
+        {
+          "target_id": 105,
+          "weight": 0.4346,
+          "same_cluster": true
+        },
+        {
+          "target_id": 108,
+          "weight": 0.3444,
+          "same_cluster": true
+        },
+        {
+          "target_id": 102,
+          "weight": 0.299,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.2273,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.2039,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.2011,
+          "same_cluster": true
+        },
+        {
+          "target_id": 104,
+          "weight": 0.2004,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.1866,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-khong-mo-duoc.html",
+      "title": "két sắt không mở được",
+      "main_keyword": "két sắt không mở được",
+      "cluster_id": 7,
+      "cluster_label": "két / sắt / bài",
+      "pagerank": 0.007683,
+      "semantic_score": 0.3601,
+      "candidates": [
+        {
+          "target_id": 102,
+          "weight": 0.3601,
+          "same_cluster": true
+        },
+        {
+          "target_id": 107,
+          "weight": 0.3444,
+          "same_cluster": true
+        },
+        {
+          "target_id": 99,
+          "weight": 0.29,
+          "same_cluster": true
+        },
+        {
+          "target_id": 105,
+          "weight": 0.2515,
+          "same_cluster": true
+        },
+        {
+          "target_id": 100,
+          "weight": 0.2421,
+          "same_cluster": true
+        },
+        {
+          "target_id": 101,
+          "weight": 0.2381,
+          "same_cluster": true
+        },
+        {
+          "target_id": 103,
+          "weight": 0.2245,
+          "same_cluster": true
+        },
+        {
+          "target_id": 42,
+          "weight": 0.2221,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "url": "https://noithattheone.vn/tin-tuc/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+      "title": "cách bố trí phòng làm việc của lãnh đạo",
+      "main_keyword": "cách bố trí phòng làm việc của lãnh đạo",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.002436,
+      "semantic_score": 0.9826,
+      "candidates": [
+        {
+          "target_id": 113,
+          "weight": 0.9826,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.5016,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4858,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.4437,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.4411,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.3913,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.3879,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.3803,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "url": "https://noithattheone.vn/tin-tuc/cach-bo-tri-van-phong-lam-viec-nho.html",
+      "title": "cách bố trí văn phòng làm việc nhỏ",
+      "main_keyword": "cách bố trí văn phòng làm việc nhỏ",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.020343,
+      "semantic_score": 0.9676,
+      "candidates": [
+        {
+          "target_id": 114,
+          "weight": 0.9676,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.7822,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.7673,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.6746,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.6736,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.6605,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.5326,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.524,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "url": "https://noithattheone.vn/tin-tuc/nguyen-tac-bo-tri-van-phong-lam-viec.html",
+      "title": "nguyên tắc bố trí văn phòng làm việc",
+      "main_keyword": "nguyên tắc bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.015962,
+      "semantic_score": 0.9702,
+      "candidates": [
+        {
+          "target_id": 112,
+          "weight": 0.9702,
+          "same_cluster": true
+        },
+        {
+          "target_id": 122,
+          "weight": 0.9082,
+          "same_cluster": true
+        },
+        {
+          "target_id": 119,
+          "weight": 0.8951,
+          "same_cluster": true
+        },
+        {
+          "target_id": 115,
+          "weight": 0.8871,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.6359,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.6324,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.6285,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.5633,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/nguyen-tac-bo-tri-van-phong-lam-viec.html",
+      "title": "Nguyên tắc bố trí văn phòng làm việc",
+      "main_keyword": "Nguyên tắc bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.015956,
+      "semantic_score": 0.9702,
+      "candidates": [
+        {
+          "target_id": 111,
+          "weight": 0.9702,
+          "same_cluster": true
+        },
+        {
+          "target_id": 122,
+          "weight": 0.887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 119,
+          "weight": 0.8757,
+          "same_cluster": true
+        },
+        {
+          "target_id": 115,
+          "weight": 0.8694,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.634,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.631,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.6301,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.5714,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+      "title": "Cách bố trí phòng làm việc của lãnh đạo",
+      "main_keyword": "Cách bố trí phòng làm việc của lãnh đạo",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.007542,
+      "semantic_score": 0.9826,
+      "candidates": [
+        {
+          "target_id": 109,
+          "weight": 0.9826,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.6095,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.5786,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.5297,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.5175,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4816,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.4738,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.4693,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-bo-tri-van-phong-lam-viec-nho.html",
+      "title": "Cách bố trí văn phòng làm việc nhỏ",
+      "main_keyword": "Cách bố trí văn phòng làm việc nhỏ",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.022099,
+      "semantic_score": 0.9676,
+      "candidates": [
+        {
+          "target_id": 110,
+          "weight": 0.9676,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.8135,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.79,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.6849,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.6755,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.6685,
+          "same_cluster": true
+        },
+        {
+          "target_id": 127,
+          "weight": 0.628,
+          "same_cluster": true
+        },
+        {
+          "target_id": 113,
+          "weight": 0.5297,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-lam-viec-van-phong-co-vach-ngan.html",
+      "title": "nguyên tắc bố trí văn phòng",
+      "main_keyword": "nguyên tắc bố trí văn phòng",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.007242,
+      "semantic_score": 0.9681,
+      "candidates": [
+        {
+          "target_id": 122,
+          "weight": 0.9681,
+          "same_cluster": true
+        },
+        {
+          "target_id": 119,
+          "weight": 0.9554,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.8871,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.8694,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5167,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5166,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5156,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4613,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-khung-sat-co-ben-khong.html",
+      "title": "bố trí không gian văn phòng làm việc",
+      "main_keyword": "bố trí không gian văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.001344,
+      "semantic_score": 0.9751,
+      "candidates": [
+        {
+          "target_id": 123,
+          "weight": 0.9751,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5393,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.537,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.535,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.4548,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4471,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.4044,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.3895,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-lap-rap-co-ben-khong.html",
+      "title": "bố trí văn phòng làm việc",
+      "main_keyword": "bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.030603,
+      "semantic_score": 0.9354,
+      "candidates": [
+        {
+          "target_id": 124,
+          "weight": 0.9354,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.93,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.8459,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.7815,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.6685,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.6605,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.6301,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.6285,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-chan-sat-hay-chan-go.html",
+      "title": "cách bố trí văn phòng làm việc",
+      "main_keyword": "cách bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.026552,
+      "semantic_score": 0.9561,
+      "candidates": [
+        {
+          "target_id": 121,
+          "weight": 0.9561,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.8135,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.8108,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.7896,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.7822,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.7815,
+          "same_cluster": true
+        },
+        {
+          "target_id": 127,
+          "weight": 0.6682,
+          "same_cluster": true
+        },
+        {
+          "target_id": 113,
+          "weight": 0.6095,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ghe-xoay-van-phong-trong-4-buoc-cho-moi-thiet-ke.html",
+      "title": "nguyên tắc bố trí văn phòng",
+      "main_keyword": "nguyên tắc bố trí văn phòng",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.007061,
+      "semantic_score": 0.9554,
+      "candidates": [
+        {
+          "target_id": 115,
+          "weight": 0.9554,
+          "same_cluster": true
+        },
+        {
+          "target_id": 122,
+          "weight": 0.9488,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.8951,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.8757,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5205,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.4977,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4965,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4444,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/trang-tri-ban-lam-viec-tai-van-phong.html",
+      "title": "bố trí văn phòng làm việc",
+      "main_keyword": "bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.031983,
+      "semantic_score": 0.9389,
+      "candidates": [
+        {
+          "target_id": 124,
+          "weight": 0.9389,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.93,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.8108,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.8074,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.6849,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.6746,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.634,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.6324,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-ban-lam-viec.html",
+      "title": "cách bố trí văn phòng làm việc",
+      "main_keyword": "cách bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.025155,
+      "semantic_score": 0.9561,
+      "candidates": [
+        {
+          "target_id": 118,
+          "weight": 0.9561,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.8459,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.8074,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.79,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.7873,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.7673,
+          "same_cluster": true
+        },
+        {
+          "target_id": 127,
+          "weight": 0.6115,
+          "same_cluster": true
+        },
+        {
+          "target_id": 113,
+          "weight": 0.5786,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-1m.html",
+      "title": "nguyên tắc bố trí văn phòng",
+      "main_keyword": "nguyên tắc bố trí văn phòng",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.007132,
+      "semantic_score": 0.9681,
+      "candidates": [
+        {
+          "target_id": 115,
+          "weight": 0.9681,
+          "same_cluster": true
+        },
+        {
+          "target_id": 119,
+          "weight": 0.9488,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.9082,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.887,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5165,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5118,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5106,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4571,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "url": "https://noithattheone.vn/noi-that-cong-trinh/ghe-phong-cho-cong-cong",
+      "title": "bố trí không gian văn phòng làm việc",
+      "main_keyword": "bố trí không gian văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.001339,
+      "semantic_score": 0.9751,
+      "candidates": [
+        {
+          "target_id": 116,
+          "weight": 0.9751,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5366,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5281,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5261,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.4395,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.438,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.3756,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.369,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/thay-luoi-ghe-cong-thai-hoc.html",
+      "title": "bố trí văn phòng làm việc",
+      "main_keyword": "bố trí văn phòng làm việc",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.030167,
+      "semantic_score": 0.9389,
+      "candidates": [
+        {
+          "target_id": 120,
+          "weight": 0.9389,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.9354,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.7896,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.7873,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.6755,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.6736,
+          "same_cluster": true
+        },
+        {
+          "target_id": 111,
+          "weight": 0.6359,
+          "same_cluster": true
+        },
+        {
+          "target_id": 112,
+          "weight": 0.631,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-lam-viec-doi-dien-cua-ra-vao.html",
+      "title": "bố trí văn phòng theo phong thủy",
+      "main_keyword": "bố trí văn phòng theo phong thủy",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.006424,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 126,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 127,
+          "weight": 0.8779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.7432,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.532,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5301,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5036,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.5023,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.493,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/mo-hinh-van-phong-xanh.html",
+      "title": "bố trí văn phòng theo phong thủy",
+      "main_keyword": "bố trí văn phòng theo phong thủy",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.006424,
+      "semantic_score": 1.0,
+      "candidates": [
+        {
+          "target_id": 125,
+          "weight": 1.0,
+          "same_cluster": true
+        },
+        {
+          "target_id": 127,
+          "weight": 0.8779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.7432,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.532,
+          "same_cluster": true
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5301,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5036,
+          "same_cluster": true
+        },
+        {
+          "target_id": 118,
+          "weight": 0.5023,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.493,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-go-hay-kim-loai.html",
+      "title": "cách bố trí văn phòng theo phong thủy",
+      "main_keyword": "cách bố trí văn phòng theo phong thủy",
+      "cluster_id": 5,
+      "cluster_label": "phòng / trí / văn",
+      "pagerank": 0.011309,
+      "semantic_score": 0.8779,
+      "candidates": [
+        {
+          "target_id": 125,
+          "weight": 0.8779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 126,
+          "weight": 0.8779,
+          "same_cluster": true
+        },
+        {
+          "target_id": 45,
+          "weight": 0.7102,
+          "same_cluster": false
+        },
+        {
+          "target_id": 118,
+          "weight": 0.6682,
+          "same_cluster": true
+        },
+        {
+          "target_id": 114,
+          "weight": 0.628,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.6115,
+          "same_cluster": true
+        },
+        {
+          "target_id": 110,
+          "weight": 0.4893,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4856,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/phong-thuy-van-phong-xanh.html",
+      "title": "Phong thuỷ văn phòng xanh",
+      "main_keyword": "Phong thuỷ văn phòng xanh",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.001389,
+      "semantic_score": 0.4337,
+      "candidates": [
+        {
+          "target_id": 62,
+          "weight": 0.4337,
+          "same_cluster": false
+        },
+        {
+          "target_id": 49,
+          "weight": 0.4337,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.3611,
+          "same_cluster": false
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3108,
+          "same_cluster": false
+        },
+        {
+          "target_id": 137,
+          "weight": 0.3029,
+          "same_cluster": true
+        },
+        {
+          "target_id": 138,
+          "weight": 0.2932,
+          "same_cluster": true
+        },
+        {
+          "target_id": 132,
+          "weight": 0.2829,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.2745,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-mo-la-gi.html",
+      "title": "Văn phòng mở là gì",
+      "main_keyword": "Văn phòng mở là gì",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.001651,
+      "semantic_score": 0.32,
+      "candidates": [
+        {
+          "target_id": 132,
+          "weight": 0.32,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.3194,
+          "same_cluster": true
+        },
+        {
+          "target_id": 138,
+          "weight": 0.3092,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.306,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.3016,
+          "same_cluster": false
+        },
+        {
+          "target_id": 69,
+          "weight": 0.2984,
+          "same_cluster": false
+        },
+        {
+          "target_id": 136,
+          "weight": 0.2961,
+          "same_cluster": true
+        },
+        {
+          "target_id": 120,
+          "weight": 0.2803,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-gom-nhung-loai-nao.html",
+      "title": "bố trí văn phòng hợp lý",
+      "main_keyword": "bố trí văn phòng hợp lý",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.002105,
+      "semantic_score": 0.9863,
+      "candidates": [
+        {
+          "target_id": 135,
+          "weight": 0.9863,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5057,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5044,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.5039,
+          "same_cluster": false
+        },
+        {
+          "target_id": 131,
+          "weight": 0.4477,
+          "same_cluster": true
+        },
+        {
+          "target_id": 125,
+          "weight": 0.4377,
+          "same_cluster": false
+        },
+        {
+          "target_id": 126,
+          "weight": 0.4377,
+          "same_cluster": false
+        },
+        {
+          "target_id": 55,
+          "weight": 0.4361,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/so-sanh-van-phong-dong-van-phong-mo.html",
+      "title": "bố trí văn phòng công ty",
+      "main_keyword": "bố trí văn phòng công ty",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.004471,
+      "semantic_score": 0.9602,
+      "candidates": [
+        {
+          "target_id": 136,
+          "weight": 0.9602,
+          "same_cluster": true
+        },
+        {
+          "target_id": 132,
+          "weight": 0.9534,
+          "same_cluster": true
+        },
+        {
+          "target_id": 138,
+          "weight": 0.7064,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.7048,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.4931,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4927,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.4908,
+          "same_cluster": false
+        },
+        {
+          "target_id": 130,
+          "weight": 0.4477,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ban-lam-viec-tieu-chuan.html",
+      "title": "bố trí văn phòng công ty",
+      "main_keyword": "bố trí văn phòng công ty",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.004269,
+      "semantic_score": 0.9805,
+      "candidates": [
+        {
+          "target_id": 136,
+          "weight": 0.9805,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.9534,
+          "same_cluster": true
+        },
+        {
+          "target_id": 138,
+          "weight": 0.7302,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.7283,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.5505,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.5494,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.549,
+          "same_cluster": false
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4742,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ke-ban-lam-viec-trong-phong-ngu.html",
+      "title": "các phương pháp bố trí văn phòng",
+      "main_keyword": "các phương pháp bố trí văn phòng",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.001079,
+      "semantic_score": 0.4113,
+      "candidates": [
+        {
+          "target_id": 114,
+          "weight": 0.4113,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.4011,
+          "same_cluster": false
+        },
+        {
+          "target_id": 124,
+          "weight": 0.4008,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4002,
+          "same_cluster": false
+        },
+        {
+          "target_id": 121,
+          "weight": 0.3582,
+          "same_cluster": false
+        },
+        {
+          "target_id": 118,
+          "weight": 0.3507,
+          "same_cluster": false
+        },
+        {
+          "target_id": 58,
+          "weight": 0.348,
+          "same_cluster": false
+        },
+        {
+          "target_id": 115,
+          "weight": 0.3447,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chinh-ghe-xoay-nga-lung.html",
+      "title": "bố trí văn phòng đẹp",
+      "main_keyword": "bố trí văn phòng đẹp",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.001079,
+      "semantic_score": 0.5123,
+      "candidates": [
+        {
+          "target_id": 124,
+          "weight": 0.5123,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4826,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.478,
+          "same_cluster": false
+        },
+        {
+          "target_id": 121,
+          "weight": 0.422,
+          "same_cluster": false
+        },
+        {
+          "target_id": 118,
+          "weight": 0.4195,
+          "same_cluster": false
+        },
+        {
+          "target_id": 114,
+          "weight": 0.3923,
+          "same_cluster": false
+        },
+        {
+          "target_id": 115,
+          "weight": 0.392,
+          "same_cluster": false
+        },
+        {
+          "target_id": 130,
+          "weight": 0.3843,
+          "same_cluster": true
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-dong-la-gi.html",
+      "title": "bố trí văn phòng hợp lý",
+      "main_keyword": "bố trí văn phòng hợp lý",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.001718,
+      "semantic_score": 0.9863,
+      "candidates": [
+        {
+          "target_id": 130,
+          "weight": 0.9863,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.4523,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4451,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.4435,
+          "same_cluster": false
+        },
+        {
+          "target_id": 55,
+          "weight": 0.4211,
+          "same_cluster": false
+        },
+        {
+          "target_id": 131,
+          "weight": 0.4064,
+          "same_cluster": true
+        },
+        {
+          "target_id": 121,
+          "weight": 0.3808,
+          "same_cluster": false
+        },
+        {
+          "target_id": 118,
+          "weight": 0.3778,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-mau-sac-trong-van-phong.html",
+      "title": "bố trí văn phòng công ty",
+      "main_keyword": "bố trí văn phòng công ty",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.004066,
+      "semantic_score": 0.9805,
+      "candidates": [
+        {
+          "target_id": 132,
+          "weight": 0.9805,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.9602,
+          "same_cluster": true
+        },
+        {
+          "target_id": 138,
+          "weight": 0.7018,
+          "same_cluster": true
+        },
+        {
+          "target_id": 137,
+          "weight": 0.6953,
+          "same_cluster": true
+        },
+        {
+          "target_id": 124,
+          "weight": 0.4936,
+          "same_cluster": false
+        },
+        {
+          "target_id": 120,
+          "weight": 0.4858,
+          "same_cluster": false
+        },
+        {
+          "target_id": 117,
+          "weight": 0.484,
+          "same_cluster": false
+        },
+        {
+          "target_id": 121,
+          "weight": 0.4156,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-ve-sinh-ghe-xoay-van-phong.html",
+      "title": "phong thủy văn phòng công ty",
+      "main_keyword": "phong thủy văn phòng công ty",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.007245,
+      "semantic_score": 0.9853,
+      "candidates": [
+        {
+          "target_id": 138,
+          "weight": 0.9853,
+          "same_cluster": true
+        },
+        {
+          "target_id": 132,
+          "weight": 0.7283,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.7048,
+          "same_cluster": true
+        },
+        {
+          "target_id": 136,
+          "weight": 0.6953,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.5993,
+          "same_cluster": false
+        },
+        {
+          "target_id": 46,
+          "weight": 0.493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 56,
+          "weight": 0.493,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.3939,
+          "same_cluster": false
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "url": "https://noithattheone.vn/phong-cach-noi-that/trang-tri-van-phong-cong-ty-du-lich.html",
+      "title": "phong thủy văn phòng công ty",
+      "main_keyword": "phong thủy văn phòng công ty",
+      "cluster_id": 1,
+      "cluster_label": "phòng / văn / trí",
+      "pagerank": 0.005362,
+      "semantic_score": 0.9853,
+      "candidates": [
+        {
+          "target_id": 137,
+          "weight": 0.9853,
+          "same_cluster": true
+        },
+        {
+          "target_id": 132,
+          "weight": 0.7302,
+          "same_cluster": true
+        },
+        {
+          "target_id": 131,
+          "weight": 0.7064,
+          "same_cluster": true
+        },
+        {
+          "target_id": 136,
+          "weight": 0.7018,
+          "same_cluster": true
+        },
+        {
+          "target_id": 54,
+          "weight": 0.5687,
+          "same_cluster": false
+        },
+        {
+          "target_id": 46,
+          "weight": 0.4853,
+          "same_cluster": false
+        },
+        {
+          "target_id": 56,
+          "weight": 0.4853,
+          "same_cluster": false
+        },
+        {
+          "target_id": 45,
+          "weight": 0.3775,
+          "same_cluster": false
+        }
+      ]
+    }
+  ]
+}

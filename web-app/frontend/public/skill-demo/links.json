@@ -1,0 +1,112 @@
+[
+  {
+    "source": "/iphone-18-camera",
+    "target": "/iphone-18-zoom",
+    "anchor": "zoom quang học iphone 18",
+    "anchor_type": "partial",
+    "position": "intro",
+    "snippet": "iPhone 18 trang bị cảm biến camera mới 48MP.",
+    "semantic_score": 0.0882,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/iphone-18-zoom",
+    "target": "/iphone-18-pin",
+    "anchor": "pin iphone 18 4500 mah",
+    "anchor_type": "partial",
+    "position": "intro",
+    "snippet": "Zoom quang học 5x trên iPhone 18 Pro Max cho phép chụp xa rõ nét.",
+    "semantic_score": 0.1007,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/iphone-18-camera",
+    "target": "/iphone-18-pin",
+    "anchor": "camera iphone 18",
+    "anchor_type": "exact",
+    "position": "intro",
+    "snippet": "iPhone 18 trang bị cảm biến camera mới 48MP.",
+    "semantic_score": 0.0659,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/ios-19",
+    "target": "/iphone-18-camera",
+    "anchor": "zoom quang học iphone 18",
+    "anchor_type": "partial",
+    "position": "outro",
+    "snippet": "Tương thích từ iPhone 15 trở lên.",
+    "semantic_score": 0.0232,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": false
+  },
+  {
+    "source": "/iphone-18-camera",
+    "target": "/iphone-18-hieu-nang",
+    "anchor": "hiệu năng chip a19 pro",
+    "anchor_type": "partial",
+    "position": "intro",
+    "snippet": "Khả năng chụp đêm vượt trội, AI xử lý ảnh thông minh.",
+    "semantic_score": 0.1002,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/iphone-18-pin",
+    "target": "/iphone-18-hieu-nang",
+    "anchor": "camera iphone 18",
+    "anchor_type": "exact",
+    "position": "intro",
+    "snippet": "Dung lượng pin iPhone 18 đạt 4500 mAh, tăng 15% so với iPhone 17.",
+    "semantic_score": 0.0709,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/iphone-18-zoom",
+    "target": "/iphone-18-hieu-nang",
+    "anchor": "đánh giá chi tiết iphone 18",
+    "anchor_type": "long-tail",
+    "position": "intro",
+    "snippet": "Zoom quang học 5x trên iPhone 18 Pro Max cho phép chụp xa rõ nét.",
+    "semantic_score": 0.1107,
+    "cluster": "iphone / camera / năng",
+    "same_cluster": true
+  },
+  {
+    "source": "/iphone-18-pin",
+    "target": "/ios-19",
+    "anchor": "ios 19 apple intelligence",
+    "anchor_type": "partial",
+    "position": "intro",
+    "snippet": "Dung lượng pin iPhone 18 đạt 4500 mAh, tăng 15% so với iPhone 17.",
+    "semantic_score": 0.0283,
+    "cluster": "ios / mới / apple",
+    "same_cluster": false
+  },
+  {
+    "source": "/iphone-18-hieu-nang",
+    "target": "/ios-19",
+    "anchor": "ios 19 apple intelligence",
+    "anchor_type": "partial",
+    "position": "outro",
+    "snippet": "Hỗ trợ Apple Intelligence đầy đủ.",
+    "semantic_score": 0.0709,
+    "cluster": "ios / mới / apple",
+    "same_cluster": false
+  },
+  {
+    "source": "/iphone-18-zoom",
+    "target": "/ios-19",
+    "anchor": "đánh giá chi tiết iphone 18",
+    "anchor_type": "long-tail",
+    "position": "intro",
+    "snippet": "Zoom quang học 5x trên iPhone 18 Pro Max cho phép chụp xa rõ nét.",
+    "semantic_score": 0.0449,
+    "cluster": "ios / mới / apple",
+    "same_cluster": false
+  }
+]

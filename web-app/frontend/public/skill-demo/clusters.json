@@ -1,0 +1,40 @@
+{
+  "clusters": [
+    {
+      "url": "/iphone-18-camera",
+      "title": "Đánh giá camera iPhone 18",
+      "main_keyword": "camera iphone 18",
+      "cluster_id": 0,
+      "cluster_label": "iphone / camera / năng"
+    },
+    {
+      "url": "/iphone-18-zoom",
+      "title": "iPhone 18 zoom quang học 5x",
+      "main_keyword": "zoom iphone 18",
+      "cluster_id": 0,
+      "cluster_label": "iphone / camera / năng"
+    },
+    {
+      "url": "/iphone-18-pin",
+      "title": "iPhone 18 dung lượng pin và sạc nhanh",
+      "main_keyword": "pin iphone 18",
+      "cluster_id": 0,
+      "cluster_label": "iphone / camera / năng"
+    },
+    {
+      "url": "/iphone-18-hieu-nang",
+      "title": "iPhone 18 chip A19 Pro hiệu năng",
+      "main_keyword": "hiệu năng iphone 18",
+      "cluster_id": 0,
+      "cluster_label": "iphone / camera / năng"
+    },
+    {
+      "url": "/ios-19",
+      "title": "iOS 19 tính năng mới và Apple Intelligence",
+      "main_keyword": "ios 19",
+      "cluster_id": 1,
+      "cluster_label": "ios / mới / apple"
+    }
+  ],
+  "k": 2
+}
