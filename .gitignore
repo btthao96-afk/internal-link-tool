@@ -45,6 +45,7 @@ coverage/
 .cache/
 .turbo/
 
-# Claude Code local config (giữ skills để chia sẻ qua repo)
+# Claude Code local config (giữ skills + commands để chia sẻ qua repo)
 .claude/*
 !.claude/skills/
+!.claude/commands/
