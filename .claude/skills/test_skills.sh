@@ -195,6 +195,45 @@ else
   record "inlink-stats::real data" FAIL "chưa có outputs/stats.json"
 fi
 
+# ============ Test 4: usage-guide ============
+echo ""
+echo "=== Testing usage-guide ==="
+SK4="$HERE/usage-guide"
+check_skill_md "$SK4"
+
+REQUIRED_SECTIONS=(
+  "sections/01-architecture.md"
+  "sections/02-install.md"
+  "sections/03-skill-internal-link.md"
+  "sections/04-skill-semantic-linker.md"
+  "sections/05-skill-inlink-stats.md"
+  "sections/06-workflow-end-to-end.md"
+  "sections/07-claude-code-trigger.md"
+  "sections/08-demo-urls.md"
+  "sections/09-faq.md"
+  "references/command-cheatsheet.md"
+  "examples/urls-sample.csv"
+  "examples/anchors-sample.csv"
+)
+MISSING=0
+for s in "${REQUIRED_SECTIONS[@]}"; do
+  [[ -f "$SK4/$s" ]] || { MISSING=$((MISSING+1)); }
+done
+if [[ "$MISSING" -eq 0 ]]; then
+  record "usage-guide::all 12 content files present" PASS "9 sections + 1 cheatsheet + 2 examples"
+else
+  record "usage-guide::all 12 content files present" FAIL "$MISSING file thiếu"
+fi
+
+if python3 "$SK4/../semantic-internal-linker/scripts/run_pipeline.py" \
+    --urls "$SK4/examples/urls-sample.csv" \
+    --anchors "$SK4/examples/anchors-sample.csv" \
+    --out "$(mktemp -d)" >/dev/null 2>&1; then
+  record "usage-guide::sample CSV runnable" PASS "examples chạy được trong semantic-linker pipeline"
+else
+  record "usage-guide::sample CSV runnable" FAIL "sample CSV không chạy được"
+fi
+
 # ============ Write report ============
 {
   echo "# Skill Test Report"

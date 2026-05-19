@@ -1,7 +1,7 @@
 # Skill Test Report
 
-**Date:** 2026-05-19 11:19:38
-**Passed:** 12
+**Date:** 2026-05-19 11:42:43
+**Passed:** 15
 **Failed:** 0
 
 ## Results
@@ -20,3 +20,6 @@
 | PASS | inlink-stats::analyze (all formats) | stats.json + report.md + .xlsx + .html |
 | PASS | inlink-stats::detect anti-patterns | phát hiện confused anchors + generic anchor |
 | PASS | inlink-stats::real data | 309 links analyzed, 11 orphans |
+| PASS | usage-guide::SKILL.md | frontmatter OK |
+| PASS | usage-guide::all 12 content files present | 9 sections + 1 cheatsheet + 2 examples |
+| PASS | usage-guide::sample CSV runnable | examples chạy được trong semantic-linker pipeline |
