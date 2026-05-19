@@ -1,7 +1,7 @@
 # Skill Test Report
 
-**Date:** 2026-05-18 23:19:34
-**Passed:** 8
+**Date:** 2026-05-19 11:19:38
+**Passed:** 12
 **Failed:** 0
 
 ## Results
@@ -16,3 +16,7 @@
 | PASS | semantic-internal-linker::real data run | 309 links từ 8 cluster (138 URLs noithattheone) |
 | PASS | semantic-internal-linker::output schema | đủ các field source/target/anchor/anchor_type/position/score |
 | PASS | semantic-internal-linker::rules (no self-link, no dup) | tuân thủ rule |
+| PASS | inlink-stats::SKILL.md | frontmatter OK |
+| PASS | inlink-stats::analyze (all formats) | stats.json + report.md + .xlsx + .html |
+| PASS | inlink-stats::detect anti-patterns | phát hiện confused anchors + generic anchor |
+| PASS | inlink-stats::real data | 309 links analyzed, 11 orphans |

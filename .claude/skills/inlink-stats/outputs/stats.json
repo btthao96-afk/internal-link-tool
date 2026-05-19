@@ -1,0 +1,1332 @@
+{
+  "generated_at": "2026-05-19T11:18:48",
+  "overview": {
+    "total_links": 309,
+    "unique_urls": 137,
+    "unique_sources": 131,
+    "unique_targets": 126,
+    "avg_inbound": 2.26,
+    "avg_outbound": 2.36,
+    "density": 0.0166,
+    "same_cluster_pct": 91.3
+  },
+  "anchor_type_distribution": {
+    "long-tail": 296,
+    "generic": 7,
+    "partial": 6
+  },
+  "top_anchors": [
+    [
+      "cách lắp ghế xoay văn phòng",
+      32
+    ],
+    [
+      "các bước lắp ráp ghế xoay lưới",
+      26
+    ],
+    [
+      "cách lắp ráp ghế xoay lưới",
+      26
+    ],
+    [
+      "lắp ráp ghế xoay văn phòng",
+      26
+    ],
+    [
+      "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+      22
+    ],
+    [
+      "phong thuỷ cho văn phòng làm việc",
+      11
+    ],
+    [
+      "phong thủy văn phòng công ty",
+      11
+    ],
+    [
+      "cách bài trí phong thủy trong văn phòng",
+      7
+    ],
+    [
+      "cách bố trí phòng làm việc của lãnh đạo",
+      7
+    ],
+    [
+      "bố trí không gian văn phòng làm việc",
+      7
+    ],
+    [
+      "khái niệm phong thủy trong văn phòng",
+      7
+    ],
+    [
+      "cách bố trí văn phòng làm việc nhỏ",
+      7
+    ],
+    [
+      "cách bố trí văn phòng làm việc theo phong thủy",
+      7
+    ],
+    [
+      "phong thủy trong văn phòng làm việc",
+      7
+    ],
+    [
+      "phong thủy trong bài trí văn phòng",
+      7
+    ]
+  ],
+  "cluster_distribution": {
+    "phòng / văn / phong": 34,
+    "ghế / xoay / lắp": 24,
+    "bàn / kích / thước": 21,
+    "phòng / trí / văn": 17,
+    "n/a": 11,
+    "két / sắt / bài": 10,
+    "phòng / văn / trí": 9,
+    "ghế / công / thái": 6,
+    "ghế / sinh / học": 5
+  },
+  "per_url": [
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/chon-huong-ban-lam-viec-nam-2025-chuan-phong-thuy-giup-su-nghiep-thang-tien.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/thay-luoi-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-khong-mo-duoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/vi-tri-de-ket-sat-trong-phong-ngu.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-chon-ghe-hoc-sinh.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "ghế / sinh / học"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-moc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hop.html",
+      "inbound": 3,
+      "outbound": 4,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/bi-quyet-phong-thuy-phong-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/tu-van-chon-ban-ghe-hoc-sinh-tai-nha-sao-cho-dung.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-thao-banh-xe-ghe-xoay-van-phong.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-bo-tri-van-phong-lam-viec-nho.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-rap-ghe-xoay-luoi.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/thay-pin-ket-sat-dien-tu.html",
+      "inbound": 3,
+      "outbound": 4,
+      "anchor_diversity": 2,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-the-one.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-2.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-nang-bao-nhieu-kg.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-ve-sinh-ghe-xoay-van-phong.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giam-doc.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "ghế / sinh / học"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giao-vien.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/nhung-dieu-can-chu-y-khi-mua-ghe-phong-cho-cho-benh-vien.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ghe-xoay-van-phong-trong-4-buoc-cho-moi-thiet-ke.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-lam-viec-tuoi-quy-hoi.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-1m8.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/trang-tri-van-phong-cong-ty-du-lich.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-lam-viec-van-phong-co-vach-ngan.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-go-hay-kim-loai.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ghe-cong-thai-hoc-la-gi.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-chan-quy.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-chan-sat-hay-chan-go.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ban-hoc-sinh.html",
+      "inbound": 3,
+      "outbound": 4,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-luoi.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-1m.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-lap-rap-co-ben-khong.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-hoa.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kinh-nghiem-mua-ket-sat-gia-dinh.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-ghe-giao-vien-noi-that-the-one.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-ve-sinh-ban-van-phong.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-lam-viec-trong-phong-ngu.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-lam-viec-tieu-chuan.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-kim.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-bi-dau-lung.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2015.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-bo-tri-van-phong-lam-viec-nho.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-xoay-khong-nga-duoc.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-3.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/menh-tho-hop-cay-gi-de-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-hoc-hop-phong-thuy.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/nguyen-tac-bo-tri-van-phong-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-nga-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-thuy.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 3,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-ma-ket-sat-dien-tu.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 2,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/trang-tri-ban-lam-viec-tai-van-phong.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-nen-de-o-dau.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/so-sanh-van-phong-dong-van-phong-mo.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ban-van-phong.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/thay-luoi-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 2,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-thao-ghe-xoay-van-phong.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 3,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-tho.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ket-sat.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/bo-suu-tap-ban-ghe-hoc-danh-cho-be-thong-minh-tu-noi-that-the-one-1.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-cho-tre-mau-giao.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 3,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-cong-thai-hoc.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ban-lam-viec-tieu-chuan.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ghe-xoay-van-phong-la-gi.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2018.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/menh-thuy-hop-cay-gi-de-ban-lam-viec.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-mau-sac-trong-van-phong.html",
+      "inbound": 3,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-2m4.html",
+      "inbound": 3,
+      "outbound": 2,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-lap-rap-ghe-xoay-luoi.html",
+      "inbound": 3,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/huong-ban-lam-viec-tuoi-canh-ngo.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-gom-nhung-loai-nao.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/vach-ngan-van-phong-xu-the-tro-lai.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/phong-thuy-van-phong-xanh.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+      "inbound": 2,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-dong-la-gi.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/nguyen-tac-bo-tri-van-phong-lam-viec.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/top-ban-ghe-hoc-sinh-duoc-yeu-thich-nhat-tu-noi-that-hoa-phat.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/vat-phong-thuy-de-ban-lam-viec-tuoi-quy-hoi.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/menh-moc-hop-cay-gi-de-ban-lam-viec.html",
+      "inbound": 2,
+      "outbound": 3,
+      "anchor_diversity": 2,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-mini-co-van-tay.html",
+      "inbound": 2,
+      "outbound": 1,
+      "anchor_diversity": 2,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-ve-sinh-ghe-xoay-van-phong.html",
+      "inbound": 2,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / sinh / học"
+    },
+    {
+      "url": "https://noithattheone.vn/noi-that-cong-trinh/ghe-phong-cho-cong-cong",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-su-dung-ghe-cong-thai-hoc.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / công / thái"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/menh-kim-hop-cay-gi-de-ban-lam-viec.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/trang-tri-ban-lam-viec-tai-van-phong.html",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-luoi.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / sinh / học"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "ghế / xoay / lắp"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-lam-viec-doi-dien-cua-ra-vao.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/xu-huong-ban-van-phong-hien-nay.html",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-mo-la-gi.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / trí"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/van-phong-xanh--xu-huong-thiet-ke-van-phong-cua-tuong-lai.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-hop-3m.html",
+      "inbound": 1,
+      "outbound": 4,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ke-ban-hoc-goc-nha-co-tot-khong.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/mo-hinh-van-phong-xanh.html",
+      "inbound": 1,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / trí / văn"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-thiet-ke-noi-that-van-phong.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/menh-hoa-hop-cay-gi-de-ban-lam-viec.html",
+      "inbound": 1,
+      "outbound": 3,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-van-phong-co-vach-ngan.html",
+      "inbound": 1,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/tieu-chuan-de-xay-dung-van-phong-xanh.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-quay-le-tan.html",
+      "inbound": 1,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "ghế / sinh / học"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-co-4-so.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "két / sắt / bài"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-hoi-truong.html",
+      "inbound": 1,
+      "outbound": 1,
+      "anchor_diversity": 1,
+      "cluster": "bàn / kích / thước"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ghe-xoay-khong-nga-duoc-hieu-qua.html",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-van-phong-1m.html",
+      "inbound": 1,
+      "outbound": 0,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+      "inbound": 1,
+      "outbound": 2,
+      "anchor_diversity": 1,
+      "cluster": "phòng / văn / phong"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-thao-banh-xe-ghe-xoay-van-phong.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/so-sanh-van-phong-dong-van-phong-mo.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ban-lam-viec-doi-dien-cua-ra-vao.html",
+      "inbound": 0,
+      "outbound": 2,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ke-ban-lam-viec-trong-phong-ngu.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-chinh-ghe-xoay-nga-lung.html",
+      "inbound": 0,
+      "outbound": 2,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/huong-ban-lam-viec-theo-tuoi.html",
+      "inbound": 0,
+      "outbound": 3,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-khung-sat-co-ben-khong.html",
+      "inbound": 0,
+      "outbound": 2,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-chinh-ghe-xoay-nga-lung.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-chan-quy.html",
+      "inbound": 0,
+      "outbound": 3,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-xoay-van-phong.html",
+      "inbound": 0,
+      "outbound": 1,
+      "anchor_diversity": 0,
+      "cluster": "n/a"
+    }
+  ],
+  "orphans": [
+    "https://noithattheone.vn/phong-cach-noi-that/ban-van-phong-khung-sat-co-ben-khong.html",
+    "https://noithattheone.vn/phong-cach-noi-that/cach-chinh-ghe-xoay-nga-lung.html",
+    "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-xoay-van-phong.html",
+    "https://noithattheone.vn/phong-cach-noi-that/huong-ban-lam-viec-theo-tuoi.html",
+    "https://noithattheone.vn/phong-cach-noi-that/ke-ban-lam-viec-trong-phong-ngu.html",
+    "https://noithattheone.vn/tin-tuc/ban-lam-viec-doi-dien-cua-ra-vao.html",
+    "https://noithattheone.vn/tin-tuc/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+    "https://noithattheone.vn/tin-tuc/cach-chinh-ghe-xoay-nga-lung.html",
+    "https://noithattheone.vn/tin-tuc/cach-thao-banh-xe-ghe-xoay-van-phong.html",
+    "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-chan-quy.html",
+    "https://noithattheone.vn/tin-tuc/so-sanh-van-phong-dong-van-phong-mo.html"
+  ],
+  "weak_pages": [
+    "https://noithattheone.vn/noi-that-cong-trinh/ghe-phong-cho-cong-cong",
+    "https://noithattheone.vn/phong-cach-noi-that/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+    "https://noithattheone.vn/phong-cach-noi-that/ban-lam-viec-doi-dien-cua-ra-vao.html",
+    "https://noithattheone.vn/phong-cach-noi-that/cach-bo-tri-phong-lam-viec-cua-lanh-dao.html",
+    "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+    "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+    "https://noithattheone.vn/phong-cach-noi-that/mo-hinh-van-phong-xanh.html",
+    "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-thiet-ke-noi-that-van-phong.html",
+    "https://noithattheone.vn/phong-cach-noi-that/tieu-chuan-de-xay-dung-van-phong-xanh.html",
+    "https://noithattheone.vn/phong-cach-noi-that/van-phong-mo-la-gi.html",
+    "https://noithattheone.vn/phong-cach-noi-that/van-phong-xanh--xu-huong-thiet-ke-van-phong-cua-tuong-lai.html",
+    "https://noithattheone.vn/phong-cach-noi-that/xu-huong-ban-van-phong-hien-nay.html",
+    "https://noithattheone.vn/tin-tuc/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+    "https://noithattheone.vn/tin-tuc/ban-hop-3m.html",
+    "https://noithattheone.vn/tin-tuc/ban-lam-viec-van-phong-co-vach-ngan.html",
+    "https://noithattheone.vn/tin-tuc/ban-van-phong-1m.html",
+    "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-co-4-so.html",
+    "https://noithattheone.vn/tin-tuc/cach-su-dung-ghe-cong-thai-hoc.html",
+    "https://noithattheone.vn/tin-tuc/ghe-xoay-khong-nga-duoc-hieu-qua.html",
+    "https://noithattheone.vn/tin-tuc/ke-ban-hoc-goc-nha-co-tot-khong.html",
+    "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-hoi-truong.html",
+    "https://noithattheone.vn/tin-tuc/kich-thuoc-quay-le-tan.html",
+    "https://noithattheone.vn/tin-tuc/menh-hoa-hop-cay-gi-de-ban-lam-viec.html",
+    "https://noithattheone.vn/tin-tuc/menh-kim-hop-cay-gi-de-ban-lam-viec.html",
+    "https://noithattheone.vn/tin-tuc/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+    "https://noithattheone.vn/tin-tuc/trang-tri-ban-lam-viec-tai-van-phong.html",
+    "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-luoi.html"
+  ],
+  "authority_pages": [
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/chon-huong-ban-lam-viec-nam-2025-chuan-phong-thuy-giup-su-nghiep-thang-tien.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/thay-luoi-ghe-cong-thai-hoc.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/ket-sat-khong-mo-duoc.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/vi-tri-de-ket-sat-trong-phong-ngu.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-lap-ban-lam-viec.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/cach-chon-ghe-hoc-sinh.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-moc.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hop.html",
+      "inbound": 3
+    },
+    {
+      "url": "https://noithattheone.vn/phong-cach-noi-that/bi-quyet-phong-thuy-phong-lam-viec.html",
+      "inbound": 3
+    }
+  ],
+  "anti_patterns": {
+    "over_optimization_targets": [],
+    "confused_anchors": [
+      {
+        "anchor": "lắp ráp ghế xoay văn phòng",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/bo-suu-tap-ban-ghe-hoc-danh-cho-be-thong-minh-tu-noi-that-the-one-1.html",
+          "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-chan-quy.html",
+          "https://noithattheone.vn/phong-cach-noi-that/nhung-dieu-can-chu-y-khi-mua-ghe-phong-cho-cho-benh-vien.html",
+          "https://noithattheone.vn/phong-cach-noi-that/van-phong-mo-la-gi.html",
+          "https://noithattheone.vn/tin-tuc/ban-lam-viec-van-phong-co-vach-ngan.html",
+          "https://noithattheone.vn/tin-tuc/ban-van-phong-1m.html",
+          "https://noithattheone.vn/tin-tuc/cach-chon-ghe-hoc-sinh.html",
+          "https://noithattheone.vn/tin-tuc/cach-lap-ban-hoc-sinh.html",
+          "https://noithattheone.vn/tin-tuc/cach-su-dung-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2015.html",
+          "https://noithattheone.vn/tin-tuc/ke-ban-hoc-goc-nha-co-tot-khong.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giam-doc.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hop.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html"
+        ]
+      },
+      {
+        "anchor": "mẹo giúp lắp ráp ghế xoay lưới nhanh",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html",
+          "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+          "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+          "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+          "https://noithattheone.vn/tin-tuc/ghe-cong-thai-hoc-la-gi.html",
+          "https://noithattheone.vn/tin-tuc/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giam-doc.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giao-vien.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-cho-tre-mau-giao.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-2.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hop.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-cong-thai-hoc.html"
+        ]
+      },
+      {
+        "anchor": "cách lắp ghế xoay văn phòng",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/ban-ghe-giao-vien-noi-that-the-one.html",
+          "https://noithattheone.vn/phong-cach-noi-that/cach-lap-rap-ghe-xoay-luoi.html",
+          "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-bi-dau-lung.html",
+          "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-san-xuat-ban-ghe-hoc-sinh.html",
+          "https://noithattheone.vn/tin-tuc/21-ban-lam-viec-chan-sat-thep-1m6-chinh-hang-gia-uu-dai.html",
+          "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-1m8.html",
+          "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-2m4.html",
+          "https://noithattheone.vn/tin-tuc/cach-lap-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/cach-ve-sinh-ghe-xoay-van-phong.html",
+          "https://noithattheone.vn/tin-tuc/menh-hoa-hop-cay-gi-de-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/menh-moc-hop-cay-gi-de-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/menh-tho-hop-cay-gi-de-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/menh-thuy-hop-cay-gi-de-ban-lam-viec.html"
+        ]
+      },
+      {
+        "anchor": "các bước lắp ráp ghế xoay lưới",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/cach-nga-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ghe-xoay-khong-nga-duoc.html",
+          "https://noithattheone.vn/phong-cach-noi-that/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+          "https://noithattheone.vn/phong-cach-noi-that/top-ban-ghe-hoc-sinh-duoc-yeu-thich-nhat-tu-noi-that-hoa-phat.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/cach-lap-ban-hoc-sinh.html",
+          "https://noithattheone.vn/tin-tuc/ghe-cong-thai-hoc-la-gi.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-2.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-3.html",
+          "https://noithattheone.vn/tin-tuc/thay-luoi-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/ve-sinh-ghe-luoi.html"
+        ]
+      },
+      {
+        "anchor": "cách lắp ráp ghế xoay lưới",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/cach-su-dung-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/phong-cach-noi-that/tu-van-chon-ban-ghe-hoc-sinh-tai-nha-sao-cho-dung.html",
+          "https://noithattheone.vn/phong-cach-noi-that/ve-sinh-ghe-luoi.html",
+          "https://noithattheone.vn/tin-tuc/ban-lam-viec-dai-1m8.html",
+          "https://noithattheone.vn/tin-tuc/cach-chon-ghe-hoc-sinh.html",
+          "https://noithattheone.vn/tin-tuc/cach-lap-ghe-cong-thai-hoc.html",
+          "https://noithattheone.vn/tin-tuc/cach-lap-rap-ghe-xoay-luoi.html",
+          "https://noithattheone.vn/tin-tuc/ghe-xoay-khong-nga-duoc-hieu-qua.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-lam-viec-tieu-chuan.html",
+          "https://noithattheone.vn/tin-tuc/menh-kim-hop-cay-gi-de-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/ngoi-ghe-cong-thai-hoc-dung-cach.html",
+          "https://noithattheone.vn/tin-tuc/thay-luoi-ghe-cong-thai-hoc.html"
+        ]
+      },
+      {
+        "anchor": "phong thuỷ cho văn phòng làm việc",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/cach-lap-ban-lam-viec.html",
+          "https://noithattheone.vn/phong-cach-noi-that/phong-thuy-van-phong-xanh.html",
+          "https://noithattheone.vn/phong-cach-noi-that/van-phong-xanh--xu-huong-thiet-ke-van-phong-cua-tuong-lai.html",
+          "https://noithattheone.vn/tin-tuc/huong-ban-lam-viec.html",
+          "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-hoa.html",
+          "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-kim.html",
+          "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-cho-nguoi-menh-tho.html",
+          "https://noithattheone.vn/tin-tuc/phong-thuy-ban-lam-viec-menh-thuy.html"
+        ]
+      },
+      {
+        "anchor": "phong thủy khi thiết kế văn phòng",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/xu-huong-ban-van-phong-hien-nay.html",
+          "https://noithattheone.vn/tin-tuc/ket-sat-nang-bao-nhieu-kg.html",
+          "https://noithattheone.vn/tin-tuc/ket-sat-nen-de-o-dau.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ket-sat.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-quay-le-tan.html",
+          "https://noithattheone.vn/tin-tuc/kinh-nghiem-mua-ket-sat-gia-dinh.html",
+          "https://noithattheone.vn/tin-tuc/thay-pin-ket-sat-dien-tu.html"
+        ]
+      },
+      {
+        "anchor": "cách xem phong thủy văn phòng",
+        "targets": [
+          "https://noithattheone.vn/phong-cach-noi-that/quy-trinh-thiet-ke-noi-that-van-phong.html",
+          "https://noithattheone.vn/phong-cach-noi-that/tieu-chuan-de-xay-dung-van-phong-xanh.html",
+          "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-co-4-so.html",
+          "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-mini-co-van-tay.html",
+          "https://noithattheone.vn/tin-tuc/cach-doi-mat-ma-ket-sat-dien-tu.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-2.html"
+        ]
+      },
+      {
+        "anchor": "cách bố trí văn phòng theo phong thủy",
+        "targets": [
+          "https://noithattheone.vn/tin-tuc/cach-doi-mat-khau-ket-sat-mini-co-van-tay.html",
+          "https://noithattheone.vn/tin-tuc/huong-ke-ban-hoc-cho-tuoi-2015.html",
+          "https://noithattheone.vn/tin-tuc/ke-ban-hoc-hop-phong-thuy.html",
+          "https://noithattheone.vn/tin-tuc/ket-sat-nang-bao-nhieu-kg.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-cho-tre-mau-giao.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ghe-hoi-truong.html",
+          "https://noithattheone.vn/tin-tuc/kinh-nghiem-mua-ket-sat-gia-dinh.html"
+        ]
+      },
+      {
+        "anchor": "phong thủy bố trí văn phòng",
+        "targets": [
+          "https://noithattheone.vn/tin-tuc/ban-hop-3m.html",
+          "https://noithattheone.vn/tin-tuc/huong-dan-chon-kich-thuoc-ghe-quay-bar-chuan-va-thoai-mai-nhat.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giam-doc.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-giao-vien.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-cho-tre-mau-giao.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-1.html",
+          "https://noithattheone.vn/tin-tuc/kich-thuoc-ban-hoc-sinh-cap-3.html"
+        ]
+      }
+    ],
+    "self_links": [],
+    "duplicate_pairs": [],
+    "generic_anchor_pct": 2.3,
+    "long_chains": [
+      [
+        "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+        "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html"
+      ],
+      [
+        "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+        "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html"
+      ],
+      [
+        "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+        "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+        "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html"
+      ],
+      [
+        "https://noithattheone.vn/phong-cach-noi-that/kinh-nghiem-chon-mua-ghe-lanh-dao-ai-cung-nen-biet.html",
+        "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+        "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html"
+      ],
+      [
+        "https://noithattheone.vn/phong-cach-noi-that/khoang-cach-giua-ban-va-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/cach-chon-ghe-hoc-sinh.html",
+        "https://noithattheone.vn/phong-cach-noi-that/kich-thuoc-ghe-hoi-truong.html",
+        "https://noithattheone.vn/phong-cach-noi-that/ghe-cong-thai-hoc-la-gi.html"
+      ]
+    ]
+  }
+}

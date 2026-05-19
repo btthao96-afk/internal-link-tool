@@ -145,6 +145,56 @@ else
   record "semantic-internal-linker::rules (no self-link, no dup)" FAIL "vi phạm rule"
 fi
 
+# ============ Test 3: inlink-stats ============
+echo ""
+echo "=== Testing inlink-stats ==="
+SK3="$HERE/inlink-stats"
+check_skill_md "$SK3"
+
+TMP3="$(mktemp -d)"
+cat > "$TMP3/links.json" <<EOF
+[
+  {"source":"/a","target":"/b","anchor":"camera","anchor_type":"exact","cluster":"x","same_cluster":true},
+  {"source":"/a","target":"/c","anchor":"camera","anchor_type":"exact","cluster":"x","same_cluster":true},
+  {"source":"/b","target":"/c","anchor":"xem thêm","anchor_type":"generic","cluster":"x","same_cluster":true},
+  {"source":"/c","target":"/a","anchor":"chi tiết","anchor_type":"generic","cluster":"x","same_cluster":true},
+  {"source":"/d","target":"/a","anchor":"đánh giá camera","anchor_type":"partial","cluster":"x","same_cluster":true}
+]
+EOF
+
+if python3 "$SK3/scripts/analyze.py" --input "$TMP3/links.json" --out "$TMP3/out" --format all >"$TMP3/log" 2>&1; then
+  if [[ -f "$TMP3/out/stats.json" && -f "$TMP3/out/report.md" && -f "$TMP3/out/report.xlsx" && -f "$TMP3/out/report.html" ]]; then
+    record "inlink-stats::analyze (all formats)" PASS "stats.json + report.md + .xlsx + .html"
+  else
+    record "inlink-stats::analyze (all formats)" FAIL "thiếu output file"
+  fi
+else
+  record "inlink-stats::analyze (all formats)" FAIL "crashed (xem $TMP3/log)"
+fi
+
+if python3 -c "
+import json
+s = json.load(open('$TMP3/out/stats.json'))
+o = s['overview']
+assert o['total_links'] == 5
+assert o['unique_urls'] == 4
+ap = s['anti_patterns']
+assert len(ap['confused_anchors']) >= 1, 'phải detect được anchor camera→2 targets'
+assert ap['generic_anchor_pct'] > 0
+" 2>/dev/null; then
+  record "inlink-stats::detect anti-patterns" PASS "phát hiện confused anchors + generic anchor"
+else
+  record "inlink-stats::detect anti-patterns" FAIL "anti-pattern detection sai"
+fi
+
+if [[ -f "$SK3/outputs/stats.json" ]]; then
+  REAL_LINKS=$(python3 -c "import json; print(json.load(open('$SK3/outputs/stats.json'))['overview']['total_links'])")
+  REAL_ORPH=$(python3 -c "import json; print(len(json.load(open('$SK3/outputs/stats.json'))['orphans']))")
+  record "inlink-stats::real data" PASS "$REAL_LINKS links analyzed, $REAL_ORPH orphans"
+else
+  record "inlink-stats::real data" FAIL "chưa có outputs/stats.json"
+fi
+
 # ============ Write report ============
 {
   echo "# Skill Test Report"
