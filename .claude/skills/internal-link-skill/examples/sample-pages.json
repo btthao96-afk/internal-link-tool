@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://seongon.com/blog/internal-link-la-gi",
+    "title": "Internal Link là gì? Hướng dẫn tối ưu liên kết nội bộ",
+    "content": "Internal link hay liên kết nội bộ là các đường link từ trang này sang trang khác trong cùng một website. Chúng giúp Google hiểu cấu trúc website, phân bổ link equity và cải thiện trải nghiệm người dùng. Một chiến lược internal link tốt sẽ giúp website tăng thứ hạng SEO đáng kể."
+  },
+  {
+    "url": "https://seongon.com/blog/toi-uu-meta-description",
+    "title": "Cách viết Meta Description chuẩn SEO",
+    "content": "Meta description là đoạn mô tả ngắn hiển thị trên kết quả tìm kiếm Google. Một meta description tốt sẽ tăng CTR đáng kể. Độ dài lý tưởng là 150-160 ký tự, chứa keyword chính và có lời kêu gọi hành động."
+  },
+  {
+    "url": "https://seongon.com/blog/keyword-research",
+    "title": "Nghiên cứu từ khóa hiệu quả 2026",
+    "content": "Keyword research là bước đầu tiên và quan trọng nhất trong SEO. Việc chọn đúng từ khóa quyết định 80% thành công của chiến dịch SEO. Các công cụ phổ biến: Ahrefs, SEMrush, Google Keyword Planner."
+  },
+  {
+    "url": "https://seongon.com/blog/page-speed-optimization",
+    "title": "Tối ưu tốc độ trang web cho SEO",
+    "content": "Page speed là một trong những yếu tố ranking quan trọng của Google. Core Web Vitals bao gồm LCP, FID, CLS. Cách tối ưu: nén ảnh, lazy load, minify CSS/JS, dùng CDN, cache trình duyệt."
+  }
+]

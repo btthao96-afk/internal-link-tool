@@ -45,6 +45,5 @@ coverage/
 .cache/
 .turbo/
 
-# Claude Code local config — chỉ giữ symlink trong .claude/skills/ trỏ về top-level skills/
-.claude/*
-!.claude/skills/
+# Claude Code — track toàn bộ .claude/, chỉ bỏ runtime lock file
+.claude/scheduled_tasks.lock
